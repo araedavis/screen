@@ -15,6 +15,33 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/modules.css">
     <link rel="stylesheet" href="css/themes.css">
+
+    <!--handlebars templates -->
+    <script id="film-template" type="text/x-handlebars-template">
+      <div>
+          <h3>{{title}}</h3>
+          <h5>{{country}}</h5>
+          <h5>{{director}}</h5>
+          <img src="{{image-small}}">
+          <a href="#" data-control="userBtn">VIEW MORE</a>
+      </div>
+    </script>
+
+    <script id="film-template-expanded" type="text/template">
+        <h5>{{country}}</h5>
+        <h5>{{director}}</h5>
+        <h3>{{title}}</h3>
+        <p>{{description}}</p>
+        <h5>{{venue}}</h5>
+        <h5>{{date}}</h5>
+        <h5>{{time}}</h5>
+        <h5>{{alt-venue}}</h5>
+        <h5>{{alt-date}}</h5>
+        <h5>{{alt-time}}</h5>
+        <img src="{{image-large}}">
+        <h5>{{trt}}</h5>
+        <iframe title="YouTube video player" class="youtube-player"   type="text/html" width="640" height="390" src="{{youtube}}" frameborder="0" allowFullScreen></iframe>
+    </script>
   </head>
 
   <body>
@@ -78,11 +105,15 @@
 
     </main>
 
+      <!--add vendor scripts -->
+
       <script src="vendor/jquery-2.2.0.min.js" type="text/javascript"></script>
+      <script type="text/javascript" src="vendor/js/handlebars-v4.0.5.js"></script>
       <script src="vendor/page.js" type="text/javascript"></script>
+
+      <script src="festivalData.json"></script>
 
       <!--<script src="server.js" type="text/javascript"></script>-->
 
   </body>
-
 </html>

@@ -5,19 +5,76 @@
     <title>Screen</title>
     <meta name="viewport" content="width=device-width" scale="1">
 
-    <link> <!--add css reset here -->
-    <link> <!--add css framework (?) here -->
+    <!--vendor stylesheets -->
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/skeleton.css">
 
+    <!--custom stylesheets -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
   </head>
 
   <body>
-    <div>
-      Hello, Screen
-    </div>
+    <main>
+      <nav>
+        <!--Screen Logo goes here -->
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">My Films</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+        </ul>
+      </nav>
 
-    <!--add vendor scripts -->
+<!--begin Landing -->
+      <section id="landing">
+        <div>
+          Hello, Screen
+        </div>
 
-    <script src="server.js" type="text/javascript"></script>
+        <div id="filters">
+          <select id="date-filter">
+            <option>-- Date --</option>
+          </select>
+
+          <select id="venue-filter">
+            <option>-- Venue --</option>
+          </select>
+
+          <select id="genre-filter">
+            <option>-- Genre --</option>
+          </select>
+
+          <select id="country-filter">
+            <option>-- Country --</option>
+          </select>
+      </section>
+
+<!--begin My Films -->
+      <section id="my-films">
+
+      </section>
+
+<!--begin About -->
+      <section id="about">
+      </section>
+
+      <footer>
+
+      </footer>
+
+    </main>
+
+      <script src="vendor/jquery-2.2.0.min.js" type="text/javascript"></script>
+      <script src="vendor/page.js" type="text/javascript"></script>
+
+      <script src="server.js" type="text/javascript"></script>
+
   </body>
 
 </html>

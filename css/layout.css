@@ -25,4 +25,8 @@ select {
     padding: 25px;
   }
 
+  .filter {
+    display: inline-block;
+  }
+
 }

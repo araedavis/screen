@@ -1,0 +1,15 @@
+/*=== Filter menu ===*/
+.filter {
+  background-color: #F3F3F3;
+  border: 1px solid;
+}
+
+.filter select {
+  background-color: #F3F3F3;
+  border-radius: 2px;
+}
+
+select:focus,
+select:hover {
+  background-color: #FDEC00;
+}

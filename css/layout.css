@@ -6,7 +6,15 @@ main {
   text-align: center;
 }
 
+#main-nav {
+  margin: -25px;
+}
+
 #filters {
+  padding: 25px;
+}
+
+section {
   padding: 25px;
 }
 
@@ -18,15 +26,17 @@ select {
   #main-nav {
     display: block;
     text-align: right;
+    padding: 10px;
   }
 
   .nav-tab {
     display: inline-block;
-    padding: 25px;
+    padding: 0px 10px;
   }
 
-  .filter {
+  .filter-style {
     display: inline-block;
+    margin: 0px;
   }
 
 }

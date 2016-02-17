@@ -1,0 +1,32 @@
+img {
+  max-width: 100%;
+}
+
+main {
+  text-align: center;
+}
+
+#filters {
+  padding: 25px;
+}
+
+select {
+  margin: 20px;
+}
+
+@media(min-width: 768px){
+  #main-nav {
+    display: block;
+    text-align: right;
+  }
+
+  .nav-tab {
+    display: inline-block;
+    padding: 25px;
+  }
+
+  .filter {
+    display: inline-block;
+  }
+
+}

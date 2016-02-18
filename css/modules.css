@@ -16,6 +16,17 @@
 
 }
 
+/*=== Film container ===*/
+
+.filmContainer {
+  border-bottom: 2px dotted #BAE3E3;
+
+}
+
+.filmCaption {
+  background-color: #f9f9f9;
+}
+
 /*select:focus,
 select:hover {
   background-color: #FDEC00;

@@ -18,6 +18,10 @@ select {
   margin: 20px;
 }
 
+.filmContainer {
+  max-width: 100%;
+}
+
 @media(min-width: 768px){
   #main-nav {
     display: block;

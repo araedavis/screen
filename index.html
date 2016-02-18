@@ -23,13 +23,18 @@
     </script>
 
     <script id="film-template" type="text/x-handlebars-template">
-      <div>
-          <h3>{{title}}</h3>
-          <h5>{{country}}</h5>
-          <h5>{{director}}</h5>
-          <h5>{{datetime}}</h5>
-          <img src="/imgs/imagesSmall/{{imagesmall}}"><br />
-          <a href="#" data-control="userBtn">VIEW MORE</a>
+      <div class="filmContainer row">
+          <div class="filmImage six columns">
+            <img src="/imgs/imagesSmall/{{imagesmall}}"><br />
+          </div>
+          <div class="filmCaption six columns">
+            <h3>{{title}}</h3>
+            <h4>{{country}}</h4>
+            <h5>Directed by {{director}}<br>
+            {{datetime}}
+            </h5>
+            <a class="filmButton" href="#" data-control="userBtn">VIEW MORE</a>
+          </div>
       </div>
     </script>
 
@@ -111,7 +116,9 @@
 
 <!-- begin Filtered Films -->
       <section id="filtered-films">
+        <div class="container">
 
+        </div>
       </section>
 
 <!--begin My Films -->

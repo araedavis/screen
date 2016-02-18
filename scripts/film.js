@@ -13,7 +13,7 @@
   // ... uses that to populate the database and returns an array of Film objects
   Film.fetchAllFilmData = function(callback){
     webDB.execute(
-    'SELECT * FROM films;', function(data){
+    'SELECT * FROM films ORDER BY "datetime";', function(data){
       if (data.length > 0){
         var arrayToReturn = data.map(function(element){
           return new Film(element);

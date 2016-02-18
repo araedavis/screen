@@ -97,11 +97,36 @@
     );
   };
 
+  //methods for filters
+  Film.allDates = function(callback){
+    //datetime
+    webDB.execute('SELECT DISTINCT datetime FROM films;', callback)
+  };
+
+  Film.allVenues = function(callback){
+    //venue
+    webDB.execute('SELECT DISTINCT venue FROM films;', callback)
+  };
+
+  Film.allCountries = function(callback){
+    //country
+    webDB.execute('SELECT DISTINCT country FROM films;', callback)
+  };
+
+  Film.allGenres = function(callback){
+    //genre
+    //not added to DB yet
+    //webDB.execute('SELECT DISTINCT genre FROM films;', callback)
+  }
+
   // Function calls
   Film.createFilmTable();
   Film.fetchAllFilmData(function(returnArray){
     console.log('retrieveData invocation callback fires and this is the returned array: ' + returnArray);
   });
+
+
+
 
   module.Film = Film;
 })(window);

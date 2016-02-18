@@ -1,26 +1,77 @@
 (function(module){
 
-var filmView = {}
+  var filmView = {};
 
-var render = function(film){
-  var template = Handlebars.compile($('#film-template').text());
-  var dateAsString = new Date(film.datetime).toDateString();
-  film.datetime = dateAsString;
-  return template(film);
-}
+  var render = function(film){
+    var template = Handlebars.compile($('#film-template').text());
+    var dateAsString = new Date(film.datetime).toDateString();
+    film.datetime = dateAsString;
+    return template(film);
+  };
 
+  filmView.populateFilters = function(){
+    var template = Handlebars.compile($('#filter-template').text());
 
-
-
-
-filmView.initPage = function(){
-  Film.fetchAllFilmData(function(returnedArray){
-    returnedArray.forEach(function(element){
-        $('#filtered-films').append(render(element));
+    Film.allDates(function(rows){
+      if($('#date-filter option').length < 2) {
+        $('#date-filter').append(
+            rows.map(function(row){
+              return template({
+                val: row.datetime });
+            })
+          );
+      };
     });
-  });
-}
 
-filmView.initPage();
+    Film.allVenues(function(rows){
+      if($('#venue-filter option').length < 2) {
+        $('#venue-filter').append(
+            rows.map(function(row){
+              return template({
+                val: row.venue });
+            })
+          );
+      };
+    });
+
+    Film.allCountries(function(rows){
+      if($('#country-filter option').length < 2) {
+        $('#country-filter').append(
+            rows.map(function(row){
+              return template({
+                //returns row.country converted to title case
+                val: (row.country).replace(/\w\S*/g, function(txt){
+                  return txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase();
+                }) });
+            })
+          );
+      };
+    });
+
+    Film.allGenres(function(rows){
+      if($('#venue-filter option').length < 2) {
+        $('#venue-filter').append(
+            rows.map(function(row){
+              return template({
+                val: row.genre });
+            })
+          );
+      };
+    });
+  };
+
+  filmView.initPage = function(){
+    Film.fetchAllFilmData(function(returnedArray){
+      returnedArray.forEach(function(element){
+        $('#filtered-films').append(render(element));
+      });
+    });
+  };
+
+  //test function calls
+  filmView.populateFilters();
+  filmView.initPage();
+
+  module.filmView = filmView;
 
 })(window);

@@ -1,5 +1,6 @@
-$('.main-gallery').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true
-});
+// $('.main-gallery js-flickity').flickity({
+//   freeScroll: true,
+//   wrapAround: true
+//
+//
+// });

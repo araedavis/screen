@@ -98,7 +98,6 @@
   };
 
   //methods for filters
-
   Film.allDates = function(callback){
     //datetime
     webDB.execute('SELECT DISTINCT datetime FROM films;', callback)

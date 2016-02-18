@@ -73,8 +73,8 @@
             this.trt,
             this.venue,
             datetime,
-            this.imagesmall,
-            this.imagelarge,
+            this.image_small,
+            this.image_large,
             this.youtube,
             this.isFavorite]
           }

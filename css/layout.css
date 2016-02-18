@@ -6,10 +6,6 @@ main {
   text-align: center;
 }
 
-#main-nav {
-  margin: -25px;
-}
-
 #filters {
   padding: 25px;
 }
@@ -34,7 +30,7 @@ select {
     padding: 0px 10px;
   }
 
-  .filter-style {
+  .filter-layout {
     display: inline-block;
     margin: 0px;
   }

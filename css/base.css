@@ -21,7 +21,7 @@ h4 {
   font-size: 1em;
 }
 
-p {
+p, h5 {
   font-size: 1em;
   font-family: 'Source Sans Pro', sans-serif;
 }

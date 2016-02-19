@@ -94,9 +94,9 @@
       'imagesmall VARCHAR(255),' +
       'imagelarge VARCHAR(255),' +
       'youtube VARCHAR(500),' +
-      'genre1 VARCHAR(255),'+
-      'genre2 VARCHAR(255),'+
-      'genre3 VARCHAR(255),'+
+      'genre1 VARCHAR(255),' +
+      'genre2 VARCHAR(255),' +
+      'genre3 VARCHAR(255),' +
       'isFavorite BOOL);', callback
     );
   };
@@ -108,7 +108,7 @@
     webDB.execute(
       [
         {
-          'sql': 'INSERT INTO films (title, director, description, country, trt, venue, datetime, imagesmall, imagelarge, youtube, isFavorite) VALUES (?,?,?,?,?,?,?,?,?,?,?);',
+          'sql': 'INSERT INTO films (title, director, description, country, trt, venue, datetime, imagesmall, imagelarge, youtube, genre1, genre2, genre3, isFavorite) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);',
           'data': [
             this.title,
             this.director,
@@ -161,9 +161,10 @@
   };
 
   Film.allGenres = function(callback){
-    //genre
-    //not added to DB yet
-    //webDB.execute('SELECT DISTINCT genre FROM films;', callback)
+
+    // webDB.execute('SELECT DISTINCT genre2 FROM films;', callback);
+
+
   };
 
   // Function calls
@@ -175,9 +176,8 @@
     console.log(returnedArray);
   });
 
-  Film.fetchGenre('Documentary' , function(returnedArray){
+  Film.fetchGenre('Documentary', function(returnedArray){
     console.log(returnedArray);
-
   });
 
 

@@ -3,6 +3,20 @@
 
   var favoriteView = {};
 
-  module.favoriteView = favoriteView;  
+  var favorite =function(film){
+    
+
+
+  };
+
+
+
+
+
+
+
+
+
+  module.favoriteView = favoriteView;
 
 })(window);

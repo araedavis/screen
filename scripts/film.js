@@ -13,7 +13,7 @@
   // ... uses that to populate the database and returns an array of Film objects
   Film.fetchAllFilmData = function(callback){
     webDB.execute(
-    'SELECT * FROM films;', function(data){
+    'SELECT * FROM films ORDER BY "datetime";', function(data){
       if (data.length > 0){
         var arrayToReturn = data.map(function(element){
           return new Film(element);
@@ -39,6 +39,47 @@
     });
   };
 
+
+  Film.fetchCountry = function(country, callback){
+    var arrayToReturn = [];
+    webDB.execute([{
+      sql: 'SELECT * FROM films WHERE country =?;',
+      data:[country]
+
+    }
+
+  ],function(data){
+      var arrayToReturn = data.map(function(element){
+        return new Film(element);
+      });
+      callback(arrayToReturn);
+    }
+
+  );
+
+  };
+
+  Film.fetchGenre = function(genre2, callback){
+    var arrayToReturn = [];
+    webDB.execute([{
+      sql: 'SELECT * FROM films WHERE genre2 =?;',
+      data:[genre2]
+
+    }
+
+  ],function(data){
+      var arrayToReturn = data.map(function(element){
+        return new Film(element);
+      });
+      callback(arrayToReturn);
+    }
+
+  );
+
+  };
+
+
+
   Film.createFilmTable = function(callback){
     webDB.execute(
       'CREATE TABLE IF NOT EXISTS films (' +
@@ -53,6 +94,9 @@
       'imagesmall VARCHAR(255),' +
       'imagelarge VARCHAR(255),' +
       'youtube VARCHAR(500),' +
+      'genre1 VARCHAR(255),' +
+      'genre2 VARCHAR(255),' +
+      'genre3 VARCHAR(255),' +
       'isFavorite BOOL);', callback
     );
   };
@@ -60,11 +104,11 @@
   // CRUD
   Film.prototype.insertRecord = function(callback){
     // Combine date and time into one timestamp
-    var datetime = this.date + ' ' + this.time
+    var datetime = this.date + ' ' + this.time;
     webDB.execute(
       [
         {
-          'sql': 'INSERT INTO films (title, director, description, country, trt, venue, datetime, imagesmall, imagelarge, youtube, isFavorite) VALUES (?,?,?,?,?,?,?,?,?,?,?);',
+          'sql': 'INSERT INTO films (title, director, description, country, trt, venue, datetime, imagesmall, imagelarge, youtube, genre1, genre2, genre3, isFavorite) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);',
           'data': [
             this.title,
             this.director,
@@ -76,9 +120,12 @@
             this.imagesmall,
             this.imagelarge,
             this.youtube,
+            this.genre1,
+            this.genre2,
+            this.genre3,
             this.isFavorite]
-          }
-        ],
+        }
+      ],
       callback
     );
   };
@@ -97,11 +144,43 @@
     );
   };
 
+  //methods for filters
+  Film.allDates = function(callback){
+    //datetime
+    webDB.execute('SELECT DISTINCT datetime FROM films;', callback);
+  };
+
+  Film.allVenues = function(callback){
+    //venue
+    webDB.execute('SELECT DISTINCT venue FROM films;', callback);
+  };
+
+  Film.allCountries = function(callback){
+    //country
+    webDB.execute('SELECT DISTINCT country FROM films;', callback);
+  };
+
+  Film.allGenres = function(callback){
+
+    // webDB.execute('SELECT DISTINCT genre2 FROM films;', callback);
+
+
+  };
+
   // Function calls
   Film.createFilmTable();
   Film.fetchAllFilmData(function(returnArray){
     console.log('retrieveData invocation callback fires and this is the returned array: ' + returnArray);
   });
+  Film.fetchCountry('ARGENTINA', function(returnedArray){
+    console.log(returnedArray);
+  });
+
+  Film.fetchGenre('Documentary', function(returnedArray){
+    console.log(returnedArray);
+  });
+
+
 
   module.Film = Film;
 })(window);

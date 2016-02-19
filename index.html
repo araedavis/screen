@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
+<html lang="eng">
+<head>
     <meta charset="UTF-8">
     <title>Screen</title>
     <meta name="viewport" content="width=device-width" scale="1">
 
     <!--vendor stylesheets -->
-    <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="vendor/skeleton.css">
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+    <link rel="stylesheet" href="vendor/css/skeleton.css">
     <link href='https://fonts.googleapis.com/css?family=Andika|Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+    <link href="vendor/flickity-docs/flickity.css" media="screen" rel="stylesheet">
 
     <!--custom stylesheets -->
     <link rel="stylesheet" href="css/base.css">
@@ -17,12 +18,17 @@
     <link rel="stylesheet" href="css/themes.css">
 
     <!--handlebars templates -->
+    <script id="filter-template" type="text/x-handlebars-template">
+      <option value="{{val}}">{{val}}</option>
+    </script>
+
     <script id="film-template" type="text/x-handlebars-template">
       <div>
           <h3>{{title}}</h3>
           <h5>{{country}}</h5>
           <h5>{{director}}</h5>
-          <img src="{{image-small}}">
+          <h5>{{datetime}}</h5>
+          <img src="/imgs/imagesSmall/{{imagesmall}}"><br />
           <a href="#" data-control="userBtn">VIEW MORE</a>
       </div>
     </script>
@@ -50,42 +56,62 @@
         <!--Screen Logo goes here -->
         <ul>
           <li class="nav-tab">
-            <a href="">Home</a>
+            <a href="">
+              <h3>Home</h3>
+              </a>
           </li>
           <li class="nav-tab">
-            <a href="">My Films</a>
+            <a href="">
+              <h3>My Films</h3>
+            </a>
           </li>
           <li class="nav-tab">
-            <a href="">About</a>
+            <a href="">
+              <h3>About</h3>
+            </a>
           </li>
         </ul>
       </nav>
 
 <!--begin Landing -->
       <section id="landing">
+        <div class="main-gallery js-flickity">
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+        </div>
         <div>
-          Hello, Screen
+          <p>Hello, Screen</p>
         </div>
 
-        <div id="filters">
+        <div class="filter-style">
             <select id="date-filter">
               <option>Date</option>
             </select>
+        </div>
 
-            <select id="venue-filter" class="filter">
+        <div class="filter-style">
+            <select id="venue-filter">
               <option>Venue</option>
             </select>
+        </div>
 
-
-            <select id="genre-filter" class="filter">
+        <div class="filter-style">
+            <select id="genre-filter">
               <option>Genre</option>
             </select>
+        </div>
 
-
-            <select id="country-filter" class="filter">
+        <div class="filter-style">
+            <select id="country-filter">
               <option>Country</option>
             </select>
-          </div>
+        </div>
+      </section>
+
+<!-- begin Filtered Films -->
+      <section id="filtered-films">
+
       </section>
 
 <!--begin My Films -->
@@ -112,8 +138,12 @@
       <script src="/vendor/js/page.js" type="text/javascript"></script>
       <script src="/vendor/js/html5sql.js" type="text/javascript"></script>
       <script src="/vendor/js/webdb.js" type="text/javascript"></script>
+      <script src="/vendor/flickity-docs/flickity.pkgd.min.js" type="text/javascript"></script>
+      <script src="scripts/flickity.js" type="text/javascript"></script>
 
       <script src="/scripts/film.js" type="text/javascript"></script>
+      <script src="scripts/filmView.js" type="text/javascript"></script>
+
       <!-- <script src="/data/festivalData.json"></script> -->
       <!--<script src="server.js" type="text/javascript"></script>-->
 

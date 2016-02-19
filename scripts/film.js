@@ -42,43 +42,37 @@
 
   Film.fetchCountry = function(country, callback){
     var arrayToReturn = [];
-    webDB.execute([{
-      sql: 'SELECT * FROM films WHERE country =?;',
-      data:[country]
-
-    }
-
-  ],function(data){
+    webDB.execute(
+      [
+        {
+          sql: 'SELECT * FROM films WHERE country =?;',
+          data:[country]
+        }
+      ],function(data){
       var arrayToReturn = data.map(function(element){
         return new Film(element);
       });
       callback(arrayToReturn);
     }
-
-  );
-
+    );
   };
 
   Film.fetchGenre = function(genre2, callback){
     var arrayToReturn = [];
-    webDB.execute([{
-      sql: 'SELECT * FROM films WHERE genre2 =?;',
-      data:[genre2]
-
-    }
-
-  ],function(data){
+    webDB.execute(
+      [
+        {
+          sql: 'SELECT * FROM films WHERE genre2 =?;',
+          data:[genre2]
+        }
+      ],function(data){
       var arrayToReturn = data.map(function(element){
         return new Film(element);
       });
       callback(arrayToReturn);
     }
-
-  );
-
+    );
   };
-
-
 
   Film.createFilmTable = function(callback){
     webDB.execute(
@@ -108,7 +102,7 @@
     webDB.execute(
       [
         {
-          'sql': 'INSERT INTO films (title, director, description, country, trt, venue, datetime, imagesmall, imagelarge, youtube, isFavorite) VALUES (?,?,?,?,?,?,?,?,?,?,?);',
+          'sql': 'INSERT INTO films (title, director, description, country, trt, venue, datetime, imagesmall, imagelarge, youtube, genre1, genre2, genre3, isFavorite) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);',
           'data': [
             this.title,
             this.director,
@@ -138,7 +132,7 @@
 
   };
 
-  Film.truncateTable = function(){
+  Film.truncateTable = function(callback){
     webDB.execute(
       'DELETE FROM films;',callback
     );
@@ -168,19 +162,6 @@
 
   // Function calls
   Film.createFilmTable();
-  Film.fetchAllFilmData(function(returnArray){
-    console.log('retrieveData invocation callback fires and this is the returned array: ' + returnArray);
-  });
-  Film.fetchCountry('ARGENTINA', function(returnedArray){
-    console.log(returnedArray);
-  });
-
-  Film.fetchGenre('Documentary' , function(returnedArray){
-    console.log(returnedArray);
-
-  });
-
-
 
   module.Film = Film;
 })(window);

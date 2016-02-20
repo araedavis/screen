@@ -74,6 +74,23 @@
     );
   };
 
+  Film.fetchVenue = function(venue, callback){
+    var arrayToReturn = [];
+    webDB.execute(
+      [
+        {
+          sql: 'SELECT * FROM films WHERE venue =?;',
+          data:[venue]
+        }
+      ], function(data){
+      var arrayToReturn = data.map(function(element){
+        return new Film(element);
+      });
+      callback(arrayToReturn);
+    }
+  );
+  };
+
   Film.createFilmTable = function(callback){
     webDB.execute(
       'CREATE TABLE IF NOT EXISTS films (' +
@@ -84,6 +101,8 @@
       'country VARCHAR(255),' +
       'trt INTEGER,' +
       'venue VARCHAR(255),' +
+      'date VARCHAR(100),' +
+      'time VARCHAR(100),' +
       'datetime DATETIME,' +
       'imagesmall VARCHAR(255),' +
       'imagelarge VARCHAR(255),' +
@@ -102,7 +121,7 @@
     webDB.execute(
       [
         {
-          'sql': 'INSERT INTO films (title, director, description, country, trt, venue, datetime, imagesmall, imagelarge, youtube, genre1, genre2, genre3, isFavorite) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);',
+          'sql': 'INSERT INTO films (title, director, description, country, trt, venue, date, time, datetime, imagesmall, imagelarge, youtube, genre1, genre2, genre3, isFavorite) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);',
           'data': [
             this.title,
             this.director,
@@ -110,6 +129,8 @@
             this.country,
             this.trt,
             this.venue,
+            this.date,
+            this.time,
             datetime,
             this.image_small,
             this.image_large,

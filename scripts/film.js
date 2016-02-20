@@ -123,10 +123,24 @@
       callback
     );
   };
+//some sort of update for the value
+  Film.updateRecord = function(id, callback){
+    console.log('hello');
+    webDB.execute(
+      [
+        {
+          sql:'UPDATE films SET isFavorite = "true" WHERE id=?;',
+          data:[id]
+        }
+      ],
+      callback
+    );
 
-  Film.prototype.updateRecord = function(callback){
 
-  };
+    //where id ==
+    //UPDATE films SET isFavorite = true Where id=?
+    //'data': [id]
+  }; //webDB end
 
   Film.prototype.deleteRecord = function(callback){
 

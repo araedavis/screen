@@ -13,13 +13,19 @@
     var template = Handlebars.compile($('#filter-template').text());
 
     Film.allDates(function(rows){
+
       if($('#date-filter option').length < 2) {
         $('#date-filter').append(
             rows.map(function(row){
+              var dateFormatted = new Date(row.datetime);
+
               return template({
-                val: new Date(row.datetime) });
+                val: dateFormatted.toDateString() + ' ' + dateFormatted.toTimeString().slice(0,5) });
             })
-          );
+          //)
+          // .sort(function(a,b){
+          //  return new Date(a.datetime) - newDate(b.datetime);
+        );
       };
     });
 
@@ -68,6 +74,7 @@
 //by country
     $('#country-filter').on('change', function(e){
       var target = $(e.target).val().toUpperCase();
+
       Film.fetchCountry(target, function(returnedArray){
         $('#filtered-films').empty();
         returnedArray.forEach(function(element){

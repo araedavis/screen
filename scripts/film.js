@@ -124,6 +124,7 @@
     );
   };
 //some sort of update for the value
+  //TODO: CHANGE this method to TRUE, create one for False
   Film.updateRecord = function(id, callback){
     console.log('hello');
     webDB.execute(
@@ -135,7 +136,6 @@
       ],
       callback
     );
-
 
     //where id ==
     //UPDATE films SET isFavorite = true Where id=?

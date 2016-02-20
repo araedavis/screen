@@ -23,7 +23,7 @@
     </script>
 
     <script id="film-template" type="text/x-handlebars-template">
-      <div class="filmContainer row">
+      <div class="filmContainer row" data-id = "{{id}}" data-isFavorite="{{isFavorite}}">
           <div class="filmImage six columns">
             <img src="/imgs/imagesSmall/{{imagesmall}}"><br />
           </div>
@@ -33,13 +33,14 @@
             <h5>Directed by {{director}}<br>
             {{datetime}}
             </h5>
-            <a id="favButton" class="" href="#" data-control="userBtn">Add to Favorites</a>
+            <a class="favButton" href="#" data-control="userBtn">Add to Favorites</a><br>
             <a class="filmButton" href="#" data-control="userBtn">VIEW MORE</a>
           </div>
       </div>
     </script>
 
     <script id="film-template-expanded" type="text/template">
+      <div>
         <h5>{{country}}</h5>
         <h5>{{director}}</h5>
         <h3>{{title}}</h3>
@@ -53,6 +54,7 @@
         <img src="{{image-large}}">
         <h5>{{trt}}</h5>
         <iframe title="YouTube video player" class="youtube-player"   type="text/html" width="640" height="390" src="{{youtube}}" frameborder="0" allowFullScreen></iframe>
+      </div>
     </script>
   </head>
 

@@ -2,7 +2,7 @@
 
 (function(module){
 
-  Film.updateRecord(4);
+  Film.updateRecord();
 
 })(window);
 

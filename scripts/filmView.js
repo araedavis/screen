@@ -7,7 +7,30 @@
     var dateAsString = new Date(film.datetime).toDateString();
     film.datetime = dateAsString;
     return template(film);
+  }; // end render
+
+
+  // filmView.addFavorites = function(film){
+  //   var template = Handlebars.compile($('#film-template').text());
+  //
+  //   Film.favorites(function(films){
+  //     if($('#favButton').click()){
+  //       console.log('Amandeep rules');
+  //     };
+  //   }); //end addFavorites
+  //   return template(film);
+  // };
+
+  filmView.addFavorites = function(){
+    //D0NE: refactor the favButton to class
+    $('.favButton').on('click', function(e){
+      e.preventDefault();
+      
+      console.log('Amandeep rules');
+    });
   };
+
+
 
   filmView.populateFilters = function(){
     var template = Handlebars.compile($('#filter-template').text());
@@ -65,12 +88,14 @@
       returnedArray.forEach(function(element){
         $('#filtered-films').append(render(element));
       });
+      filmView.addFavorites();
     });
   };
 
   //test function calls
   filmView.populateFilters();
   filmView.initPage();
+
 
   module.filmView = filmView;
 

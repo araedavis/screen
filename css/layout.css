@@ -6,10 +6,6 @@ main {
   text-align: center;
 }
 
-#main-nav {
-  margin: -25px;
-}
-
 #filters {
   padding: 25px;
 }
@@ -20,6 +16,10 @@ section {
 
 select {
   margin: 20px;
+}
+
+.filmContainer {
+  max-width: 100%;
 }
 
 @media(min-width: 768px){
@@ -34,7 +34,7 @@ select {
     padding: 0px 10px;
   }
 
-  .filter-style {
+  .filter-layout {
     display: inline-block;
     margin: 0px;
   }

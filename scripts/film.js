@@ -57,13 +57,13 @@
     );
   };
 
-  Film.fetchGenre = function(genre2, callback){
+  Film.fetchGenre = function(genre1, callback){
     var arrayToReturn = [];
     webDB.execute(
       [
         {
-          sql: 'SELECT * FROM films WHERE genre2 =?;',
-          data:[genre2]
+          sql: 'SELECT * FROM films WHERE genre1 =?;',
+          data:[genre1]
         }
       ],function(data){
       var arrayToReturn = data.map(function(element){

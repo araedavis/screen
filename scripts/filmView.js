@@ -75,7 +75,15 @@
       });
     });
 
-    
+    $('#genre-filter').on('change', function(e){
+      var target = $(e.target).val();
+      Film.fetchGenre(target, function(returnedArray){
+        $('#filtered-films').empty();
+        returnedArray.forEach(function(element){
+          $('#filtered-films').append(render(element));
+        });
+      });
+    });
   };
 
 

@@ -23,9 +23,9 @@
     </script>
 
     <script id="film-template" type="text/x-handlebars-template">
-      <div class="filmContainer row" data-id = "{{id}}" data-isFavorite="{{isFavorite}}">
+      <div class="filmContainer row" data-isFavorite="{{isFavorite}}">
           <div class="filmImage six columns">
-            <img src="/imgs/imagesSmall/{{imagesmall}}"><br />
+            <img src="/imgs/imagesSmall/{{imagesmall}}"><br/>
           </div>
           <div class="filmCaption six columns">
             <h3>{{title}}</h3>
@@ -33,7 +33,7 @@
             <h5>Directed by {{director}}<br>
             {{datetime}}
             </h5>
-            <a class="favButton" href="#" data-control="userBtn">Add to Favorites</a><br>
+            <a class="favButton" href="#"  data-id="{{id}}" data-control="userBtn">Add to Favorites</a><br>
             <a class="filmButton" href="#" data-control="userBtn">VIEW MORE</a>
           </div>
       </div>

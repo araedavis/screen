@@ -10,23 +10,12 @@
   }; // end render
 
 
-  // filmView.addFavorites = function(film){
-  //   var template = Handlebars.compile($('#film-template').text());
-  //
-  //   Film.favorites(function(films){
-  //     if($('#favButton').click()){
-  //       console.log('Amandeep rules');
-  //     };
-  //   }); //end addFavorites
-  //   return template(film);
-  // };
-
   filmView.addFavorites = function(){
     //D0NE: refactor the favButton to class
     $('.favButton').on('click', function(e){
       e.preventDefault();
-      
-      console.log('Amandeep rules');
+      var favoriteId = $(e.target).data('id');
+      console.log(favoriteId);
     });
   };
 

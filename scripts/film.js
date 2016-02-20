@@ -156,8 +156,7 @@
 
   Film.allGenres = function(callback){
     //genre
-    //not added to DB yet
-    //webDB.execute('SELECT DISTINCT genre FROM films;', callback)
+    webDB.execute('SELECT DISTINCT genre1 FROM films;', callback);
   };
 
   // Function calls

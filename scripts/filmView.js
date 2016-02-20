@@ -49,16 +49,25 @@
     });
 
     Film.allGenres(function(rows){
-      if($('#venue-filter option').length < 2) {
-        $('#venue-filter').append(
+      if($('#genre-filter option').length < 2) {
+        $('#genre-filter').append(
             rows.map(function(row){
               return template({
-                val: row.genre });
+                val: row.genre1
+              });
             })
           );
       };
     });
   };
+
+  filmView.handleFilters = function(rows){
+    Film.fetchCountry(function(){
+
+    });
+
+  };
+
 
   filmView.initPage = function(){
     Film.fetchAllFilmData(function(returnedArray){

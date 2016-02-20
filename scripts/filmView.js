@@ -15,7 +15,7 @@
     $('.favButton').on('click', function(e){
       e.preventDefault();
       var favoriteId = $(e.target).data('id');
-      console.log(favoriteId);
+      Film.updateRecord(favoriteId);
     });
   };
 

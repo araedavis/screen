@@ -25,6 +25,7 @@
           var arrayToReturn = [];
           data.forEach(function(element){
             var film = new Film(element);
+            film.datetime = film.date + ' ' + film.time;
             arrayToReturn.push(film);
             film.insertRecord(function(){
             });
@@ -132,8 +133,8 @@
             this.date,
             this.time,
             datetime,
-            this.image_small,
-            this.image_large,
+            this.imagesmall,
+            this.imagelarge,
             this.youtube,
             this.genre1,
             this.genre2,

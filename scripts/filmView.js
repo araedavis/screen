@@ -61,11 +61,21 @@
     });
   };
 
-  filmView.handleFilters = function(rows){
-    Film.fetchCountry(function(){
-
+//working with country filter to start
+  filmView.handleFilters = function(){
+    //on select
+      //target filter by ID
+    $('#country-filter').on('change', function(e){
+      var target = $(e.target).val().toUpperCase();
+      Film.fetchCountry(target, function(returnedArray){
+        $('#filtered-films').empty();
+        returnedArray.forEach(function(element){
+          $('#filtered-films').append(render(element));
+        });
+      });
     });
 
+    
   };
 
 
@@ -80,6 +90,7 @@
   //test function calls
   filmView.populateFilters();
   filmView.initPage();
+  filmView.handleFilters();
 
   module.filmView = filmView;
 

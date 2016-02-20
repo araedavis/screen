@@ -17,7 +17,7 @@
         $('#date-filter').append(
             rows.map(function(row){
               return template({
-                val: row.datetime });
+                val: new Date(row.datetime) });
             })
           );
       };
@@ -61,10 +61,11 @@
     });
   };
 
-//working with country filter to start
   filmView.handleFilters = function(){
-    //on select
-      //target filter by ID
+
+//TODO:refactor handleFilters to make code DRYer
+
+//by country
     $('#country-filter').on('change', function(e){
       var target = $(e.target).val().toUpperCase();
       Film.fetchCountry(target, function(returnedArray){
@@ -75,6 +76,7 @@
       });
     });
 
+//by genre
     $('#genre-filter').on('change', function(e){
       var target = $(e.target).val();
       Film.fetchGenre(target, function(returnedArray){

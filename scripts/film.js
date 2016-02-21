@@ -183,7 +183,7 @@
   };
 
   // Function calls
-  Film.createFilmTable();
+  // Film.createFilmTable();
 
   module.Film = Film;
 })(window);

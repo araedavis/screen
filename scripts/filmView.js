@@ -69,8 +69,8 @@
   };
 
   //test function calls
-  filmView.populateFilters();
-  filmView.initPage();
+  // filmView.populateFilters();
+  // filmView.initPage();
 
   module.filmView = filmView;
 

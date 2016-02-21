@@ -105,9 +105,10 @@
   };
 
   //test function calls
-  filmView.populateFilters();
-  filmView.initPage();
-  filmView.handleFilters();
+    //filmView.handleFilters();
+    // filmView.populateFilters();
+    // filmView.initPage();
+
 
   module.filmView = filmView;
 

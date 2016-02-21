@@ -23,7 +23,7 @@
     </script>
 
     <script id="film-template" type="text/x-handlebars-template">
-      <div class="filmContainer row" data-isFavorite="{{isFavorite}}">
+      <div class="filmContainer row" >
           <div class="filmImage six columns">
             <img src="/imgs/imagesSmall/{{imagesmall}}"><br/>
           </div>
@@ -33,7 +33,12 @@
             <h5>Directed by {{director}}<br>
             {{datetime}}
             </h5>
-            <a class="favButton" href="#"  data-id="{{id}}" data-control="userBtn">Add to Favorites</a><br>
+            {{#if this.isFavorite}}
+            <a class="favButton liked" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn">Add to Favorites</a><br>
+            {{else}}
+            <a class="favButton" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn">Add to Favorites</a><br>
+            {{/if}}
+
             <a class="filmButton" href="#" data-control="userBtn">VIEW MORE</a>
           </div>
       </div>

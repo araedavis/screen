@@ -16,6 +16,9 @@
 
 }
 
+.liked {
+  color: red;
+}
 /*=== Film container ===*/
 
 .filmContainer {

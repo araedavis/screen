@@ -6,8 +6,12 @@
     var template = Handlebars.compile($('#film-template').text());
     var dateAsString = new Date(film.datetime).toDateString();
     film.datetime = dateAsString;
+    if (film.isFavorite === 'false'){
+      film.isFavorite = false;
+    }
     return template(film);
   }; // end render
+
 
 
   filmView.addFavorites = function(){
@@ -15,11 +19,20 @@
     $('.favButton').on('click', function(e){
       e.preventDefault();
       var favoriteId = $(e.target).data('id');
-      Film.updateRecord(favoriteId);
+      var isFavoriteTable = $(e.target).data('favorite');
+      console.log(isFavoriteTable);
+      if (!$(e.target).hasClass('liked')){
+        $(e.target).addClass('liked');
+        Film.updateRecord(favoriteId, true);
+        $(e.target).data('favorite', 'true');
+      }
+      else {
+        $(e.target).removeClass('liked');
+        Film.updateRecord(favoriteId, false);
+        $(e.target).data('favorite', 'false');
+      }
     });
   };
-
-
 
   filmView.populateFilters = function(){
     var template = Handlebars.compile($('#filter-template').text());

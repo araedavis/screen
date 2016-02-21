@@ -3,7 +3,6 @@
     Object.keys(opts).forEach(function(e){
       this[e] = opts[e];
     },this);
-    this.isFavorite = false;
   };
 
   //    ___fetchAllFilmData___
@@ -125,13 +124,12 @@
   };
 //some sort of update for the value
   //TODO: CHANGE this method to TRUE, create one for False
-  Film.updateRecord = function(id, callback){
-    console.log('hello');
+  Film.updateRecord = function(id, val, callback){
     webDB.execute(
       [
         {
-          sql:'UPDATE films SET isFavorite = "true" WHERE id=?;',
-          data:[id]
+          sql:'UPDATE films SET isFavorite=? WHERE id=?;',
+          data:[val, id]
         }
       ],
       callback

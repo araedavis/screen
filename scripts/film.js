@@ -161,9 +161,10 @@
   };
 
   //methods for filters
+  //TODO sort dates by date, and then by time
   Film.allDates = function(callback){
     //datetime
-    webDB.execute('SELECT DISTINCT datetime FROM films;', callback);
+    webDB.execute('SELECT DISTINCT datetime FROM films ORDER BY date;', callback);
   };
 
   Film.allVenues = function(callback){

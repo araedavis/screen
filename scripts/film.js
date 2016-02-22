@@ -3,7 +3,6 @@
     Object.keys(opts).forEach(function(e){
       this[e] = opts[e];
     },this);
-    this.isFavorite = false;
   };
 
   //    ___fetchAllFilmData___
@@ -145,10 +144,23 @@
       callback
     );
   };
+//some sort of update for the value
+  //TODO: CHANGE this method to TRUE, create one for False
+  Film.updateRecord = function(id, val, callback){
+    webDB.execute(
+      [
+        {
+          sql:'UPDATE films SET isFavorite=? WHERE id=?;',
+          data:[val, id]
+        }
+      ],
+      callback
+    );
 
-  Film.prototype.updateRecord = function(callback){
-
-  };
+    //where id ==
+    //UPDATE films SET isFavorite = true Where id=?
+    //'data': [id]
+  }; //webDB end
 
   Film.prototype.deleteRecord = function(callback){
 

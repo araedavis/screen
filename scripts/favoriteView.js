@@ -2,10 +2,6 @@
 (function(module){
 
   var favoriteView = {};
-  
-
-
-
 
 
   module.favoriteView = favoriteView;

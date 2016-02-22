@@ -8,5 +8,11 @@
     $('#landing').hide();
   };
 
+  Film.updateRecord();
+
+  //film.updateRecord(id)
+  //test by using th numbers the record should
+  //user response event
+
   module.myFilmsController = myFilmsController;
 })(window);

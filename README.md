@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/araedavis/screen.png?label=ready&title=Ready)](https://waffle.io/araedavis/screen)
 # Screen
 Team Superb: Dave, Amandeep, Allison, Sonya
 

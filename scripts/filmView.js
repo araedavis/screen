@@ -25,11 +25,13 @@
         $(e.target).addClass('liked');
         Film.updateRecord(favoriteId, true);
         $(e.target).data('favorite', 'true');
+        $(e.target).firstChild().addClass('fa-heart').removeClass('fa-heart-o');
       }
       else {
         $(e.target).removeClass('liked');
         Film.updateRecord(favoriteId, false);
         $(e.target).data('favorite', 'false');
+        $(e.target).firstChild().addClass('fa-heart-o').removeClass('fa-heart');
       }
     });
   };

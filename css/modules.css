@@ -1,15 +1,36 @@
 /*=== Filter menu ===*/
-.filter {
+.filter-style {
   background-color: #F3F3F3;
-  border: 1px solid;
-}
-
-.filter select {
-  background-color: #F3F3F3;
+  padding: 0;
+  margin: 0;
+  width: 20%;
   border-radius: 2px;
 }
 
-select:focus,
+.filter-style select {
+  border: none;
+  background-color: transparent;
+  padding: 5px 8px;
+  width: 85%;
+  text-align: center;
+
+}
+
+.liked {
+  color: red;
+}
+/*=== Film container ===*/
+
+.filmContainer {
+  border-bottom: 2px dotted #BAE3E3;
+
+}
+
+.filmCaption {
+  background-color: #f9f9f9;
+}
+
+/*select:focus,
 select:hover {
   background-color: #FDEC00;
-}
+} */

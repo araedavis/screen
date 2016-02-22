@@ -8,12 +8,15 @@
     "venue":"Fox Tower",
     "date":"2016/02/07",
     "time":"20:30:00",
-    "alt-venue":"Cinemagic",
-    "alt-date":"02/16/16",
-    "alt-time":"15:00:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/16",
+    "alt_time":"15:00:00",
     "imagesmall":"Wajma_500.jpg",
     "imagelarge":"1183805_Wajma-guitar.jpg",
-    "youtube":"http://www.youtube.com/watch?v=zcTp5fbW3K0"
+    "youtube":"http://www.youtube.com/watch?v=zcTp5fbW3K0",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":""
   },
   {
     "country":"ARGENTINA",
@@ -24,12 +27,15 @@
     "venue":"Cinema 21",
     "date":"2016/02/07",
     "time":"20:30:00",
-    "alt-venue":"OMSI",
-    "alt-date":"02/12/16",
-    "alt-time":"20:30:00",
+    "alt_venue":"OMSI",
+    "alt_date":"2016/02/12",
+    "alt_time":"20:30:00",
     "imagesmall":"germandoctor_500.jpg",
     "imagelarge":"the-german-doctor-argentina.jpg",
-    "youtube":"http://www.youtube.com/watch?v=YxMtDaNbMMk"
+    "youtube":"http://www.youtube.com/watch?v=YxMtDaNbMMk",
+    "genre1":"Narrative Feature",
+    "genre2":"Spanish Language",
+    "genre3":"German Language"
   },
   {
     "country":"AUSTRALIA",
@@ -40,12 +46,15 @@
     "venue":"Cinema 21",
     "date":"2016/02/08",
     "time":"18:00:00",
-    "alt-venue":"",
-    "alt-date":"",
-    "alt-time":"",
+    "alt_venue":"",
+    "alt_date":"",
+    "alt_time":"",
     "imagesmall":"Therocket_500.jpg",
     "imagelarge":"The Rocket-Australia.jpg",
-    "youtube":"http://www.youtube.com/watch?v=byE542mNjp8"
+    "youtube":"http://www.youtube.com/watch?v=byE542mNjp8",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":""
   },
   {
     "country":"BANGLADESH",
@@ -56,12 +65,15 @@
     "venue":"Whitsell Auditorium",
     "date":"2016/02/15",
     "time":"21:00:00",
-    "alt-venue":"Cinema 21",
-    "alt-date":"02/17/16",
-    "alt-time":"17:00:00",
+    "alt_venue":"Cinema 21",
+    "alt_date":"2016/02/17",
+    "alt_time":"17:00:00",
     "imagesmall":"Television_500.jpg",
     "imagelarge":"Television-Bangladesh.jpg",
-    "youtube":"http://www.youtube.com/watch?v=Ffxj7ZPDDkg"
+    "youtube":"http://www.youtube.com/watch?v=Ffxj7ZPDDkg",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":""
   },
   {
     "country":"CAMBODIA",
@@ -72,12 +84,15 @@
     "venue":"World Trade Center Theater",
     "date":"2016/02/07",
     "time":"18:00:00",
-    "alt-venue":"World Trade Center Theater",
-    "alt-date":"02/15/16",
-    "alt-time":"18:00:00",
+    "alt_venue":"World Trade Center Theater",
+    "alt_date":"2016/02/15",
+    "alt_time":"18:00:00",
     "imagesmall":"MissingPicture_500.jpg",
     "imagelarge":"The_Missing_Picture2.jpg",
-    "youtube":"http://www.youtube.com/watch?v=lzvVRtbA70s"
+    "youtube":"http://www.youtube.com/watch?v=lzvVRtbA70s",
+    "genre1":"Asian",
+    "genre2":"Documentary",
+    "genre3":""
   },
   {
     "country":"CANADA",
@@ -88,12 +103,15 @@
     "venue":"Cinemagic",
     "date":"2016/02/08",
     "time":"13:00:00",
-    "alt-venue":"OMSI",
-    "alt-date":"02/15/16",
-    "alt-time":"18:15:00",
+    "alt_venue":"OMSI",
+    "alt_date":"2016/02/15",
+    "alt_time":"18:15:00",
     "imagesmall":"GABRIELLE_500.jpg",
     "imagelarge":"GABRIELLE-Canada1.jpg",
-    "youtube":"http://www.youtube.com/watch?v=H1_FkjD9I58"
+    "youtube":"http://www.youtube.com/watch?v=H1_FkjD9I58",
+    "genre1":"Oscar Submission",
+    "genre2":"Documentary",
+    "genre3":""
   },
   {
     "country":"CANADA",
@@ -104,12 +122,15 @@
     "venue":"Cinemagic",
     "date":"2016/02/08",
     "time":"20:30:00",
-    "alt-venue":"Fox Tower",
-    "alt-date":"02/12/16",
-    "alt-time":"20:30:00",
+    "alt_venue":"Fox Tower",
+    "alt_date":"2016/02/12",
+    "alt_time":"20:30:00",
     "imagesmall":"vicflo_500.jpg",
     "imagelarge":"vic-canada.jpg",
-    "youtube":"http://www.youtube.com/watch?v=TmX11-CUeR8"
+    "youtube":"http://www.youtube.com/watch?v=TmX11-CUeR8",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":""
   },
   {
     "country":"CHINA",
@@ -120,12 +141,15 @@
     "venue":"OMSI",
     "date":"2016/02/16",
     "time":"18:30:00",
-    "alt-venue":"Cinemagic",
-    "alt-date":"02/18/16",
-    "alt-time":"20:30:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/18",
+    "alt_time":"20:30:00",
     "imagesmall":"Backto1942_500.jpg",
     "imagelarge":"Backto1942-China.jpg",
-    "youtube":"http://www.youtube.com/watch?v=_Zwc-rfdC8c"
+    "youtube":"http://www.youtube.com/watch?v=_Zwc-rfdC8c",
+    "genre1":"Oscar Submission",
+    "genre2":"Narrative Feature",
+    "genre3":"Asian"
   },
   {
     "country":"CHINA",
@@ -136,12 +160,15 @@
     "venue":"Cinemagic",
     "date":"2016/02/08",
     "time":"15:30:00",
-    "alt-venue":"Whitsell Auditorium",
-    "alt-date":"02/10/16",
-    "alt-time":"18:00:00",
+    "alt_venue":"Whitsell Auditorium",
+    "alt_date":"2016/02/10",
+    "alt_time":"18:00:00",
     "imagesmall":"trap-street_500.jpg",
     "imagelarge":"trapstreet-china.jpg",
-    "youtube":"http://www.youtube.com/watch?v=mojq-VRzwBI"
+    "youtube":"http://www.youtube.com/watch?v=mojq-VRzwBI",
+    "genre1":"Narrative Feature",
+    "genre2":"Asian",
+    "genre3":""
   },
   {
     "country":"CROATIA",
@@ -152,12 +179,15 @@
     "venue":"OMSI",
     "date":"2016/02/14",
     "time":"20:30:00",
-    "alt-venue":"Cinemagic",
-    "alt-date":"02/17/16",
-    "alt-time":"17:00:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/17",
+    "alt_time":"17:00:00",
     "imagesmall":"Priests-Children_500.jpg",
     "imagelarge":"PriestChildren-Croatia.jpg",
-    "youtube":"http://www.youtube.com/watch?v=wIZXmv_yDrE"
+    "youtube":"http://www.youtube.com/watch?v=wIZXmv_yDrE",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":""
   },
   {
     "country":"CZECH REPUBLIC",
@@ -168,12 +198,15 @@
     "venue":"Fox Tower",
     "date":"2016/02/19",
     "time":"18:00:00",
-    "alt-venue":"Cinemagic",
-    "alt-date":"02/20/16",
-    "alt-time":"20:30:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/20",
+    "alt_time":"20:30:00",
     "imagesmall":"The-Don-Juan_500.jpg",
     "imagelarge":"TheDonJuans-Czech.jpg",
-    "youtube":"http://www.youtube.com/watch?v=D3W_ZXh9idQ"
+    "youtube":"http://www.youtube.com/watch?v=D3W_ZXh9idQ",
+    "genre1":"Oscar Submission",
+    "genre2":"Narrative Feature",
+    "genre3":"Comedy"
   },
   {
     "country":"DENMARK",
@@ -184,12 +217,15 @@
     "venue":"Whitsell Auditorium",
     "date":"2016/02/13",
     "time":"20:30:00",
-    "alt-venue":"Cinemagic",
-    "alt-date":"02/15/16",
-    "alt-time":"13:00:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/15",
+    "alt_time":"13:00:00",
     "imagesmall":"Antboy_500.jpg",
     "imagelarge":"Antboy-Denmark.jpg",
-    "youtube":"http://www.youtube.com/watch?v=Ktb2kHdOvgo"
+    "youtube":"http://www.youtube.com/watch?v=Ktb2kHdOvgo",
+    "genre1":"Narrative Feature",
+    "genre2":"Family Fare",
+    "genre3":""
   },
   {
     "country":"EGYPT",
@@ -200,12 +236,15 @@
     "venue":"World Trade Center Theater",
     "date":"2016/02/09",
     "time":"13:00:00",
-    "alt-venue":"World Trade Center Theater",
-    "alt-date":"02/15/16",
-    "alt-time":"21:00:00",
+    "alt_venue":"World Trade Center Theater",
+    "alt_date":"2016/02/15",
+    "alt_time":"21:00:00",
     "imagesmall":"cairodrive_500.jpg",
     "imagelarge":"cairodrive-cycle.jpg",
-    "youtube":"http://www.youtube.com/watch?v=KiUty3nIhZo"
+    "youtube":"http://www.youtube.com/watch?v=KiUty3nIhZo",
+    "genre1":"Middle Eastern",
+    "genre2":"Documentary",
+    "genre3":""
   },
   {
     "country":"FINLAND",
@@ -216,12 +255,15 @@
     "venue":"Whitsell Auditorium",
     "date":"2016/02/10",
     "time":"20:30:00",
-    "alt-venue":"Cinema 21",
-    "alt-date":"02/16/16",
-    "alt-time":"17:30:00",
+    "alt_venue":"Cinema 21",
+    "alt_date":"2016/02/16",
+    "alt_time":"17:30:00",
     "imagesmall":"The-Disciple_500.jpg",
     "imagelarge":"TheDisciple-Finland.jpg",
-    "youtube":"http://www.youtube.com/watch?v=ZXUbJUjOhxU"
+    "youtube":"http://www.youtube.com/watch?v=ZXUbJUjOhxU",
+    "genre1":"Oscar Submission",
+    "genre2":"Narrative Feature",
+    "genre3":""
   },
   {
     "country":"FRANCE",
@@ -232,12 +274,15 @@
     "venue":"OMSI",
     "date":"2016/02/18",
     "time":"18:00:00",
-    "alt-venue":"Whitsell Auditorium",
-    "alt-date":"02/22/16",
-    "alt-time":"19:30:00",
+    "alt_venue":"Whitsell Auditorium",
+    "alt_date":"2016/02/22",
+    "alt_time":"19:30:00",
     "imagesmall":"2-Autums_500.jpg",
     "imagelarge":"2Autums3Winters-France.png",
-    "youtube":"http://www.youtube.com/watch?v=SZtDcCAyLwU"
+    "youtube":"http://www.youtube.com/watch?v=SZtDcCAyLwU",
+    "genre1":"Narrative Feature",
+    "genre2":"French Language",
+    "genre3":""
   },
   {
     "country":"FRANCE",
@@ -248,12 +293,15 @@
     "venue":"Cinema 21",
     "date":"2016/02/08",
     "time":"15:30:00",
-    "alt-venue":"Cinemagic",
-    "alt-date":"02/10/16",
-    "alt-time":"20:30:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/10",
+    "alt_time":"20:30:00",
     "imagesmall":"Kohlhaas_500.jpg",
     "imagelarge":"MichaelKohlhaas1.jpg",
-    "youtube":"http://www.youtube.com/watch?v=uUQfZtiKu-4"
+    "youtube":"http://www.youtube.com/watch?v=uUQfZtiKu-4",
+    "genre1":"Narrative Feature",
+    "genre2":"French Language",
+    "genre3":""
   },
   {
     "country":"FRANCE",
@@ -264,12 +312,15 @@
     "venue":"Whitsell Auditorium",
     "date":"2016/02/15",
     "time":"15:30:00",
-    "alt-venue":"Cinema 21",
-    "alt-date":"02/17/16",
-    "alt-time":"12:15:00",
+    "alt_venue":"Cinema 21",
+    "alt_date":"2016/02/17",
+    "alt_time":"12:15:00",
     "imagesmall":"ayadeyop_500.jpg",
     "imagelarge":"aya-de-yop-France.jpg",
-    "youtube":"http://www.youtube.com/watch?v=boZ_aUh7EZQ"
+    "youtube":"http://www.youtube.com/watch?v=boZ_aUh7EZQ",
+    "genre1":"Narrative Feature",
+    "genre2":"Animation",
+    "genre3":""
   },
   {
     "country":"FRANCE",
@@ -280,12 +331,15 @@
     "venue":"Cinemagic",
     "date":"2016/02/07",
     "time":"18:00:00",
-    "alt-venue":"Fox Tower",
-    "alt-date":"02/13/16",
-    "alt-time":"20:30:00",
+    "alt_venue":"Fox Tower",
+    "alt_date":"2016/02/13",
+    "alt_time":"20:30:00",
     "imagesmall":"BicyclingMoliere_500France.jpg",
     "imagelarge":"BicyclingwithMoliere-France.jpg",
-    "youtube":"http://www.youtube.com/watch?v=rlJgzcEzYT4"
+    "youtube":"http://www.youtube.com/watch?v=rlJgzcEzYT4",
+    "genre1":"Narrative Feature",
+    "genre2":"French Language",
+    "genre3":""
   },
   {
     "country":"FRANCE",
@@ -296,12 +350,15 @@
     "venue":"Cinemagic",
     "date":"2016/02/19",
     "time":"18:00:00",
-    "alt-venue":"Whitsell Auditorium",
-    "alt-date":"02/22/16",
-    "alt-time":"12:00:00",
+    "alt_venue":"Whitsell Auditorium",
+    "alt_date":"2016/02/22",
+    "alt_time":"12:00:00",
     "imagesmall":"day-of-crows_500.jpg",
     "imagelarge":"day-of-crows-France.jpg",
-    "youtube":"http://www.youtube.com/watch?v=97CX4eaOim0"
+    "youtube":"http://www.youtube.com/watch?v=97CX4eaOim0",
+    "genre1":"Narrative Feature",
+    "genre2":"Animation",
+    "genre3":"Family Fare"
   },
   {
     "country":"FRANCE",
@@ -312,12 +369,15 @@
     "venue":"Whitsell Auditorium",
     "date":"2016/02/07",
     "time":"18:00:00",
-    "alt-venue":"Fox Tower",
-    "alt-date":"02/11/16",
-    "alt-time":"18:00:00",
+    "alt_venue":"Fox Tower",
+    "alt_date":"2016/02/11",
+    "alt_time":"18:00:00",
     "imagesmall":"Ernest_500.jpg",
     "imagelarge":"ErnestandCelestine-France.jpg",
-    "youtube":"http://www.youtube.com/watch?v=UJ1rmOYLr2U"
+    "youtube":"http://www.youtube.com/watch?v=UJ1rmOYLr2U",
+    "genre1":"Narrative Feature",
+    "genre2":"Animation",
+    "genre3":"Family Fare"
   },
   {
     "country":"FRANCE",
@@ -328,12 +388,15 @@
     "venue":"Cinema 21",
     "date":"2016/02/13",
     "time":"20:30:00",
-    "alt-venue":"Cinema 21",
-    "alt-date":"02/15/16",
-    "alt-time":"18:00:00",
+    "alt_venue":"Cinema 21",
+    "alt_date":"2016/02/15",
+    "alt_time":"18:00:00",
     "imagesmall":"just-a-sigh_500.jpg",
     "imagelarge":"just-a-sigh2-france.jpg",
-    "youtube":"http://www.youtube.com/watch?v=V0-w_2NBZP0"
+    "youtube":"http://www.youtube.com/watch?v=V0-w_2NBZP0",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":""
   },
   {
     "country":"FRANCE",
@@ -344,12 +407,15 @@
     "venue":"World Trade Center Theater",
     "date":"2016/02/09",
     "time":"17:30:00",
-    "alt-venue":"World Trade Center Theater",
-    "alt-date":"02/16/16",
-    "alt-time":"13:00:00",
+    "alt_venue":"World Trade Center Theater",
+    "alt_date":"2016/02/16",
+    "alt_time":"13:00:00",
     "imagesmall":"THE-LAST-UNJUST_500.jpg",
     "imagelarge":"THELASToftheUNJUST.jpeg",
-    "youtube":"http://www.youtube.com/watch?v=YhP3iQ3kyMs"
+    "youtube":"http://www.youtube.com/watch?v=YhP3iQ3kyMs",
+    "genre1":"Documentary",
+    "genre2":"",
+    "genre3":""
   },
   {
     "country":"FRANCE",
@@ -360,12 +426,15 @@
     "venue":"Cinemagic",
     "date":"2016/02/09",
     "time":"13:00:00",
-    "alt-venue":"Cinemagic",
-    "alt-date":"02/16/16",
-    "alt-time":"13:00:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/16",
+    "alt_time":"13:00:00",
     "imagesmall":"mommyamer_500.jpg",
     "imagelarge":"mommy-amer2-France.jpg",
-    "youtube":"http://www.youtube.com/watch?v=uhpfUUmn5VA&feature=youtu.be"
+    "youtube":"http://www.youtube.com/watch?v=uhpfUUmn5VA&feature=youtu.be",
+    "genre1":"Narrative Feature",
+    "genre2":"Animation",
+    "genre3":""
   },
   {
     "country":"FRANCE",
@@ -376,12 +445,15 @@
     "venue":"Cinemagic",
     "date":"2016/02/14",
     "time":"18:00:00",
-    "alt-venue":"Whitsell Auditorium",
-    "alt-date":"02/22/16",
-    "alt-time":"21:30:00",
+    "alt_venue":"Whitsell Auditorium",
+    "alt_date":"2016/02/22",
+    "alt_time":"21:30:00",
     "imagesmall":"StrangerByLake_500.jpg",
     "imagelarge":"StrangerByTheLake-France.jpg",
-    "youtube":"http://www.youtube.com/watch?v=PgcEGKn7waI"
+    "youtube":"http://www.youtube.com/watch?v=PgcEGKn7waI",
+    "genre1":"Narrative Feature",
+    "genre2":"French Language",
+    "genre3":"Queer"
   },
   {
     "country":"FRANCE",
@@ -392,12 +464,15 @@
     "venue":"Cinema 21",
     "date":"2016/02/08",
     "time":"20:30:00",
-    "alt-venue":"Fox Tower",
-    "alt-date":"02/10/16",
-    "alt-time":"20:30:00",
+    "alt_venue":"Fox Tower",
+    "alt_date":"2016/02/10",
+    "alt_time":"20:30:00",
     "imagesmall":"Young-and-Beautiful_500.jpg",
     "imagelarge":"YoungandBeautiful-France.jpg",
-    "youtube":"http://www.youtube.com/watch?v=IzSJ5mijWyA"
+    "youtube":"http://www.youtube.com/watch?v=IzSJ5mijWyA",
+    "genre1":"Narrative Feature",
+    "genre2":"French Language",
+    "genre3":""
   },
   {
     "country":"GEORGIA",
@@ -408,12 +483,15 @@
     "venue":"Cinemagic",
     "date":"2016/02/15",
     "time":"18:00:00",
-    "alt-venue":"Fox Tower",
-    "alt-date":"02/17/16",
-    "alt-time":"17:00:00",
+    "alt_venue":"Fox Tower",
+    "alt_date":"2016/02/17",
+    "alt_time":"17:00:00",
     "imagesmall":"inbloom_500.jpg",
     "imagelarge":"inbloom-george2.jpg",
-    "youtube":"http://www.youtube.com/watch?v=fEyt7XqbMx4"
+    "youtube":"http://www.youtube.com/watch?v=fEyt7XqbMx4",
+    "genre1":"Oscar Submission",
+    "genre2":"Narrative Feature",
+    "genre3":""
   },
   {
     "country":"GERMANY",
@@ -424,12 +502,15 @@
     "venue":"OMSI",
     "date":"2016/02/14",
     "time":"18:00:00",
-    "alt-venue":"Cinemagic",
-    "alt-date":"02/17/16",
-    "alt-time":"14:30:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/17",
+    "alt_time":"14:30:00",
     "imagesmall":"coffeeberlin_500.jpg",
     "imagelarge":"coffee-Berlin2-Germany.jpg",
-    "youtube":"http://www.youtube.com/watch?v=s9GOvKPAy1g&feature=youtu.be"
+    "youtube":"http://www.youtube.com/watch?v=s9GOvKPAy1g&feature=youtu.be",
+    "genre1":"Narrative Feature",
+    "genre2":"German Language",
+    "genre3":""
   },
   {
     "country":"GERMANY",
@@ -440,12 +521,15 @@
     "venue":"Cinema 21",
     "date":"2016/02/15",
     "time":"12:00:00",
-    "alt-venue":"",
-    "alt-date":"",
-    "alt-time":"",
+    "alt_venue":"",
+    "alt_date":"",
+    "alt_time":"",
     "imagesmall":"nothing-bad_500.jpg",
     "imagelarge":"nothingbadcanhappen-germany.jpg",
-    "youtube":"http://www.youtube.com/watch?v=ujc7fC93uRY"
+    "youtube":"http://www.youtube.com/watch?v=ujc7fC93uRY",
+    "genre1":"Narrative Feature",
+    "genre2":"German Language",
+    "genre3":""
   },
   {
     "country":"GERMANY",
@@ -456,12 +540,15 @@
     "venue":"Cinema 21",
     "date":"2016/02/07",
     "time":"18:00:00",
-    "alt-venue":"Fox Tower",
-    "alt-date":"02/10/16",
-    "alt-time":"18:00:00",
+    "alt_venue":"Fox Tower",
+    "alt_date":"2016/02/10",
+    "alt_time":"18:00:00",
     "imagesmall":"strangecat_500.jpg",
     "imagelarge":"strangelittlecat2.jpg",
-    "youtube":"http://www.youtube.com/watch?v=h9WwkoEjkJc"
+    "youtube":"http://www.youtube.com/watch?v=h9WwkoEjkJc",
+    "genre1":"Narrative Feature",
+    "genre2":"German Language",
+    "genre3":"Comedy"
   },
   {
     "country":"GERMANY",
@@ -472,27 +559,14 @@
     "venue":"Cinemagic",
     "date":"2016/02/07",
     "time":"20:30:00",
-    "alt-venue":"Fox Tower",
-    "alt-date":"02/09/16",
-    "alt-time":"17:30:00",
+    "alt_venue":"Fox Tower",
+    "alt_date":"2016/02/09",
+    "alt_time":"17:30:00",
     "imagesmall":"twolives_500.jpg",
     "imagelarge":"twolives3-germany.jpg",
-    "youtube":"http://www.youtube.com/watch?v=W9lzGwTWlDg"
-  },
-  {
-    "country":"GREAT BRITAIN",
-    "title":"",
-    "director":"",
-    "description":"",
-    "trt":null,
-    "venue":"",
-    "date":"",
-    "time":"",
-    "alt-venue":"",
-    "alt-date":"",
-    "alt-time":"",
-    "imagesmall":"",
-    "imagelarge":"",
-    "youtube":""
+    "youtube":"http://www.youtube.com/watch?v=W9lzGwTWlDg",
+    "genre1":"Oscar Submission",
+    "genre2":"German Language",
+    "genre3":"Narrative Feature"
   }
 ]

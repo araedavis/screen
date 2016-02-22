@@ -35,9 +35,9 @@
             {{datetime}}
             </h5>
             {{#if this.isFavorite}}
-            <a class="favButton liked" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn">Add to Favorites</a><br>
+            <a class="favButton liked" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart"></i>Remove from My Films</a><br>
             {{else}}
-            <a class="favButton" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn">Add to Favorites</a><br>
+            <a class="favButton" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart-o"></i>Add to My Films</a><br>
             {{/if}}
 
             <a class="filmButton" href="#" data-control="userBtn">VIEW MORE</a>
@@ -67,7 +67,7 @@
   <body>
     <main>
       <nav id="main-nav">
-        <!--Screen Logo goes here -->
+        <img id="logo" src="imgs/SCREEN-logo.png"></img>
         <ul>
           <li class="nav-tab">
             <a href="/">

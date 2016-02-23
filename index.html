@@ -41,10 +41,11 @@
             {{datetime}}
             </h5>
             <a class="filmButton" href="#" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br>
+
             {{#if this.isFavorite}}
-            <a class="favButton liked" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart"></i>Remove from My Films</a>
+            <button class="favButton liked" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart"></i>Remove from My Films</button>
             {{else}}
-            <a class="favButton" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart-o"></i>Add to My Films</a>
+            <button class="favButton" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart-o"></i>Add to My Films</button>
             {{/if}}
 
           </div>
@@ -176,7 +177,8 @@
 
 <!--begin My Films -->
       <section id="my-films">
-        <!--this is a test icon for Twitter API -->
+        <button id="date-view"><i class="fa fa-calendar myfilm-btn"></i>&nbsp;&nbsp;Sort By Date</button>
+        <button id="print-view"><i class="fa fa-print myfilm-btn"></i>&nbsp;&nbsp;Print My Schedule</button>
 
       </section>
 

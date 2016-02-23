@@ -38,6 +38,7 @@ var html5sql = (function () {
         dataForNextTransaction = null,
         currentSqlObject = null,
         runTransaction = function () {
+          console.log(sqlObjects[sequenceNumber].sql, sqlObjects[sequenceNumber].data);
           transaction.executeSql(sqlObjects[sequenceNumber].sql,
             sqlObjects[sequenceNumber].data,
             successCallback,

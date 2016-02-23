@@ -96,30 +96,109 @@
 
 //TODO:refactor handleFilters to make code DRYer
 
+
 //by country
     $('#country-filter').on('change', function(e){
-      var target = $(e.target).val().toUpperCase();
+      var arrayOfActiveFilters = filmView.getStateOfFilters();
+      filmView.performFilter(arrayOfActiveFilters);
 
-      Film.fetchCountry(target, function(returnedArray){
-        $('#filtered-films').empty();
-        returnedArray.forEach(function(element){
-          $('#filtered-films').append(render(element));
-        });
-      });
+
+      // var target = $(e.target).val().toUpperCase();
+      // if (target === 'ALL'){
+      //   $('#filtered-films').empty();
+      //   filmView.initPage();
+      //   return;
+      // };
+      // Film.fetchCountry(target, function(returnedArray){
+      //   $('#filtered-films').empty();
+      //   returnedArray.forEach(function(element){
+      //     $('#filtered-films').append(render(element));
+      //   });
+      // });
     });
 
 //by genre
     $('#genre-filter').on('change', function(e){
-      var target = $(e.target).val();
-      Film.fetchGenre(target, function(returnedArray){
+      var arrayOfActiveFilters = filmView.getStateOfFilters();
+      filmView.performFilter(arrayOfActiveFilters);
+
+
+      // var target = $(e.target).val();
+      // if (target === 'all'){
+      //   $('#filtered-films').empty();
+      //   filmView.initPage();
+      //   return;
+      // };
+      // Film.fetchGenre(target, function(returnedArray){
+      //   $('#filtered-films').empty();
+      //   returnedArray.forEach(function(element){
+      //     $('#filtered-films').append(render(element));
+      //   });
+      // });
+    });
+
+  //by venue
+    $('#venue-filter').on('change', function(e){
+      var arrayOfActiveFilters = filmView.getStateOfFilters();
+      filmView.performFilter(arrayOfActiveFilters);
+    });
+  };
+
+
+
+  // Takes a new filter object with properties criteria and value as a parameter
+  // Makes a call to film.js for the query
+  filmView.performFilter = function(array){
+    var lengthOfArray = array.length;
+
+    if (lengthOfArray === 1){
+      Film.fetchOneCriteria(array[0].criteria, array[0].value, function(returnedArray){
+        // console.log('this is the returned array length ' + returnedArray.length);
         $('#filtered-films').empty();
         returnedArray.forEach(function(element){
           $('#filtered-films').append(render(element));
         });
       });
-    });
+    }
+
+    if (lengthOfArray === 0){
+      $('#filtered-films').empty();
+      filmView.initPage();
+    }
+
+    if (lengthOfArray === 2){
+      Film.fetchTwoCriteria(array[0].criteria, array[0].value, array[1].criteria, array[1].value, function(returnedArray){
+        // console.log('this is the returned array length ' + returnedArray.length);
+        $('#filtered-films').empty();
+        returnedArray.forEach(function(element){
+          $('#filtered-films').append(render(element));
+        });
+      });
+    }
   };
 
+  // Returns an array of objects, each has two properties: criteria and value
+  filmView.getStateOfFilters = function(){
+    var returnArray = [];
+    $('.filter-layout').each(function(index, element){
+      var filterValue = $(element).find('select').val();
+      var filterCriteria = $(element).find('select').attr('id');
+      var lastIndex = filterCriteria.lastIndexOf('-');
+      var filterCriteria = filterCriteria.substring(0, lastIndex);
+      if (filterValue !== 'all'){
+        if (filterCriteria === 'genre'){
+          filterCriteria = 'genre1';
+        }
+        if (filterCriteria === 'country'){
+          filterValue = filterValue.toUpperCase();
+        }
+        var object = {criteria:filterCriteria, value:filterValue};
+        returnArray.push(object);
+      }
+    });
+    console.log('array to return ' + returnArray);
+    return returnArray;
+  };
 
   filmView.initPage = function(){
     Film.fetchAllFilmData(function(returnedArray){

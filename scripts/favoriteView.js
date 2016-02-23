@@ -4,17 +4,17 @@
   var favoriteView = {};
 
   favoriteView.initMyFilms = function(){
-    var test = Film.fetchAllFilmData(function(returnedArray){
+    Film.fetchAllFilmData(function(returnedArray){
       return returnedArray.filter(function(film){
         //if film is favorited
-        console.log(film.isFavorite);
-        return film.isFavorite;
+        console.log(typeof film.isFavorite);
+        return (film.isFavorite === 'true');
+      })
+      .forEach(function(element){
+        $('#my-films').append(filmView.render(element));
       });
     });
-
-    console.log(test);
   };
-
 
 
   module.favoriteView = favoriteView;

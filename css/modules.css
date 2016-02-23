@@ -69,10 +69,6 @@ select:hover {
 
 /*=== Modal window ===*/
 
-.modalDialog .filmContainer {
-
-}
-
 .modalDialog {
     display: none;
     overflow: auto;

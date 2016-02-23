@@ -20,7 +20,7 @@
       $('.modalDialog').hide();
       $('.modalDialog-'+ filmId).show('slow', function() {
       });
-      $('html').addClass('scrollprevent');
+      // $('html').addClass('scrollprevent');
     });
 
     $('.close').on('click', function(e){

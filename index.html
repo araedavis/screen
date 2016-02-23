@@ -35,7 +35,7 @@
             <h5>Directed by {{director}}<br>
             {{datetime}}
             </h5>
-            <a class="filmButton" href="#" data-control="userBtn">VIEW MORE</a><br>
+            <a class="filmButton" href="#" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br>
             {{#if this.isFavorite}}
             <a class="favButton liked" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart"></i>Remove from My Films</a>
             {{else}}

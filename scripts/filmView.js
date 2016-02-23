@@ -175,7 +175,7 @@
         // console.log('this is the returned array length ' + returnedArray.length);
         $('#filtered-films').empty();
         returnedArray.forEach(function(element){
-          $('#filtered-films').append(render(element));
+          $('#filtered-films').append(filmView.render(element));
         });
       });
     }

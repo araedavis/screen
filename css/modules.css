@@ -18,11 +18,11 @@
 
 }
 
-.placeholder-img {
-  
+/*=== Filter menu ===*/
+.filter-container {
+  text-align: center;
 }
 
-/*=== Filter menu ===*/
 .filter-style {
   background-color: #F3F3F3;
   border-radius: 2px;

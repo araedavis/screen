@@ -73,6 +73,40 @@
   );
   };
 
+  Film.fetchThreeCriteria = function (criteria1, value1, criteria2, value2, criteria3, value3, callback){
+    var arrayToReturn = [];
+    webDB.execute(
+      [
+        {
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? AND ' + criteria3 + '=?;',
+          data: [value1, value2, value3]
+        }
+      ],function(data){
+      var arrayToReturn = data.map(function(element){
+        return new Film(element);
+      });
+      callback(arrayToReturn);
+    }
+  );
+  };
+
+  Film.fetchFourCriteria = function (criteria1, value1, criteria2, value2, criteria3, value3, criteria4, value4, callback){
+    var arrayToReturn = [];
+    webDB.execute(
+      [
+        {
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? AND ' + criteria3 + '=? AND ' + criteria4 + '=?;',
+          data: [value1, value2, value3, value4]
+        }
+      ],function(data){
+      var arrayToReturn = data.map(function(element){
+        return new Film(element);
+      });
+      callback(arrayToReturn);
+    }
+  );
+  };
+
   Film.fetchCountry = function(country, callback){
     var arrayToReturn = [];
     webDB.execute(
@@ -209,7 +243,7 @@
   //TODO sort dates by date, and then by time
   Film.allDates = function(callback){
     //datetime
-    webDB.execute('SELECT DISTINCT datetime FROM films ORDER BY date;', callback);
+    webDB.execute('SELECT DISTINCT date FROM films ORDER BY date;', callback);
   };
 
   Film.allVenues = function(callback){

@@ -58,13 +58,18 @@
 
     Film.allDates(function(rows){
 
+      // Special template just for dates
+      template = Handlebars.compile($('#filter-template-date').text());
+
       if($('#date-filter option').length < 2) {
         $('#date-filter').append(
             rows.map(function(row){
-              var dateFormatted = new Date(row.datetime);
-
+              var dateFormatted = new Date(row.date);
+              // console.log('this is the row rawdate ' + row.date);
               return template({
-                val: dateFormatted.toDateString() + ' ' + dateFormatted.toTimeString().slice(0,5) });
+                val: dateFormatted.toDateString(),
+                date: row.date
+              });
             })
           //)
           // .sort(function(a,b){
@@ -115,45 +120,22 @@
 
 //TODO:refactor handleFilters to make code DRYer
 
+//by date
+    $('#date-filter').on('change', function(e){
+      var arrayOfActiveFilters = filmView.getStateOfFilters();
+      filmView.performFilter(arrayOfActiveFilters);
+    });
 
 //by country
     $('#country-filter').on('change', function(e){
       var arrayOfActiveFilters = filmView.getStateOfFilters();
       filmView.performFilter(arrayOfActiveFilters);
-
-
-      // var target = $(e.target).val().toUpperCase();
-      // if (target === 'ALL'){
-      //   $('#filtered-films').empty();
-      //   filmView.initPage();
-      //   return;
-      // };
-      // Film.fetchCountry(target, function(returnedArray){
-      //   $('#filtered-films').empty();
-      //   returnedArray.forEach(function(element){
-      //     $('#filtered-films').append(render(element));
-      //   });
-      // });
     });
 
 //by genre
     $('#genre-filter').on('change', function(e){
       var arrayOfActiveFilters = filmView.getStateOfFilters();
       filmView.performFilter(arrayOfActiveFilters);
-
-
-      // var target = $(e.target).val();
-      // if (target === 'all'){
-      //   $('#filtered-films').empty();
-      //   filmView.initPage();
-      //   return;
-      // };
-      // Film.fetchGenre(target, function(returnedArray){
-      //   $('#filtered-films').empty();
-      //   returnedArray.forEach(function(element){
-      //     $('#filtered-films').append(render(element));
-      //   });
-      // });
     });
 
   //by venue
@@ -170,29 +152,50 @@
   filmView.performFilter = function(array){
     var lengthOfArray = array.length;
 
-    if (lengthOfArray === 1){
-      Film.fetchOneCriteria(array[0].criteria, array[0].value, function(returnedArray){
-        // console.log('this is the returned array length ' + returnedArray.length);
-        $('#filtered-films').empty();
-        returnedArray.forEach(function(element){
-          $('#filtered-films').append(filmView.render(element));
-        });
-      });
-    }
-
     if (lengthOfArray === 0){
       $('#filtered-films').empty();
       filmView.initPage();
-    }
 
-    if (lengthOfArray === 2){
-      Film.fetchTwoCriteria(array[0].criteria, array[0].value, array[1].criteria, array[1].value, function(returnedArray){
-        // console.log('this is the returned array length ' + returnedArray.length);
+    }else if (lengthOfArray === 1){
+      Film.fetchOneCriteria(array[0].criteria, array[0].value, function(returnedArray){
         $('#filtered-films').empty();
         returnedArray.forEach(function(element){
           $('#filtered-films').append(filmView.render(element));
         });
       });
+
+    }else if (lengthOfArray === 2){
+      Film.fetchTwoCriteria(array[0].criteria, array[0].value,
+        array[1].criteria, array[1].value,
+        function(returnedArray){
+          $('#filtered-films').empty();
+          returnedArray.forEach(function(element){
+            $('#filtered-films').append(filmView.render(element));
+          });
+        });
+
+    }else if (lengthOfArray === 3){
+      Film.fetchThreeCriteria(array[0].criteria, array[0].value,
+        array[1].criteria, array[1].value,
+        array[2].criteria, array[2].value,
+        function(returnedArray){
+          $('#filtered-films').empty();
+          returnedArray.forEach(function(element){
+            $('#filtered-films').append(filmView.render(element));
+          });
+        });
+
+    }else if(lengthOfArray === 4){
+      Film.fetchFourCriteria(array[0].criteria, array[0].value,
+        array[1].criteria, array[1].value,
+        array[2].criteria, array[2].value,
+        array[3].criteria, array[3].value,
+        function(returnedArray){
+          $('#filtered-films').empty();
+          returnedArray.forEach(function(element){
+            $('#filtered-films').append(filmView.render(element));
+          });
+        });
     }
   };
 
@@ -211,11 +214,14 @@
         if (filterCriteria === 'country'){
           filterValue = filterValue.toUpperCase();
         }
+        if (filterCriteria === 'date'){
+          filterValue = $(element).find('option[value|="' + filterValue + '"]').data('rawdate');
+        }
         var object = {criteria:filterCriteria, value:filterValue};
         returnArray.push(object);
       }
     });
-    console.log('array to return ' + returnArray);
+    // console.log('array to return ' + returnArray);
     return returnArray;
   };
 

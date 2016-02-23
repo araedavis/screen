@@ -27,7 +27,7 @@
     <script id="film-template" type="text/x-handlebars-template">
       <div class="filmContainer row" >
           <div class="filmImage six columns">
-            <img src="/imgs/imagesSmall/{{imagesmall}}"><br/>
+            <img class="filmImg" src="/imgs/imagesSmall/{{imagesmall}}"><br/>
           </div>
           <div class="filmCaption six columns">
             <h3>{{title}}</h3>
@@ -35,13 +35,14 @@
             <h5>Directed by {{director}}<br>
             {{datetime}}
             </h5>
+            <a class="filmButton" href="#" data-control="userBtn">VIEW MORE</a><br>
             {{#if this.isFavorite}}
-            <a class="favButton liked" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart"></i>Remove from My Films</a><br>
+            <a class="favButton liked" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart"></i>Remove from My Films</a>
             {{else}}
-            <a class="favButton" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart-o"></i>Add to My Films</a><br>
+            <a class="favButton" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart-o"></i>Add to My Films</a>
             {{/if}}
 
-            <a class="filmButton" href="#" data-control="userBtn">VIEW MORE</a>
+
           </div>
       </div>
     </script>
@@ -99,30 +100,31 @@
           <p>Hello, Screen</p>
         </div>
 
+<!--TODO: see if there's a good way to display FontAwesome chevron icon -->
         <div class="filter-style filter-layout">
             <select id="date-filter">
-              <option>Date</option>
+              <option class="fa fa-chevron-down">Date &#xf078;</option>
             </select>
         </div>
 
         <div class="filter-style filter-layout">
             <select id="venue-filter">
-              <option>Venue</option>
+              <option>Venue &#xf078;</option>
             </select>
 
         </div>
 
         <div class="filter-style filter-layout">
             <select id="genre-filter">
-              <option>Genre</option>
+              <option>Genre &#xf078;</option>
             </select>
 
         </div>
 
         <div class="filter-style filter-layout">
             <select id="country-filter">
-              <option>Country</option>
-              
+              <option>Country &#xf078;</option>
+
             </select>
         </div>
       </section>

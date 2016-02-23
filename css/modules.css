@@ -6,9 +6,6 @@
 /*=== Filter menu ===*/
 .filter-style {
   background-color: #F3F3F3;
-  padding: 0;
-  margin: 0;
-  width: 20%;
   border-radius: 2px;
 }
 
@@ -18,7 +15,10 @@
   padding: 5px 8px;
   width: 85%;
   text-align: center;
+}
 
+.filter-style select option {
+  font-family:"FontAwesome";
 }
 
 .liked {
@@ -28,11 +28,14 @@
 
 .filmContainer {
   border-bottom: 2px dotted #BAE3E3;
-
 }
 
 .filmCaption {
   background-color: #f9f9f9;
+}
+
+.filmImg {
+  border-radius: 10px;
 }
 
 /*select:focus,

@@ -26,6 +26,7 @@ select {
   #main-nav {
     padding: 10px;
   }
+
   #main-nav ul {
     display: block;
     text-align: right;
@@ -48,6 +49,13 @@ select {
   .filter-layout {
     display: inline-block;
     margin: 0px;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+  }
+
+  .filter-style {
+
   }
 
 }

@@ -51,4 +51,14 @@
 /*select:focus,
 select:hover {
   background-color: #FDEC00;
+<<<<<<< HEAD
 } */
+
+/*=== About page ===*/
+
+.profile-photo {
+	display: block;
+	max-width: 200px;
+	margin: 0 auto 30px;
+	border-radius: 20px;
+}

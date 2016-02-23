@@ -6,13 +6,7 @@
     $('#filtered-films').hide();
     $('#my-films').hide();
     $('#about').show();
-
-
-
   };
-
-
-
 
   module.aboutController = aboutController;
 })(window);

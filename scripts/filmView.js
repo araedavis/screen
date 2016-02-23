@@ -12,7 +12,24 @@
     return template(film);
   }; // end render
 
+  filmView.modalWindow = function(){
+    $('.filmButton').on('click', function(e){
+      console.log('hello');
+      e.preventDefault();
+      var filmId = $(e.target).data('film-id');
+      $('.modalDialog').hide();
+      $('.modalDialog-'+ filmId).show('slow', function() {
+      });
+      // $('body').addClass('scrollprevent');
+    });
 
+    $('.close').on('click', function(e){
+      e.preventDefault();
+      $('.modalDialog').hide('slow', function(){
+      });
+      // $('body').removeClass('scrollprevent');
+    });
+  };
 
   filmView.addFavorites = function(){
     //D0NE: refactor the favButton to class
@@ -127,6 +144,7 @@
         $('#filtered-films').append(render(element));
       });
       filmView.addFavorites();
+      filmView.modalWindow();
     });
   };
 

@@ -20,7 +20,7 @@
 
 /*=== Filter menu ===*/
 .filter-container {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .filter-style {
@@ -31,9 +31,8 @@
 .filter-style select {
   border: none;
   background-color: transparent;
-  padding: 5px 8px;
-  width: 85%;
-  text-align: center;
+  /*padding: 5px 8px;*/
+  /*width: 85%;*/
 }
 
 .filter-style select option {

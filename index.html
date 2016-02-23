@@ -40,13 +40,17 @@
             <h5>Directed by {{director}}<br>
             {{datetime}}
             </h5>
-            <a class="filmButton" href="#" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br>
+            <a class="filmButton" href="#" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br><br>
 
             {{#if this.isFavorite}}
             <button class="favButton liked" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart"></i>Remove from My Films</button>
             {{else}}
             <button class="favButton" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart-o"></i>Add to My Films</button>
             {{/if}}
+            <button class="tweetButton">
+              <i class="fa fa-twitter"></i>
+              TWEET MY REVIEW
+            </button>
 
           </div>
       </div>

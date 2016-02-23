@@ -8,8 +8,9 @@
 
 /*=== Top navigation ===*/
 .navigation {
-  margin: 20px;
+  margin: 5px;
 }
+
 .nav-tab:hover {
   color: #E6CE1D;
 }
@@ -36,8 +37,9 @@
   /*width: 85%;*/
 }
 
-.filter-style select option {
-  font-family:"FontAwesome";
+.favButton i,
+.tweetButton i {
+  font-size: 1.5em;
 }
 
 .liked {

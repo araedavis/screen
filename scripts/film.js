@@ -39,6 +39,39 @@
     });
   };
 
+  Film.fetchOneCriteria = function(criteria1, value1, callback){
+    var arrayToReturn = [];
+    webDB.execute(
+      [
+        {
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=?;',
+          data: [value1]
+        }
+      ],function(data){
+      var arrayToReturn = data.map(function(element){
+        return new Film(element);
+      });
+      callback(arrayToReturn);
+    }
+  );
+  };
+
+  Film.fetchTwoCriteria = function (criteria1, value1, criteria2, value2, callback){
+    var arrayToReturn = [];
+    webDB.execute(
+      [
+        {
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=?;',
+          data: [value1, value2]
+        }
+      ],function(data){
+      var arrayToReturn = data.map(function(element){
+        return new Film(element);
+      });
+      callback(arrayToReturn);
+    }
+  );
+  };
 
   Film.fetchCountry = function(country, callback){
     var arrayToReturn = [];

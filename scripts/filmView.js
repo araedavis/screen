@@ -2,7 +2,7 @@
 
   var filmView = {};
 
-  var render = function(film){
+  filmView.render = function(film){
     var template = Handlebars.compile($('#film-template').text());
     var dateAsString = new Date(film.datetime).toDateString();
     film.datetime = dateAsString;
@@ -25,13 +25,13 @@
         $(e.target).addClass('liked');
         Film.updateRecord(favoriteId, true);
         $(e.target).data('favorite', 'true');
-        $(e.target).firstChild().addClass('fa-heart').removeClass('fa-heart-o');
+        $(e.target).first().addClass('fa-heart').removeClass('fa-heart-o');
       }
       else {
         $(e.target).removeClass('liked');
         Film.updateRecord(favoriteId, false);
         $(e.target).data('favorite', 'false');
-        $(e.target).firstChild().addClass('fa-heart-o').removeClass('fa-heart');
+        $(e.target).first().addClass('fa-heart-o').removeClass('fa-heart');
       }
     });
   };
@@ -116,7 +116,7 @@
       Film.fetchGenre(target, function(returnedArray){
         $('#filtered-films').empty();
         returnedArray.forEach(function(element){
-          $('#filtered-films').append(render(element));
+          $('#filtered-films').append(filmView.render(element));
         });
       });
     });
@@ -126,7 +126,7 @@
   filmView.initPage = function(){
     Film.fetchAllFilmData(function(returnedArray){
       returnedArray.forEach(function(element){
-        $('#filtered-films').append(render(element));
+        $('#filtered-films').append(filmView.render(element));
       });
       filmView.addFavorites();
     });

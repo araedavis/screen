@@ -2,6 +2,8 @@
 (function(module){
   var myFilmsController ={};
   myFilmsController.index = function(ctx){
+    favoriteView.initMyFilms();
+    
     $('#about').hide();
     $('#filtered-films').hide();
     $('#my-films').show();

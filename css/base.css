@@ -33,11 +33,3 @@ ul {
 a {
   text-decoration: none;
 }
-
-a:hover {
-  color: #BAE3E3;
-}
-
-a:active {
-  color: #FDEC00;
-}

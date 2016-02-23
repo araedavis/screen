@@ -1,3 +1,21 @@
+
+.logo{
+  float: left;
+  max-width: 200px;
+  overflow: auto;
+}
+
+/*=== Top navigation ===*/
+.navigation {
+  margin: 20px;
+}
+.nav-tab:hover {
+  color: #E6CE1D;
+}
+.nav-tab:active {
+  color: #FDEC00;
+}
+
 /*=== Filter menu ===*/
 .filter-style {
   background-color: #F3F3F3;

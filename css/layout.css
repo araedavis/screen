@@ -20,6 +20,7 @@ select {
 
 .filmContainer {
   max-width: 100%;
+  padding: 10px;
 }
 
 @media(max-width: 400px){

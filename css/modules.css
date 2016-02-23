@@ -24,7 +24,8 @@
 }
 
 .filter-style {
-  background-color: #F3F3F3;
+  background-color: #03A89E;
+  color: #fff;
   border-radius: 2px;
 }
 
@@ -45,7 +46,7 @@
 /*=== Film container ===*/
 
 .filmContainer {
-  border-bottom: 2px dotted #BAE3E3;
+  border-bottom: 1px dotted #03A89E;
 }
 
 .filmCaption {

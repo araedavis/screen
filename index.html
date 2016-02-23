@@ -45,6 +45,7 @@
       <div class="modalDialog modalDialog-{{id}}">
         <div class="modalContent">
           <div class="filmHeader screen-project">
+            <iframe title="YouTube video player" class="youtube-player"   type="text/html" width="640" height="390" src="{{youtube}}" frameborder="0" allowFullScreen></iframe>
             <a href="#close" title="Close" class="close">X</a>
             <h3 class="filmTitle subheader headline">{{title}}</h3>
             <h3 class="filmType subheader headline">{{genre1}}</h3>
@@ -69,12 +70,11 @@
                 <b>Duration: {{trt}}</b>
               </p>
             </div>
+            <div class="projectImages">
+                <img class="showcase-full" src="/imgs/imagesSmall/{{imagesmall}}">
+            </div>
           </div> <!--end projectHeader-->
-          <div class="projectImages">
-              <img class="showcase-full" src="/imgs/imagesSmall/{{imagesmall}}">
-              <iframe title="YouTube video player" class="youtube-player"   type="text/html" width="640" height="390" src="{{youtube}}" frameborder="0" allowFullScreen></iframe>
-          </div>
-          </div> <!--end modalDialog-->
+        </div> <!--end modalDialog-->
       </div> <!--end modalDialog-->
     </script>
   </head>

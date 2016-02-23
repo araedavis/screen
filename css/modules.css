@@ -142,7 +142,7 @@ select:hover {
 .close:hover { background: #00d9ff; }
 
 .screen-project {
-    background-image: url(screen.jpg);
+    background-color: rgba(41,39,42,.9);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: cover;
@@ -151,7 +151,11 @@ select:hover {
     position: relative;
 }
 
-.screen-project:before {
+.scrollprevent {
+  overflow: hidden; 
+}
+
+/*.screen-project:before {
     background-color: rgba(41,39,42,.9);
     bottom: 0;
     content: "";
@@ -160,7 +164,7 @@ select:hover {
     right: 0;
     top: 0;
     z-index: 0;
-}
+}*/
 /*Layout*/
 
 .showcase-half {
@@ -172,4 +176,8 @@ select:hover {
 .showcase-full {
     margin: 20px;
     width: 60%;
+}
+
+.youtube-player {
+  z-index: 1;
 }

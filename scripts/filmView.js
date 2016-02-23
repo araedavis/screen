@@ -20,14 +20,14 @@
       $('.modalDialog').hide();
       $('.modalDialog-'+ filmId).show('slow', function() {
       });
-      // $('body').addClass('scrollprevent');
+      $('html').addClass('scrollprevent');
     });
 
     $('.close').on('click', function(e){
       e.preventDefault();
       $('.modalDialog').hide('slow', function(){
       });
-      // $('body').removeClass('scrollprevent');
+      $('html').removeClass('scrollprevent');
     });
   };
 

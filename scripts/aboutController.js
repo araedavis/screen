@@ -9,8 +9,5 @@
 
   };
 
-
-
-
   module.aboutController = aboutController;
 })(window);

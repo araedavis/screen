@@ -41,3 +41,9 @@ a:hover {
 a:active {
   color: #FDEC00;
 }
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

@@ -16,6 +16,10 @@
     });
   };
 
+  favoriteView.addTwitterWidget = function(){
+
+  };
+
 
   module.favoriteView = favoriteView;
 

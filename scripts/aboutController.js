@@ -7,8 +7,6 @@
     $('#my-films').hide();
     $('#about').show();
 
-
-
   };
 
 

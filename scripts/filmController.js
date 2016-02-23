@@ -7,7 +7,8 @@
     $('#filtered-films').show();
     $('#my-films').hide();
     $('#landing').show();
-    
+
+
     filmView.populateFilters();
     filmView.handleFilters();
     filmView.initPage();

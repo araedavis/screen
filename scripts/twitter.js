@@ -1,7 +1,7 @@
 (function(module){
   var twitter = {};
 
-  twttr.widgets.load();
+
   // twitter.auth = function(callback){
   //   $.ajax({
   //     url: 'https://api.twitter.com/1.1/statuses/update.json',

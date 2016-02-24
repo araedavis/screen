@@ -48,8 +48,6 @@
             <button class="favButton" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart-o"></i>Add to My Films</button>
             {{/if}}
 
-            <div id="twitter"></div>
-
           </div>
       </div>
       <div class="modalDialog modalDialog-{{id}}">
@@ -90,9 +88,12 @@
 
     <script id="twitter-template" type="text/template">
       <div class="twitter-widget">
-        <i class="fa fa-twitter"></i>
+        <a class="twitter-hashtag-button"
+  href="https://twitter.com/intent/tweet?button_hashtag={{title}}&hashtags=TBT,FF">
+Tweet a Review</a>
       </div>
     </script>
+    
   </head>
 
   <body>

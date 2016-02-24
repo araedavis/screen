@@ -10,9 +10,14 @@
         return (film.isFavorite === 'true');
       })
       .forEach(function(element){
-        $('#my-films').append(filmView.render(element));
+        var rendered = filmView.render(element);
+        
+        $('#my-films').append($(rendered).append(filmView.renderTwtter(element)));
+
       });
     });
+
+
 
     // twttr.widgets.createHashtagButton(
     //   'TestHash',

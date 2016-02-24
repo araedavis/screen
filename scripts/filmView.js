@@ -32,6 +32,30 @@
     });
   };
 
+
+  filmView.buttonClick = function(){
+    $('.button-fill').hover(function () {
+      $(this).children('.button-inside').addClass('full');
+    }, function() {
+      $(this).children('.button-inside').removeClass('full');
+    });
+  };
+
+  filmView.mobileView = function(){
+    $('#nav').addClass('js').before('<div id="menu">&#9776;</div>');
+    $('#menu').click(function(){
+      $('#nav').toggle();
+    });
+    $(window).resize(function(){
+      if(window.innerWidth > 768) {
+        if(window.innerWidth > 768) {
+          $('#nav').removeAttr('style');
+        }
+      }
+    });
+  };
+
+
   filmView.addFavorites = function(){
     //D0NE: refactor the favButton to class
     $('.favButton').on('click', function(e){
@@ -233,6 +257,8 @@
       });
       filmView.addFavorites();
       filmView.modalWindow();
+      filmView.buttonClick();
+      filmView.mobileView();
     });
   };
 

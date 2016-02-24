@@ -24,6 +24,7 @@
           var arrayToReturn = [];
           data.forEach(function(element){
             var film = new Film(element);
+            film.isFavorite = false;
             film.datetime = film.date + ' ' + film.time;
             arrayToReturn.push(film);
             film.insertRecord(function(){

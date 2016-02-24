@@ -6,7 +6,9 @@
     var template = Handlebars.compile($('#film-template').text());
     var dateAsString = new Date(film.datetime).toDateString();
     film.datetime = dateAsString;
-    if (film.isFavorite === 'false'){
+    if (film.isFavorite !== true){
+      console.log('this is the isFavorite value: ' + this.isFavorite);
+
       film.isFavorite = false;
     }
     return template(film);

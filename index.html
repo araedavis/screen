@@ -8,6 +8,7 @@
     <!--vendor stylesheets -->
     <link rel="stylesheet" href="vendor/css/normalize.css">
     <link rel="stylesheet" href="vendor/css/skeleton.css">
+    <link rel='stylesheet' href="vendor/fullcalendar.css"/>
     <link href="https://fonts.googleapis.com/css?family=Andika|Source+Sans+Pro:400,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- <link href="vendor/flickity-docs/flickity.css" media="screen" rel="stylesheet"> -->
@@ -202,7 +203,7 @@
 <!--begin My Films -->
       <section id="my-films">
         <button id="date-view"><i class="fa fa-calendar myfilm-btn"></i>&nbsp;&nbsp;Sort By Date</button>
-        <button id="print-view"><i class="fa fa-print myfilm-btn"></i>&nbsp;&nbsp;Print My Schedule</button>
+        <button onclick="window.print();return false;" id="print-view"><i class="fa fa-print myfilm-btn"></i>&nbsp;&nbsp;Print My Schedule</button>
         <div id="my-films-list">
         </div>
       </section>
@@ -263,6 +264,8 @@
       <script src="/vendor/js/page.js" type="text/javascript"></script>
       <script src="/vendor/js/html5sql.js" type="text/javascript"></script>
       <script src="/vendor/js/webdb.js" type="text/javascript"></script>
+      <script src="/vendor/moment.min.js" type="text/javascript"></script>
+      <script src='/vendor/fullcalendar.js'></script>
       <!-- <script src="/vendor/flickity-docs/flickity.pkgd.min.js" type="text/javascript"></script>
       <script src="scripts/flickity.js" type="text/javascript"></script> -->
 
@@ -273,7 +276,8 @@
       <script src="/scripts/myFilmsController.js" type="text/javascript"></script>
       <script src="/scripts/filmController.js" type="text/javascript"></script>
       <script src="/scripts/routes.js" type="text/javascript"></script>
-      <script src="/scripts/expandedView.js" type="text/javascript"></script>
+      <script src="/scripts/scheduleView.js" type="text/javascript"></script>
+
 
       <!-- <script src="/data/festivalData.json"></script> -->
       <!--<script src="server.js" type="text/javascript"></script>-->

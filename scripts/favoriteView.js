@@ -22,7 +22,7 @@
 
         $('#my-films-list').append(filmView.render(element));
       });
-      filmView.modalWindow();
+      // filmView.modalWindow();
     });
   };
 

@@ -46,7 +46,7 @@
     webDB.execute(
       [
         {
-          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=?;',
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? ORDER BY date, time;',
           data: [value1]
         }
       ],function(data){
@@ -63,7 +63,7 @@
     webDB.execute(
       [
         {
-          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=?;',
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? ORDER BY date, time;',
           data: [value1, value2]
         }
       ],function(data){
@@ -80,7 +80,7 @@
     webDB.execute(
       [
         {
-          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? AND ' + criteria3 + '=?;',
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? AND ' + criteria3 + '=? ORDER BY date, time;',
           data: [value1, value2, value3]
         }
       ],function(data){
@@ -97,7 +97,7 @@
     webDB.execute(
       [
         {
-          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? AND ' + criteria3 + '=? AND ' + criteria4 + '=?;',
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? AND ' + criteria3 + '=? AND ' + criteria4 + '=? ORDER BY date, time;',
           data: [value1, value2, value3, value4]
         }
       ],function(data){
@@ -257,7 +257,7 @@
   //TODO sort dates by date, and then by time
   Film.allDates = function(callback){
     //datetime
-    webDB.execute('SELECT DISTINCT date FROM films ORDER BY date;', callback);
+    webDB.execute('SELECT DISTINCT date FROM films ORDER BY date, time;', callback);
   };
 
   Film.allVenues = function(callback){

@@ -3,6 +3,7 @@
     Object.keys(opts).forEach(function(e){
       this[e] = opts[e];
     },this);
+    // console.log('this is the value for isFav in constructor: ' + this.isFavorite);
   };
 
   //    ___fetchAllFilmData___
@@ -222,7 +223,19 @@
           data:[val, id]
         }
       ],
-      callback
+      function(){
+        webDB.execute(
+          [
+            {
+              sql:'SELECT * FROM films WHERE id=?;',
+              data:[id]
+            }
+          ],
+          function(data){
+            callback(new Film(data[0]));
+          }
+        );
+      }
     );
 
     //where id ==

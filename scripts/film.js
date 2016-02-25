@@ -275,8 +275,24 @@
     webDB.execute('SELECT DISTINCT genre1 FROM films;', callback);
   };
 
+  Film.getRating = function(filmTitle){
+    var queryTitle = filmTitle.toLowerCase().replace(/\s/g,'+');
+    console.log(queryTitle);
+    $.ajax({
+      url: 'http://www.omdbapi.com/?' + 't=' + queryTitle,
+      method: 'GET',
+      error: function(){
+        console.log('bummer bro');
+      },
+      success: function(data){
+        console.log(data.imdbRating);
+      }
+    });
+  };
+
   // Function calls
   // Film.createFilmTable();
+  //Film.getRating('Gabrielle');
 
   module.Film = Film;
 })(window);

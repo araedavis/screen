@@ -18,7 +18,7 @@
         //build title hashtag string
         var titleHashtag = (element.title).toLowerCase().replace(/\s/g,'');
 
-        $('#my-films').append(filmView.render(element));
+        $('#my-films-list').append(filmView.render(element));
         //twttr button creation
         twttr.ready(function(twttr){
           twttr.widgets.createHashtagButton(hashtag, document.getElementById(element.id),

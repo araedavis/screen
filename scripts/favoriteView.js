@@ -11,24 +11,22 @@
       })
       .forEach(function(element){
         var hashtag = 'pdxfilmfestival';
-        //build hashtag string
-        var titleHashtag = (element.title).toLowerCase().replace(/\s/g,'');
-        console.log(titleHashtag);
 
+        //build title hashtag string
+        var titleHashtag = (element.title).toLowerCase().replace(/\s/g,'');
+
+        $('#my-films').append(filmView.render(element));
         //twttr button creation
         twttr.ready(function(twttr){
-          twttr.widgets.createHashtagButton(hashtag, document.getElementById(''),
-          {size:'large'});
+          twttr.widgets.createHashtagButton(hashtag, document.getElementById(element.id),
+          { size:'large',
+          hashtags: titleHashtag
+        });
           twttr.widgets.load();
         });
 
-          //figure out how to add secondary hashtags
-        $('#my-films').append(filmView.render(element));
-
       });
     });
-
-
 
   };
 

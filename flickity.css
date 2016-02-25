@@ -10,13 +10,12 @@
 .flickity-prev-next-button {
   width: 40px;
   height: 40px;
-  background: #00B9BC;
+  /*background: #00B9BC;*/
 }
 
-
-
-
-
+.gallery-cell {
+  width: 100%;
+}
 
 .flickity-page-dots {
   bottom: -20px;
@@ -34,14 +33,41 @@
   background: #FEF200;
 }
 
-
-
-
-
-
-
-
 .main-gallery {
   border-color: #00B9BC;
 
+}
+
+
+
+/* Styling for carousel img description hover*/
+
+
+/*.imgWrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}*/
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
 }

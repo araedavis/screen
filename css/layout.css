@@ -1,6 +1,6 @@
 /*
 img {
-  max-width: 100%;
+  max-width: 100%;      //make this more specific with a class. breaks carousel other wise//
 }*/
 
 main {

@@ -8,6 +8,8 @@
     $('#filtered-films').show();
     $('#my-films').show();
     $('#landing').hide();
+    $('#calendar').hide();
+    $('#my-films-list').show();
   };
 
   Film.updateRecord();

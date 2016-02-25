@@ -6,11 +6,17 @@
     var template = Handlebars.compile($('#film-template').text());
     var dateAsString = new Date(film.datetime).toDateString();
     film.datetime = dateAsString;
-    if (film.isFavorite === 'false'){
+
+    if (film.isFavorite == 'true'){
+      film.isFavorite = true;
+    }else if (film.isFavorite !== true){
       film.isFavorite = false;
     }
-    return template(film);
-  }; // end render
+
+    var htmlObject = template(film);
+    return htmlObject;
+  }; // end
+
 
 
   filmView.modalWindow = function(){
@@ -60,21 +66,32 @@
     //D0NE: refactor the favButton to class
     $('.favButton').on('click', function(e){
       e.preventDefault();
+
+
       var favoriteId = $(e.target).data('id');
       var isFavoriteTable = $(e.target).data('favorite');
-      console.log(isFavoriteTable);
       if (!$(e.target).hasClass('liked')){
-        $(e.target).addClass('liked');
-        Film.updateRecord(favoriteId, true);
-        $(e.target).data('favorite', 'true');
-        $(e.target).first().addClass('fa-heart').removeClass('fa-heart-o');
-      }
-      else {
-        $(e.target).removeClass('liked');
-        Film.updateRecord(favoriteId, false);
-        $(e.target).data('favorite', 'false');
-        $(e.target).first().addClass('fa-heart-o').removeClass('fa-heart');
-      }
+        Film.updateRecord(favoriteId, true, function(returnedObject){
+          $(e.target).parent().parent().replaceWith(filmView.render(returnedObject));
+        });
+      };
+
+
+
+      // var favoriteId = $(e.target).data('id');
+      // var isFavoriteTable = $(e.target).data('favorite');
+      // if (!$(e.target).hasClass('liked')){
+      //   $(e.target).addClass('liked');
+      //   Film.updateRecord(favoriteId, true);
+      //   $(e.target).data('favorite', 'true');
+      //   $(e.target).first().addClass('fa-heart').removeClass('fa-heart-o');
+      // }
+      // else {
+      //   $(e.target).removeClass('liked');
+      //   Film.updateRecord(favoriteId, false);
+      //   $(e.target).data('favorite', 'false');
+      //   $(e.target).first().addClass('fa-heart-o').removeClass('fa-heart');
+      // }
     });
   };
 

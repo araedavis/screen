@@ -10,16 +10,19 @@
   // };
 
   favoriteView.initMyFilms = function(){
+    $('#my-films-list').empty();
     Film.fetchAllFilmData(function(returnedArray){
-      return returnedArray.filter(function(film){
+
+      returnedArray.filter(function(film){
         //if film is favorited
+        console.log('intiMyFilms fires with film.isFavorite ' + film.isFavorite);
         return (film.isFavorite === 'true');
-      })
-      .forEach(function(element){
+      }).forEach(function(element){
         //var completedFilm = $(element).append(favoriteView.addTwitterWidget());
 
-        $('#my-films').append(filmView.render(element));
+        $('#my-films-list').append(filmView.render(element));
       });
+      filmView.modalWindow();
     });
   };
 

@@ -18,7 +18,6 @@
   }; // end
 
 
-
   filmView.modalWindow = function(){
     $('.filmButton').on('click', function(e){
       console.log('hello');

@@ -3,12 +3,6 @@
 
   var favoriteView = {};
 
-
-  // favoriteView.addTwitterWidget = function(){
-  //   var template = Handlebars.compile($('#twitter-template').text());
-  //   return template;
-  // };
-
   favoriteView.initMyFilms = function(){
     $('#my-films-list').empty();
     Film.fetchAllFilmData(function(returnedArray){
@@ -17,17 +11,27 @@
         //if film is favorited
         console.log('intiMyFilms fires with film.isFavorite ' + film.isFavorite);
         return (film.isFavorite === 'true');
-      }).forEach(function(element){
-        //var completedFilm = $(element).append(favoriteView.addTwitterWidget());
+      })
+      .forEach(function(element){
+        var hashtag = 'pdxfilmfestival';
 
-        $('#my-films-list').append(filmView.render(element));
+        //build title hashtag string
+        var titleHashtag = (element.title).toLowerCase().replace(/\s/g,'');
+
+        $('#my-films').append(filmView.render(element));
+        //twttr button creation
+        twttr.ready(function(twttr){
+          twttr.widgets.createHashtagButton(hashtag, document.getElementById(element.id),
+          { size:'large',
+          hashtags: titleHashtag
+        });
+          twttr.widgets.load();
+        });
       });
+      
       filmView.modalWindow();
     });
   };
-
-
-
 
   module.favoriteView = favoriteView;
 

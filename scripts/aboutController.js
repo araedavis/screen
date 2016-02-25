@@ -6,7 +6,8 @@
     $('#filtered-films').hide();
     $('#my-films').hide();
     $('#about').show();
-
+    $('#calendar').hide();
+    $('#my-films-list').hide();
   };
 
   module.aboutController = aboutController;

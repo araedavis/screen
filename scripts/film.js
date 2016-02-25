@@ -3,6 +3,7 @@
     Object.keys(opts).forEach(function(e){
       this[e] = opts[e];
     },this);
+    // console.log('this is the value for isFav in constructor: ' + this.isFavorite);
   };
 
   //    ___fetchAllFilmData___
@@ -24,6 +25,7 @@
           var arrayToReturn = [];
           data.forEach(function(element){
             var film = new Film(element);
+            film.isFavorite = false;
             film.datetime = film.date + ' ' + film.time;
             arrayToReturn.push(film);
             film.insertRecord(function(){
@@ -44,7 +46,7 @@
     webDB.execute(
       [
         {
-          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=?;',
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? ORDER BY date, time;',
           data: [value1]
         }
       ],function(data){
@@ -61,7 +63,7 @@
     webDB.execute(
       [
         {
-          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=?;',
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? ORDER BY date, time;',
           data: [value1, value2]
         }
       ],function(data){
@@ -78,7 +80,7 @@
     webDB.execute(
       [
         {
-          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? AND ' + criteria3 + '=?;',
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? AND ' + criteria3 + '=? ORDER BY date, time;',
           data: [value1, value2, value3]
         }
       ],function(data){
@@ -95,7 +97,7 @@
     webDB.execute(
       [
         {
-          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? AND ' + criteria3 + '=? AND ' + criteria4 + '=?;',
+          sql: 'SELECT * FROM films WHERE ' + criteria1 + '=? AND ' + criteria2 + '=? AND ' + criteria3 + '=? AND ' + criteria4 + '=? ORDER BY date, time;',
           data: [value1, value2, value3, value4]
         }
       ],function(data){
@@ -221,7 +223,19 @@
           data:[val, id]
         }
       ],
-      callback
+      function(){
+        webDB.execute(
+          [
+            {
+              sql:'SELECT * FROM films WHERE id=?;',
+              data:[id]
+            }
+          ],
+          function(data){
+            callback(new Film(data[0]));
+          }
+        );
+      }
     );
 
     //where id ==
@@ -243,7 +257,7 @@
   //TODO sort dates by date, and then by time
   Film.allDates = function(callback){
     //datetime
-    webDB.execute('SELECT DISTINCT date FROM films ORDER BY date;', callback);
+    webDB.execute('SELECT DISTINCT date FROM films ORDER BY date, time;', callback);
   };
 
   Film.allVenues = function(callback){

@@ -7,6 +7,10 @@ main {
   text-align: center;
 }
 
+#filters {
+  padding: 25px;
+}
+
 section {
   padding: 25px;
 }
@@ -17,7 +21,6 @@ select {
 
 .filmContainer {
   max-width: 100%;
-  padding: 10px;
 }
 
 @media screen and (max-width: 768px){
@@ -59,7 +62,7 @@ select {
   }
 
   #main-nav {
-    padding: 5px;
+    padding: 10px;
   }
 
   #main-nav ul {
@@ -75,7 +78,18 @@ select {
 
   .filter-layout {
     display: inline-block;
+    margin: 0px;
+    padding: 0;
+    margin: 0;
+    width: 20%;
   }
 
+  .filter-style {
 
+  }
 }
+
+  @media print {
+    header {display:none;}
+    button {display:none;}
+  }

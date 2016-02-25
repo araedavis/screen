@@ -28,8 +28,9 @@
           twttr.widgets.load();
         });
       });
-      
+
       filmView.modalWindow();
+
     });
   };
 

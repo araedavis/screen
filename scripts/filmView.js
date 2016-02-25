@@ -60,39 +60,53 @@
     });
   };
 
-
   filmView.addFavorites = function(){
     //D0NE: refactor the favButton to class
-    $('.favButton').on('click', function(e){
+    $('.respond-to-film-buttons').on('click', 'button', function(e){
       e.preventDefault();
 
-
-      var favoriteId = $(e.target).data('id');
-      var isFavoriteTable = $(e.target).data('favorite');
-      if (!$(e.target).hasClass('liked')){
-        Film.updateRecord(favoriteId, true, function(returnedObject){
-          $(e.target).parent().parent().replaceWith(filmView.render(returnedObject));
-        });
+      if ($(e.target).hasClass('favButton')){
+        var favoriteId = $(e.target).data('id');
+        var isFavoriteTable = $(e.target).data('favorite');
+        if (!$(e.target).hasClass('liked')){
+          Film.updateRecord(favoriteId, true, function(returnedObject){
+            $(e.target).parent().parent().replaceWith(filmView.render(returnedObject));
+          });
+        }else{
+          Film.updateRecord(favoriteId, false, function(returnedObject){
+            $(e.target).parent().parent().replaceWith(filmView.render(returnedObject));
+          });
+        }
       };
 
-
-
-      // var favoriteId = $(e.target).data('id');
-      // var isFavoriteTable = $(e.target).data('favorite');
-      // if (!$(e.target).hasClass('liked')){
-      //   $(e.target).addClass('liked');
-      //   Film.updateRecord(favoriteId, true);
-      //   $(e.target).data('favorite', 'true');
-      //   $(e.target).first().addClass('fa-heart').removeClass('fa-heart-o');
-      // }
-      // else {
-      //   $(e.target).removeClass('liked');
-      //   Film.updateRecord(favoriteId, false);
-      //   $(e.target).data('favorite', 'false');
-      //   $(e.target).first().addClass('fa-heart-o').removeClass('fa-heart');
-      // }
     });
   };
+
+
+  filmView.addModalButtons = function(){
+    $('.respond-to-film-buttons').on('click', 'a', function(e){
+      e.preventDefault();
+
+      if ($(e.target).hasClass('filmButton')){
+        console.log('hello');
+        e.preventDefault();
+        var filmId = $(e.target).data('film-id');
+        $('.modalDialog').hide();
+        $('.modalDialog-'+ filmId).show('slow', function() {
+        });
+        // $('html').addClass('scrollprevent');
+      };
+
+      if ($(e.target).hasClass('close')){
+        e.preventDefault();
+        $('.modalDialog').hide('slow', function(){
+        });
+        $('html').removeClass('scrollprevent');
+      };
+
+    });
+  };
+
 
   filmView.populateFilters = function(){
     var template = Handlebars.compile($('#filter-template').text());
@@ -158,35 +172,16 @@
   };
 
   filmView.handleFilters = function(){
+    // Without this, the filters will eventually run repeat event responders...
+    // Adding duplicates of all the films
+    $('.filter-container').off('change', 'select');
 
-//TODO:refactor handleFilters to make code DRYer
-
-//by date
-    $('#date-filter').on('change', function(e){
+    $('.filter-container').on('change', 'select', function(e){
       var arrayOfActiveFilters = filmView.getStateOfFilters();
       filmView.performFilter(arrayOfActiveFilters);
-    });
-
-//by country
-    $('#country-filter').on('change', function(e){
-      var arrayOfActiveFilters = filmView.getStateOfFilters();
-      filmView.performFilter(arrayOfActiveFilters);
-    });
-
-//by genre
-    $('#genre-filter').on('change', function(e){
-      var arrayOfActiveFilters = filmView.getStateOfFilters();
-      filmView.performFilter(arrayOfActiveFilters);
-    });
-
-  //by venue
-    $('#venue-filter').on('change', function(e){
-      var arrayOfActiveFilters = filmView.getStateOfFilters();
-      filmView.performFilter(arrayOfActiveFilters);
+      console.log('handleFilter fires');
     });
   };
-
-
 
   // Takes a new filter object with properties criteria and value as a parameter
   // Makes a call to film.js for the query
@@ -267,12 +262,15 @@
   };
 
   filmView.initPage = function(){
+    $('#filtered-films').empty().append('<div class="container"></div>');
+
     Film.fetchAllFilmData(function(returnedArray){
       returnedArray.forEach(function(element){
         $('#filtered-films').append(filmView.render(element));
       });
       filmView.addFavorites();
-      filmView.modalWindow();
+      filmView.addModalButtons();
+      // filmView.modalWindow();
       filmView.buttonClick();
       filmView.mobileView();
     });
@@ -282,7 +280,6 @@
     //filmView.handleFilters();
     // filmView.populateFilters();
     // filmView.initPage();
-
 
 
   module.filmView = filmView;

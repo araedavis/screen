@@ -48,6 +48,7 @@
             <button class="favButton" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart-o"></i>Add to My Films</button>
             {{/if}}
 
+            <!-- <div id=twttr-btn></div> -->
           </div>
       </div>
       <div class="modalDialog modalDialog-{{id}}">
@@ -86,14 +87,14 @@
       </div> <!--end modalDialog-->
     </script>
 
-    <script id="twitter-template" type="text/template">
+    <!-- <script id="twitter-template" type="text/template">
       <div class="twitter-widget">
         <a class="twitter-hashtag-button"
   href="https://twitter.com/intent/tweet?button_hashtag={{title}}&hashtags=TBT,FF">
 Tweet a Review</a>
       </div>
-    </script>
-    
+    </script> -->
+
   </head>
 
   <body>
@@ -154,7 +155,7 @@ Tweet a Review</a>
           </div>
 
 
-<!--TODO: see if there's a good way to display FontAwesome chevron icon-->
+<!--DONE: see if there's a good way to display FontAwesome chevron icon-->
     <div class="row filter-container">
         <div class="filter-style filter-layout three columns">
             <select id="date-filter">
@@ -257,7 +258,7 @@ Tweet a Review</a>
       <script src="/vendor/js/page.js" type="text/javascript"></script>
       <script src="/vendor/js/html5sql.js" type="text/javascript"></script>
       <script src="/vendor/js/webdb.js" type="text/javascript"></script>
-      <script src="/vendor/js/twttersnippet.js" type="text/javascript"></script>
+      <script src="/vendor/js/widgets.js" type="text/javascript"></script><!--twttr widget snippet-->
       <!-- <script src="/vendor/flickity-docs/flickity.pkgd.min.js" type="text/javascript"></script>
       <script src="scripts/flickity.js" type="text/javascript"></script> -->
 

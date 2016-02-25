@@ -12,10 +12,10 @@
     return template(film);
   }; // end render
 
-  filmView.renderTwtter = function(film){
-    var template = Handlebars.compile($('#twitter-template').text());
-    return template(film);
-  };
+  // filmView.renderTwtter = function(film){
+  //   var template = Handlebars.compile($('#twitter-template').text());
+  //   return template(film);
+  // };
 
   filmView.modalWindow = function(){
     $('.filmButton').on('click', function(e){

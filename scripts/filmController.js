@@ -7,6 +7,8 @@
     $('#filtered-films').show();
     $('#my-films').hide();
     $('#landing').show();
+    $('#calendar').hide();
+    $('#my-films-list').hide();
 
 
     filmView.populateFilters();

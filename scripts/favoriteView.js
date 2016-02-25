@@ -18,23 +18,15 @@
 
         //build title hashtag string
         var titleHashtag = (element.title).toLowerCase().replace(/\s/g,'');
-        // console.log(titleHashtag);
-        // console.log(twttr.widgets);
 
         $('#my-films-list').append(filmView.render(element));
         //twttr button creation
-        // twttr.ready(function(twttr){
-
-
-
         twttr.widgets.createHashtagButton(hashtag, document.getElementById(element.id),
         { size:'large',
           hashtags: titleHashtag
         });
         twttr.widgets.load();
-        console.log('SHOULD HAVE RUN!');
-        // });
-
+      
       });
       filmView.modalWindow();
     });

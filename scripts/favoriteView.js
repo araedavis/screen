@@ -4,6 +4,7 @@
   var favoriteView = {};
 
   favoriteView.initMyFilms = function(){
+    $('#filtered-films').empty();
     $('#my-films-list').empty();
     Film.fetchAllFilmData(function(returnedArray){
 
@@ -20,19 +21,21 @@
 
         $('#my-films-list').append(filmView.render(element));
         //twttr button creation
-        twttr.ready(function(twttr){
-          twttr.widgets.createHashtagButton(hashtag, document.getElementById(element.id),
-          { size:'large',
+        twttr.widgets.createHashtagButton(hashtag, document.getElementById(element.id),
+        { size:'large',
           hashtags: titleHashtag
         });
-          twttr.widgets.load();
-        });
+        twttr.widgets.load();
+
       });
 
       filmView.addModalButtons();
+      filmView.modalWindow();
 
     });
   };
+
+
 
   module.favoriteView = favoriteView;
 

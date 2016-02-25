@@ -29,7 +29,7 @@
         });
       });
 
-      filmView.modalWindow();
+      filmView.addModalButtons();
 
     });
   };

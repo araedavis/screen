@@ -37,10 +37,11 @@
           </div>
           <div class="filmCaption six columns">
             <h2>{{title}}</h2>
-            <h5>Directed by {{director}}<br>
+            <h4>{{imdbRating}}</h4>
             <h5>Country: {{country}} // Venue: {{venue}}</h5>
+            <h5>Directed by {{director}}<br>
             <h6>{{datetime}}</h6>
-            </h5>
+
             <a class="filmButton" href="#" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br><br>
 
             {{#if this.isFavorite}}

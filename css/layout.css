@@ -98,7 +98,7 @@ select {
     button {display:none;}
     a {display:none;}
     img {display:none;}
-    h6 {float: left;}
+    h6 {float: left; }
     div .twttr-btn {display:none;}
     h2, h5, h6 {font-size: 0.5em}
   }

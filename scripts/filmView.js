@@ -17,10 +17,14 @@
     return htmlObject;
   }; // end
 
+  filmView.renderCarousel = function(film) {
+    var template = Handlebars.compile($('#carousel-template').text());
+    var htmlObject = template(film);
+    return htmlObject;
+  };
 
   filmView.modalWindow = function(){
     $('.filmButton').on('click', function(e){
-      console.log('hello');
       e.preventDefault();
       var filmId = $(e.target).data('film-id');
       $('.modalDialog').hide();
@@ -264,10 +268,19 @@
   filmView.initPage = function(){
     $('#filtered-films').empty().append('<div class="container"></div>');
 
-    Film.fetchAllFilmData(function(returnedArray){
-      returnedArray.forEach(function(element){
-        $('#filtered-films').append(filmView.render(element));
+
+    //Carousel Logic
+
+    Film.fetchAllFilmData(function(filmData) {
+
+      $('#filtered-films').append(filmData.map(filmView.render));
+      $('#carousel-main').append(getCarouselHtml(filmData));
+
+      $('.main-gallery').flickity({
+        cellAlign: 'left',
+        contain: true
       });
+
       filmView.addFavorites();
       filmView.addModalButtons();
       // filmView.modalWindow();
@@ -276,6 +289,20 @@
     });
   };
 
+  function getCarouselHtml(filmData) {
+    return filmData.filter(uglyImages)
+      .slice(0, 13)
+      .sort(randomOrder)
+      .map(filmView.renderCarousel);
+  }
+
+  function randomOrder() {
+    return Math.floor(Math.random() * 3) - 1;
+  }
+
+  function uglyImages(film, index) {
+    return [1,5,18,7].indexOf(film.id) === -1;
+  }
   //test function calls
     //filmView.handleFilters();
     // filmView.populateFilters();

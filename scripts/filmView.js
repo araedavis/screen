@@ -23,26 +23,6 @@
   }; // end
 
 
-  filmView.modalWindow = function(){
-    $('.filmButton').on('click', function(e){
-      console.log('hello');
-      e.preventDefault();
-      var filmId = $(e.target).data('film-id');
-      $('.modalDialog').hide();
-      $('.modalDialog-'+ filmId).show('slow', function() {
-      });
-      // $('html').addClass('scrollprevent');
-    });
-    
-    $('.close, .modalDialog').on('click', function(e){
-      e.preventDefault();
-      $('.modalDialog').hide('slow', function(){
-      });
-      $('html').removeClass('scrollprevent');
-    });
-  };
-
-
   filmView.buttonClick = function(){
     $('.button-fill').hover(function () {
       $(this).children('.button-inside').addClass('full');
@@ -89,6 +69,14 @@
 
 
   filmView.addModalButtons = function(){
+    $('.modalDailog').on('click', function(e){
+      e.preventDefault();
+      $('.modalDialog').hide('slow', function(){
+      });
+      $('html').removeClass('scrollprevent');
+    });
+
+
     $('.respond-to-film-buttons').on('click', 'a', function(e){
       e.preventDefault();
 
@@ -102,7 +90,7 @@
         // $('html').addClass('scrollprevent');
       };
 
-      if ($(e.target).hasClass('close')){
+      if ($(e.target).hasClass('close','modalDialog')){
         e.preventDefault();
         $('.modalDialog').hide('slow', function(){
         });

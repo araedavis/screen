@@ -19,6 +19,11 @@ select {
   margin: 20px;
 }
 
+.filter-layout {
+  max-width: 100%;
+  margin: 1em;
+}
+
 .filmContainer {
   max-width: 100%;
 }
@@ -76,20 +81,24 @@ select {
     border-right: 1px solid #aaa;
   }
 
+  .filter-container {
+    padding: 1em;
+  }
+
   .filter-layout {
     display: inline-block;
-    margin: 0px;
     padding: 0;
-    margin: 0;
-    width: 20%;
+    margin: 1em;
   }
 
-  .filter-style {
-
-  }
 }
 
   @media print {
     header {display:none;}
     button {display:none;}
+    a {display:none;}
+    img {display:none;}
+    h6 {float: left; }
+    div .twttr-btn {display:none;}
+    h2, h5, h6 {font-size: 0.5em}
   }

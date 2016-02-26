@@ -8,6 +8,9 @@
     $('#my-films-list').hide();
     $('#my-films').show();
     $('#calendar').show();
+
+    var calendarArray = ctx.calendarArray;
+    calendarView.loadCalendar(calendarArray);
   };
 
   module.myCalendarController = myCalendarController;

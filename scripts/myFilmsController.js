@@ -11,9 +11,18 @@
     $('#calendar').hide();
     $('#my-films-list').show();
   };
-
-  Film.updateRecord();
-
+  //
+  // Film.updateRecord();
+  myFilmsController.getFavoriteFilms = function(ctx, next){
+    Film.fetchOneCriteria('isFavorite', 'true', function(arrayToReturn){
+      var calendarArray = [];
+      var calendarArray = arrayToReturn.map(function(element){
+        return {title: element.title, start: element.datetime};
+      });
+      ctx.calendarArray = calendarArray;
+      next();
+    });
+  };
   //film.updateRecord(id)
   //test by using th numbers the record should
   //user response event

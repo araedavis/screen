@@ -5,6 +5,9 @@
   filmView.render = function(film){
     var template = Handlebars.compile($('#film-template').text());
     var dateAsString = new Date(film.datetime).toDateString();
+
+    // film.imdbRating = Film.getRating(film.title);
+    // console.log(film.imdbRating);
     film.datetime = dateAsString;
 
     if (film.isFavorite == 'true'){

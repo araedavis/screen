@@ -271,20 +271,20 @@
     return returnArray;
   };
 
-  filmView.initPage = function(){
+  filmView.initPage = function(films){
     $('#filtered-films').empty().append('<div class="container"></div>');
 
-    Film.fetchAllFilmData(function(returnedArray){
-      returnedArray.forEach(function(element){
-        $('#filtered-films').append(filmView.render(element));
-      });
-      filmView.addFavorites();
-      filmView.addModalButtons();
-      // filmView.modalWindow();
-      filmView.buttonClick();
-      filmView.mobileView();
-
+    films.forEach(function(element){
+      $('#filtered-films').append(filmView.render(element));
     });
+
+
+    filmView.addFavorites();
+    filmView.addModalButtons();
+    // filmView.modalWindow();
+    filmView.buttonClick();
+    filmView.mobileView();
+
   };
 
   //test function calls

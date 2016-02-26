@@ -13,10 +13,15 @@
 
     filmView.populateFilters();
     filmView.handleFilters();
-    filmView.initPage();
+    filmView.initPage(ctx);
   };
 
+  filmController.getFilms = function(ctx, next){
+    Film.fetchAllFilmData(function(filmArray){
+      ctx.filmArray = filmArray;
+      next();
+    });
+  };
 
-  
   module.filmController = filmController;
 })(window);

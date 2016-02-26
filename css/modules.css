@@ -122,13 +122,33 @@ select:hover {
 
 /*=== About page ===*/
 
+.about-ele {
+  text-align: center;
+}
+
+.about-ele p {
+  font-size: 1.25em;
+}
+
+.about-ele ul li{
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .profile-photo {
 	display: block;
 	max-width: 200px;
 	margin: 0 auto 30px;
-	border-radius: 20px;
 }
 
+.github-btn {
+  margin: 25px;
+  font-size: 1em;
+}
+
+.github-btn i {
+  font-size: 1.5em;
+}
 /*=== Modal window ===*/
 
 .modalDialog {

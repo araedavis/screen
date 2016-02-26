@@ -126,6 +126,10 @@ select:hover {
   text-align: center;
 }
 
+.about-ele h1 {
+  margin: 25px;
+}
+
 .about-ele p {
   font-size: 1.25em;
 }
@@ -141,9 +145,20 @@ select:hover {
 	margin: 0 auto 30px;
 }
 
+.team-icon {
+  margin: 8px;
+  font-size: 2.5em;
+}
+
 .github-btn {
   margin: 25px;
-  font-size: 1em;
+  font-size: 1.25em;
+  border-color: #03A89E;
+}
+
+.github-btn i,
+.github-btn a {
+  color: #03A89E;
 }
 
 .github-btn i {

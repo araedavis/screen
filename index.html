@@ -41,12 +41,10 @@
             <h5>Directed by {{director}}<br>
             {{datetime}}
             </h5>
-            <div class="ratingStars">
-              <i class="fa fa-star-o star-icn"></i><i class="fa fa-star-o star-icn"></i><i class="fa fa-star-o star-icn"></i><i class="fa fa-star-o star-icn"></i><i class="fa fa-star-o star-icn"></i>
-            </div>
+        
             <a class="filmButton" href="#" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br><br>
 
-            <button class="imdbButton" data-id="{{id}}">GET IMDB RATING</button>
+            <button class="imdbButton" data-id="{{id}}"><i class="fa fa-star-o"></i>GET IMDB RATING</button>
             {{#if this.isFavorite}}
             <button class="favButton liked" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart"></i>Remove from My Films</button>
             {{else}}

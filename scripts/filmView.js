@@ -38,14 +38,7 @@
   };
 
   filmView.displayRatings = function(imdb){
-    //round imdb rating to a whole number (scale is 0 - 10)
-    //scale imdb rating to star rating
-    var starRating = Math.ceil(imdb/2);
 
-    //alter star classes in relation to star rating
-    for(var i = 0; i < starRating; i++){
-      $('.star-icn').eq(i).addClass('fa-star').removeClass('fa-star-o');
-    }
   };
 
   filmView.buttonClick = function(){
@@ -91,8 +84,25 @@
       if($(e.target).hasClass('imdbButton')){
         var imdbId = $(e.target).data('id');
         Film.getLocalRating(imdbId, function(review){
-          console.log(review);
-          //call filmView method to alter stars
+
+          $(e.target).empty();
+
+          if(review === undefined){
+
+            $(e.target).append('</i><p>Film not reviewed on IMDB</p>');
+
+          } else {
+            var starRating = Math.ceil(review/2);
+
+
+            for(var i = 0; i < starRating; i++){
+              $(e.target).append('<i class="fa fa-star star-icn"></i>');
+            };
+            for(var x = 0; x <= (5 - starRating); x++){
+              $(e.target).append('<i class="fa fa-star-o star-icn"></i>');
+            }
+
+          }
         });
 
       }

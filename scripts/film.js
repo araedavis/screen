@@ -278,17 +278,29 @@
     webDB.execute('SELECT DISTINCT genre1 FROM films;', callback);
   };
 
-  Film.getRating = function(film){
+  Film.getRating = function(film, callback){
     var queryTitle = film.title.toLowerCase().replace(/\s/g,'+');
-    console.log(queryTitle);
     $.ajax({
       url: 'http://www.omdbapi.com/?' + 't=' + queryTitle,
       method: 'GET',
       error: function(){
-        console.log('bummer bro');
+        console.log('Omdb api call failed');
       },
       success: function(data){
-        film.imdbRating = data.imdbRating;
+        callback(data.imdbRating);
+      }
+    });
+  };
+
+  Film.getLocalRating = function(id, callback){
+    Film.fetchOneCriteria('id', id, function(filmArray){
+      if(filmArray[0].imdbRating !== '11'){
+        Film.getRating(filmArray[0], function(apiRating){
+          filmArray[0].imdbRating = apiRating;
+          callback(apiRating);
+        });
+      } else {
+        callback(filmArray[0].imdbRating);
       }
     });
   };

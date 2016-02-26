@@ -88,7 +88,14 @@
           });
         }
       };
+      if($(e.target).hasClass('imdbButton')){
+        var imdbId = $(e.target).data('id');
+        Film.getLocalRating(imdbId, function(review){
+          console.log(review);
+          //call filmView method to alter stars
+        });
 
+      }
     });
   };
 
@@ -270,6 +277,7 @@
     // console.log('array to return ' + returnArray);
     return returnArray;
   };
+
 
   filmView.initPage = function(films){
     $('#filtered-films').empty().append('<div class="container"></div>');

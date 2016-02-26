@@ -29,6 +29,9 @@ select {
 }
 
 @media screen and (max-width: 768px){
+  .screen-project {
+    padding: 0 !important;
+  }
   .button-fill-mobile {
     text-align: center;
     display: list-item !important;
@@ -56,6 +59,9 @@ select {
 
   .nav-tab {
     display: block;
+  }
+  .youtube-player {
+    max-width: 100%;
   }
 }
 

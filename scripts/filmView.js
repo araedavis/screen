@@ -33,8 +33,8 @@
       });
       // $('html').addClass('scrollprevent');
     });
-
-    $('.close').on('click', function(e){
+    
+    $('.close, .modalDialog').on('click', function(e){
       e.preventDefault();
       $('.modalDialog').hide('slow', function(){
       });
@@ -269,7 +269,7 @@
   filmView.printPage = function(){
 
     var element = {};
-    
+
 
     var map = {};
     $('h6').each(function(){

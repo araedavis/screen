@@ -264,6 +264,20 @@
     return returnArray;
   };
 
+  filmView.printPage = function(){
+
+    var map = {};
+    $('h6').each(function(){
+      var value = $(this).text();
+      if (map[value] == null){
+        map[value] = true;
+      } else {
+        $(this).addClass('hidePrint');
+      }
+    });
+
+  };
+
   filmView.initPage = function(){
     $('#filtered-films').empty().append('<div class="container"></div>');
 
@@ -276,6 +290,7 @@
       // filmView.modalWindow();
       filmView.buttonClick();
       filmView.mobileView();
+      filmView.printPage();
     });
   };
 

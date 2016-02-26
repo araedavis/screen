@@ -40,9 +40,12 @@
             <h6>{{datetime}} || {{time}}</h6>
             <h5>Venue: {{venue}}</h5>
             <h2>{{title}}</h2>
+
             <h5 class="dir-coun">Directed by {{director}} || Country: {{country}}</h5>
             <h4>{{imdbRating}}</h4>
             <a class="filmButton" href="#" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br><br>
+            <button class="imdbButton" data-id="{{id}}"><i class="fa fa-star-o"></i>GET IMDB RATING</button>
+
             {{#if this.isFavorite}}
             <button class="favButton liked" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart"></i>Remove from My Films</button>
             {{else}}
@@ -197,39 +200,69 @@
 
 <!--begin About -->
       <section id="about">
-        <div class="container">
-          <div>
-            <h2>Our Team</h2>
-            <h3>
-              Our team has created this website so you can find the information about the movies you want to see during this international festival.
-            </h3>
+        <div class="container about-ele">
+          <h1>About Screen</h1>
+          <p>Screen is written in client-side JavaScript and SQL, and is designed to serve as a companion schedule application
+             to independent film festivals. Filter a festival schedule on multiple criteria, watch trailers, and create a custom schedule of interesting films.
+             Integrates with the Open Movie Database API and Twitter to display ratings and tweet reviews quickly.</p>
+
+              <button class="github-btn">
+                <a href="#"><i class="fa fa-github"></i>&nbsp How to Deploy</a>
+              </button>
+
           </div>
+
+            <h1>Our Team</h1>
 
         <div id="team" class="row">
             <div class="three columns">
               <img src="imgs/teamPhotos/placeholder.jpg" class="profile-photo">
-              <h4>Dave</h4>
+              <h3>Dave</h3>
               <h5>Dave is a Software developer, who likes movies</h5>
-              <a href="">www.dave.com</a>
+              <a href="" target="blank">www.dave.com</a><br>
+              <a href="" target="blank">
+                <i class="fa fa-github team-icon"></i>
+              </a>
+              <a href="" target="blank">
+                <i class="fa fa-linkedin-square team-icon"></i>
+              </a>
             </div>
             <div class="three columns">
               <img src="imgs/teamPhotos/allison.jpg" class="profile-photo">
-              <h4>Allison</h4>
-              <h5>Allison is a Software developer, who likes theater</h5>
-              <a href="">www.allison.com</a>
+              <h3>Allison Davis</h3>
+              <h5>Allison is a web developer, word nerd, roller derby skater, and urban farming enthusiast who lives in North Portland. </h5>
+              <a href="https://araedavis.herokuapp.com/" target="blank">www.araedavis.com</a><br>
+              <a href="github.com/araedavis" target="blank">
+                <i class="fa fa-github team-icon"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/araedavis" target="blank">
+                <i class="fa fa-linkedin-square team-icon"></i>
+              </a>
             </div>
 
             <div class="three columns">
               <img src="imgs/teamPhotos/placeholder.jpg" class="profile-photo">
-              <h4>Amandeep</h4>
+              <h3>Amandeep</h3>
               <h5>Amandeep is a Software developer, who is from San Francisco</h5>
-              <a href="">www.amandeep.com</a>
+              <a href="" target="blank">www.amandeep.com</a><br>
+              <a href="" target="blank">
+                <i class="fa fa-github team-icon"></i>
+              </a>
+              <a href="" target="blank">
+                <i class="fa fa-linkedin-square team-icon"></i>
+              </a>
             </div>
             <div class="three columns">
               <img src="imgs/teamPhotos/sonya.jpg" class="profile-photo">
-              <h4>Sonya</h4>
+              <h3>Sonya</h3>
               <h5>Sonya is a Software developer, who likes chocolate</h5>
-              <a href="">www.sonya.com</a>
+              <a href="" target="blank">www.sonya.com</a><br>
+              <a href="" target="blank">
+                <i class="fa fa-github team-icon"></i>
+              </a>
+              <a href="" target="blank">
+                <i class="fa fa-linkedin-square team-icon"></i>
+              </a>
             </div>
 
           </div>

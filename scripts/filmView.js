@@ -37,7 +37,7 @@
       });
       // $('html').addClass('scrollprevent');
     });
-    
+
     $('.close, .modalDialog').on('click', function(e){
       e.preventDefault();
       $('.modalDialog').hide('slow', function(){
@@ -46,6 +46,9 @@
     });
   };
 
+  filmView.displayRatings = function(imdb){
+
+  };
 
   filmView.buttonClick = function(){
     $('.button-fill').hover(function () {
@@ -87,7 +90,43 @@
           });
         }
       };
+      if($(e.target).hasClass('imdbButton')){
+        var imdbId = $(e.target).data('id');
+        Film.getLocalRating(imdbId, function(review){
 
+          $(e.target).empty();
+
+          if(review === undefined || review === NaN){
+            $(e.target).append('<i class="fa fa-star-o star-icn"></i>Film not reviewed on IMDB');
+
+          } else {
+            var starArray = [];
+            var starRating = review/2;
+
+            for(var i = 1; i <= 5; i++){
+              if(starRating - i > - 0.2){
+                starArray.push(1);
+              } else if (starRating - i <= - 0.2 && starRating - i >= -0.6){
+                starArray.push(0.5);
+              } else if (starRating - i < -0.6){
+                starArray.push(0);
+              }
+            }
+
+            console.log(starArray);
+            starArray.forEach(function(star){
+              if(star === 0){
+                $(e.target).append('<i class="fa fa-star-o star-icn"></i>');
+              } else if (star === 0.5){
+                $(e.target).append('<i class="fa fa-star-half-o star-icn"></i>');
+              } else if (star === 1){
+                $(e.target).append('<i class="fa fa-star star-icn"></i>');
+              }
+            });
+          }
+        });
+
+      }
     });
   };
 
@@ -270,6 +309,7 @@
     return returnArray;
   };
 
+
   filmView.printPage = function(){
 
     var element = {};
@@ -290,9 +330,7 @@
   filmView.initPage = function(){
     $('#filtered-films').empty().append('<div class="container"></div>');
 
-
     //Carousel Logic
-
     Film.fetchAllFilmData(function(filmData) {
 
       $('#filtered-films').append(filmData.map(filmView.render));
@@ -309,7 +347,16 @@
       filmView.buttonClick();
       filmView.mobileView();
       filmView.printPage();
+
     });
+
+
+    filmView.addFavorites();
+    filmView.addModalButtons();
+    // filmView.modalWindow();
+    filmView.buttonClick();
+    filmView.mobileView();
+
   };
 
   function getCarouselHtml(filmData) {

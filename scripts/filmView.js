@@ -5,10 +5,12 @@
   filmView.render = function(film){
     var template = Handlebars.compile($('#film-template').text());
     var dateAsString = new Date(film.datetime).toDateString();
+    var timeAsString = new Date(film.datetime).toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
 
     // film.imdbRating = Film.getRating(film.title);
     // console.log(film.imdbRating);
     film.datetime = dateAsString;
+    film.time = timeAsString;
 
     if (film.isFavorite == 'true'){
       film.isFavorite = true;

@@ -94,12 +94,19 @@ select {
 }
 
   @media print {
-    .hidePrint {display:none;}
-    header {display:none;}
-    button {display:none;}
-    a {display:none;}
-    img {display:none;}
-    h6 {float: left; }
+    
+    .hidePrint {
+      display:none;
+    }
+    h6 {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    header, button, a, img {
+      display:none;
+    }
+
     div .twttr-btn {display:none;}
-    h2, h5, h6 {font-size: 0.5em}
+    h2, h5 {font-size: 0.5em}
   }

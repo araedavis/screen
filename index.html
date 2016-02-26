@@ -36,11 +36,11 @@
             <img class="filmImg" src="/imgs/imagesSmall/{{imagesmall}}"><br/>
           </div>
           <div class="filmCaption six columns">
+            <h6>{{datetime}}</h6>
             <h2>{{title}}</h2>
             <h4>{{imdbRating}}</h4>
             <h5>Country: {{country}} // Venue: {{venue}}</h5>
             <h5>Directed by {{director}}<br>
-            <h6>{{datetime}}</h6>
 
             <a class="filmButton" href="#" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br><br>
 
@@ -50,7 +50,7 @@
             <button class="favButton" href="#"  data-id="{{id}}" data-favorite="{{isFavorite}}" data-control="userBtn"><i class="fa fa-heart-o"></i>Add to My Films</button>
             {{/if}}
 
-            <div class=twttr-btn id={{id}}></div> <!--twttr btn will populate here -->
+            <div class="twttr-btn" id={{id}}></div> <!--twttr btn will populate here -->
           </div>
       </div>
       <div class="modalDialog modalDialog-{{id}}">
@@ -67,9 +67,9 @@
                 <br>
                 <b class="position">Directed by {{director}}</b>
                 <br>
-                <b class="position">Date {{date}}</b>
+                <b class="position">{{datetime}}</b>
                 <br>
-                <b class="position">Time {{time}}</b>
+                <b class="position">Time: {{time}}</b>
                 <br>
                 <b class="position">Venue {{venue}}</b>
                 <b>{{alt-venue}}</b>

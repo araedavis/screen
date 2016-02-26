@@ -268,6 +268,9 @@
 
   filmView.printPage = function(){
 
+    var element = {};
+    
+
     var map = {};
     $('h6').each(function(){
       var value = $(this).text();

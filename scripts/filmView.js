@@ -5,10 +5,12 @@
   filmView.render = function(film){
     var template = Handlebars.compile($('#film-template').text());
     var dateAsString = new Date(film.datetime).toDateString();
+    var timeAsString = new Date(film.datetime).toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
 
     // film.imdbRating = Film.getRating(film.title);
     // console.log(film.imdbRating);
     film.datetime = dateAsString;
+    film.time = timeAsString;
 
     if (film.isFavorite == 'true'){
       film.isFavorite = true;
@@ -35,8 +37,8 @@
       });
       // $('html').addClass('scrollprevent');
     });
-
-    $('.close').on('click', function(e){
+    
+    $('.close, .modalDialog').on('click', function(e){
       e.preventDefault();
       $('.modalDialog').hide('slow', function(){
       });
@@ -268,6 +270,23 @@
     return returnArray;
   };
 
+  filmView.printPage = function(){
+
+    var element = {};
+
+
+    var map = {};
+    $('h6').each(function(){
+      var value = $(this).text();
+      if (map[value] == null){
+        map[value] = true;
+      } else {
+        $(this).addClass('hidePrint');
+      }
+    });
+
+  };
+
   filmView.initPage = function(){
     $('#filtered-films').empty().append('<div class="container"></div>');
 
@@ -289,6 +308,7 @@
       // filmView.modalWindow();
       filmView.buttonClick();
       filmView.mobileView();
+      filmView.printPage();
     });
   };
 

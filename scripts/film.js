@@ -26,6 +26,7 @@
           data.forEach(function(element){
             var film = new Film(element);
             film.isFavorite = false;
+            film.imdbRating = 11.0;
             film.datetime = film.date + ' ' + film.time;
             arrayToReturn.push(film);
             film.insertRecord(function(){
@@ -179,7 +180,8 @@
       'genre1 VARCHAR(255),'+
       'genre2 VARCHAR(255),'+
       'genre3 VARCHAR(255),'+
-      'isFavorite BOOL);', callback
+      'isFavorite BOOL,'+
+      'imdbRating FLOAT);', callback
     );
   };
 
@@ -190,7 +192,7 @@
     webDB.execute(
       [
         {
-          'sql': 'INSERT INTO films (title, director, description, country, trt, venue, date, time, datetime, imagesmall, imagelarge, youtube, genre1, genre2, genre3, isFavorite) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);',
+          'sql': 'INSERT INTO films (title, director, description, country, trt, venue, date, time, datetime, imagesmall, imagelarge, youtube, genre1, genre2, genre3, isFavorite, imdbRating) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);',
           'data': [
             this.title,
             this.director,
@@ -207,7 +209,8 @@
             this.genre1,
             this.genre2,
             this.genre3,
-            this.isFavorite]
+            this.isFavorite,
+            this.imdbRating]
         }
       ],
       callback
@@ -275,8 +278,8 @@
     webDB.execute('SELECT DISTINCT genre1 FROM films;', callback);
   };
 
-  Film.getRating = function(filmTitle){
-    var queryTitle = filmTitle.toLowerCase().replace(/\s/g,'+');
+  Film.getRating = function(film){
+    var queryTitle = film.title.toLowerCase().replace(/\s/g,'+');
     console.log(queryTitle);
     $.ajax({
       url: 'http://www.omdbapi.com/?' + 't=' + queryTitle,
@@ -285,7 +288,7 @@
         console.log('bummer bro');
       },
       success: function(data){
-        console.log(data.imdbRating);
+        film.imdbRating = data.imdbRating;
       }
     });
   };

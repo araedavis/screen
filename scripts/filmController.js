@@ -14,14 +14,9 @@
     filmView.populateFilters();
     filmView.handleFilters();
     filmView.initPage();
-
-
-
   };
 
 
-
-
-
+  
   module.filmController = filmController;
 })(window);

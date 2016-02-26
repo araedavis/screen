@@ -37,6 +37,16 @@
     });
   };
 
+  filmView.displayRatings = function(imdb){
+    //round imdb rating to a whole number (scale is 0 - 10)
+    //scale imdb rating to star rating
+    var starRating = Math.ceil(imdb/2);
+
+    //alter star classes in relation to star rating
+    for(var i = 0; i < starRating; i++){
+      $('.star-icn').eq(i).addClass('fa-star').removeClass('fa-star-o');
+    }
+  };
 
   filmView.buttonClick = function(){
     $('.button-fill').hover(function () {
@@ -273,6 +283,7 @@
       // filmView.modalWindow();
       filmView.buttonClick();
       filmView.mobileView();
+
     });
   };
 

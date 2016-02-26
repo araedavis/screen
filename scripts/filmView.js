@@ -87,21 +87,33 @@
 
           $(e.target).empty();
 
-          if(review === undefined){
-
-            $(e.target).append('</i><p>Film not reviewed on IMDB</p>');
+          if(review === undefined || review === NaN){
+            $(e.target).append('<i class="fa fa-star-o star-icn"></i>Film not reviewed on IMDB');
 
           } else {
-            var starRating = Math.ceil(review/2);
+            var starArray = [];
+            var starRating = review/2;
 
-
-            for(var i = 0; i < starRating; i++){
-              $(e.target).append('<i class="fa fa-star star-icn"></i>');
-            };
-            for(var x = 0; x <= (5 - starRating); x++){
-              $(e.target).append('<i class="fa fa-star-o star-icn"></i>');
+            for(var i = 1; i <= 5; i++){
+              if(starRating - i > - 0.2){
+                starArray.push(1);
+              } else if (starRating - i <= - 0.2 && starRating - i >= -0.6){
+                starArray.push(0.5);
+              } else if (starRating - i < -0.6){
+                starArray.push(0);
+              }
             }
 
+            console.log(starArray);
+            starArray.forEach(function(star){
+              if(star === 0){
+                $(e.target).append('<i class="fa fa-star-o star-icn"></i>');
+              } else if (star === 0.5){
+                $(e.target).append('<i class="fa fa-star-half-o star-icn"></i>');
+              } else if (star === 1){
+                $(e.target).append('<i class="fa fa-star star-icn"></i>');
+              }
+            });
           }
         });
 

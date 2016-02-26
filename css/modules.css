@@ -87,8 +87,13 @@
 }
 
 .favButton i,
+.imdbButton i,
 .tweetButton i {
   font-size: 1.5em;
+}
+
+.star-icn {
+  color: #E6CE1D;
 }
 
 .liked {

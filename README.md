@@ -1,21 +1,20 @@
 [![Stories in Ready](https://badge.waffle.io/araedavis/screen.png?label=ready&title=Ready)](https://waffle.io/araedavis/screen)
 
-**About Screen**
+#**About Screen**
 
 Screen is written in client-side JavaScript and SQL, and is designed to serve as a companion schedule application to independent film festivals. Filter a festival schedule on multiple criteria, watch trailers, and create a custom schedule of interesting films. Integrates with the Open Movie Database API and Twitter to display ratings and tweet reviews quickly.
 
-[View live demo](https://screen-portland.herokuapp.com/)
+**[View live demo](https://screen-portland.herokuapp.com/)**
 
-**Getting Started**
-To use Screen, make sure you have the following installed:
+##**Getting Started**
+
+Before cloning the Screen repo, make sure you have the following installed:
 * 		[node](https://nodejs.org/en/)
 * 		[npm](https://www.npmjs.com/)
 		
-**Installation**
-Clone GitHub repo
-	$ git clone https://github.com/araedavis/screen.git
 	
-**Add Data**
+##**Add Data**
+
 	The Screen repo includes a festivalData.json file that can be repurposed to house your event data. The database table instantiates from this file.
 	
 	Default JSON format: 

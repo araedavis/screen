@@ -311,8 +311,6 @@
   filmView.printPage = function(){
 
     var element = {};
-
-
     var map = {};
     $('h6').each(function(){
       var value = $(this).text();
@@ -322,7 +320,6 @@
         $(this).addClass('hidePrint');
       }
     });
-
   };
 
   filmView.initPage = function(){
@@ -352,7 +349,7 @@
     });
   };
   filmView.mobileView();
-  
+
   function getCarouselHtml(filmData) {
     return filmData.filter(uglyImages)
       .slice(0, 13)

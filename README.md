@@ -6,6 +6,8 @@ Screen is written in client-side JavaScript and SQL, and is designed to serve as
 
 **[View live demo](https://screen-portland.herokuapp.com/)**
 
+Our Team: [Allison](https://github.com/araedavis), [Amandeep](https://github.com/dindrala), [Dave](https://github.com/billyham), [Sonya](https://github.com/strachsel)
+
 ##**Getting Started**
 
 Before cloning the Screen repo, make sure you have the following installed:
@@ -15,9 +17,10 @@ Before cloning the Screen repo, make sure you have the following installed:
 	
 ##**Add Data**
 
-	The Screen repo includes a festivalData.json file that can be repurposed to house your event data. The database table instantiates from this file.
+The Screen repo includes a festivalData.json file that can be repurposed to house your event data. The database table instantiates from this file.
 	
-	Default JSON format: 
+Default JSON format: 
+
 	{
     "country":"AFGHANISTAN",
     "title":"WAJMA (AN AFGHAN LOVE STORY)",

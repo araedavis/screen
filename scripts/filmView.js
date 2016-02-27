@@ -226,7 +226,6 @@
     $('.filter-container').on('change', 'select', function(e){
       var arrayOfActiveFilters = filmView.getStateOfFilters();
       filmView.performFilter(arrayOfActiveFilters);
-      console.log('handleFilter fires');
     });
   };
 
@@ -240,45 +239,39 @@
       filmView.initPage();
 
     }else if (lengthOfArray === 1){
-      Film.fetchOneCriteria(array[0].criteria, array[0].value, function(returnedArray){
-        $('#filtered-films').empty();
-        returnedArray.forEach(function(element){
-          $('#filtered-films').append(filmView.render(element));
-        });
-      });
+      Film.fetchOneCriteria(array[0].criteria, array[0].value,
+        filmView.outputFilterArray);
 
     }else if (lengthOfArray === 2){
       Film.fetchTwoCriteria(array[0].criteria, array[0].value,
         array[1].criteria, array[1].value,
-        function(returnedArray){
-          $('#filtered-films').empty();
-          returnedArray.forEach(function(element){
-            $('#filtered-films').append(filmView.render(element));
-          });
-        });
+        filmView.outputFilterArray);
 
     }else if (lengthOfArray === 3){
       Film.fetchThreeCriteria(array[0].criteria, array[0].value,
         array[1].criteria, array[1].value,
         array[2].criteria, array[2].value,
-        function(returnedArray){
-          $('#filtered-films').empty();
-          returnedArray.forEach(function(element){
-            $('#filtered-films').append(filmView.render(element));
-          });
-        });
+        filmView.outputFilterArray);
 
     }else if(lengthOfArray === 4){
       Film.fetchFourCriteria(array[0].criteria, array[0].value,
         array[1].criteria, array[1].value,
         array[2].criteria, array[2].value,
         array[3].criteria, array[3].value,
-        function(returnedArray){
-          $('#filtered-films').empty();
-          returnedArray.forEach(function(element){
-            $('#filtered-films').append(filmView.render(element));
-          });
-        });
+        filmView.outputFilterArray);
+    }
+  };
+
+  filmView.outputFilterArray = function(filterArray){
+    if (filterArray.length === 0){
+      var template = Handlebars.compile($('#no-result-template').text());
+      $('#filtered-films').empty();
+      $('#filtered-films').append(template());
+    }else{
+      $('#filtered-films').empty();
+      filterArray.forEach(function(element){
+        $('#filtered-films').append(filmView.render(element));
+      });
     }
   };
 

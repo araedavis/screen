@@ -30,7 +30,6 @@
       });
 
       filmView.addModalButtons();
-      filmView.modalWindow();
       filmView.printPage();
     });
   };

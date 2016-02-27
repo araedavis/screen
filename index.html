@@ -43,7 +43,7 @@
 
             <h5 class="dir-coun">Directed by {{director}} || Country: {{country}}</h5>
             <h4>{{imdbRating}}</h4>
-            <a class="filmButton" href="#" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br><br>
+            <a class="filmButton" href="#" data-ytlink="{{youtube}}" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br><br>
             <button class="imdbButton" data-id="{{id}}"><i class="fa fa-star-o"></i>GET IMDB RATING</button>
 
             {{#if this.isFavorite}}
@@ -57,7 +57,7 @@
       <div class="modalDialog modalDialog-{{id}}">
         <div class="modalContent">
           <div class="filmHeader screen-project">
-            <iframe title="YouTube video player" class="youtube-player"  type="text/html" width="640" height="390" src="{{youtube}}" frameborder="0" allowFullScreen></iframe>
+            <div class="yt-placeholder"></div>
             <a href="#close" title="Close" class="close">X</a>
             <h3 class="filmTitle subheader headline">{{title}}</h3>
             <h3 class="filmType subheader headline">{{genre1}}</h3>
@@ -136,45 +136,45 @@
 
 
 <!--begin Landing -->
+<div id="landing">
+  <script id="carousel-template" type="text/x-handlebars-template">
+    <div class="gallery-cell fade" style="background-image: url(/imgs/imagesSmall/{{imagesmall}})">
+      <p class="imgDescription">Genre: {{genre1}} Title: {{title}} <br/> <a href="#" class="filmButton" data-film-id="{{id}}" data-control="userBtn" >View More</a></p>
+    </div>
+  </script>
+  <div id="carousel-main" class="main-gallery imgWrap respond-to-film-buttons"></div>
 
-<script id="carousel-template" type="text/x-handlebars-template">
-  <div class="gallery-cell fade" style="background-image: url(/imgs/imagesSmall/{{imagesmall}})">
-    <p class="imgDescription">Genre: {{genre1}} Title: {{title}} <br/> <a href="#" class="filmButton" data-film-id="{{id}}" data-control="userBtn" >View More</a></p>
-  </div>
-</script>
-<div id="carousel-main" class="main-gallery imgWrap respond-to-film-buttons"></div>
 
+  <!--DONE: see if there's a good way to display FontAwesome chevron icon-->
+  <div class="row filter-container">
+    <div class="filter-style filter-layout three columns">
+      <select id="date-filter">
+        <option value="all">Date &nbsp;&nbsp; &#x25BE;</option>
+      </select>
+    </div>
 
-<!--DONE: see if there's a good way to display FontAwesome chevron icon-->
-    <div class="row filter-container">
-        <div class="filter-style filter-layout three columns">
-            <select id="date-filter">
-              <option value="all">Date &nbsp;&nbsp; &#x25BE;</option>
-            </select>
-        </div>
+    <div class="filter-style filter-layout three columns">
+      <select id="venue-filter">
+        <option value="all">Venue &nbsp;&nbsp; &#x25BE;</option>
+      </select>
 
-        <div class="filter-style filter-layout three columns">
-            <select id="venue-filter">
-              <option value="all">Venue &nbsp;&nbsp; &#x25BE;</option>
-            </select>
+    </div>
 
-        </div>
+    <div class="filter-style filter-layout three columns">
+      <select id="genre-filter">
+        <option value="all">Genre &nbsp;&nbsp; &#x25BE;</option>
+      </select>
 
-        <div class="filter-style filter-layout three columns">
-            <select id="genre-filter">
-              <option value="all">Genre &nbsp;&nbsp; &#x25BE;</option>
-            </select>
+    </div>
 
-        </div>
+    <div class="filter-style filter-layout three columns">
+      <select id="country-filter">
+        <option value="all">Country &nbsp;&nbsp; &#x25BE;</option>
+      </select>
+    </div>
 
-        <div class="filter-style filter-layout three columns">
-            <select id="country-filter">
-              <option value="all">Country &nbsp;&nbsp; &#x25BE;</option>
-            </select>
-        </div>
-
-      </div> <!--end row for filters -->
-
+  </div> <!--end row for filters -->
+</div>
     <!-- begin Filtered Films -->
           <div id="filtered-films" class="respond-to-film-buttons">
             <div class="container">
@@ -216,14 +216,14 @@
 
         <div id="team" class="row">
             <div class="three columns">
-              <img src="imgs/teamPhotos/placeholder.jpg" class="profile-photo">
+              <img src="imgs/teamPhotos/dave.jpg" class="profile-photo">
               <h3>Dave</h3>
-              <h5>Dave is a Software developer, who likes movies</h5>
-              <a href="" target="blank">www.dave.com</a><br>
-              <a href="" target="blank">
+              <h5>Dave is a Software developer, who likes movies and makes his own camera lenses from cardboard and tape</h5>
+              <a href="http://www.davehanagan.com" target="blank">www.davehanagan.com</a><br>
+              <a href="https://github.com/billyham" target="blank">
                 <i class="fa fa-github team-icon"></i>
               </a>
-              <a href="" target="blank">
+              <a href="https://www.linkedin.com/in/dave-hanagan-93051572" target="blank">
                 <i class="fa fa-linkedin-square team-icon"></i>
               </a>
             </div>

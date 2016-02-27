@@ -136,8 +136,13 @@
       e.preventDefault();
 
       if ($(e.target).hasClass('filmButton')){
-        console.log('hello');
         e.preventDefault();
+
+        // Replace youtube placeholder with <iframe>
+        var ytlink = $(e.target).data('ytlink');
+        var iframeString = '<iframe class="yt-content" title="YouTube video player" class="youtube-player"  type="text/html" width="640" height="390" src="' + ytlink + '" frameborder="0" allowFullScreen></iframe>';
+        $(e.target).parent().parent().next().find('.yt-placeholder').replaceWith(iframeString);
+
         var filmId = $(e.target).data('film-id');
         $('.modalDialog').hide();
         $('.modalDialog-'+ filmId).show('slow', function() {
@@ -147,6 +152,12 @@
 
       if ($(e.target).hasClass('close')){
         e.preventDefault();
+
+        // Replace <iframe> placeholder with placeholder
+        var ytlink = $(e.target).data('ytlink');
+        var iframeString = '<div class="yt-placeholder"></div>';
+        $(e.target).parent().parent().next().find('.yt-content').replaceWith(iframeString);
+
         $('.modalDialog').hide('slow', function(){
         });
         $('html').removeClass('scrollprevent');

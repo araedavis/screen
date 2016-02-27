@@ -82,8 +82,7 @@
 .filter-style select {
   border: none;
   background-color: transparent;
-  /*padding: 5px 8px;*/
-  /*width: 85%;*/
+  text-align-last: center;
 }
 
 .favButton i,

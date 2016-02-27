@@ -16,7 +16,7 @@ section {
 }
 
 select {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .filter-layout {
@@ -66,6 +66,10 @@ select {
     display: none;
   }
 
+  #nav {
+    display: none;
+  }
+
   #menu {
     width: 1.4em;
     display: block;
@@ -84,6 +88,10 @@ select {
   }
   .close {
     display: none;
+  }
+
+  .column, .columns {
+    float: none !important;
   }
 }
 

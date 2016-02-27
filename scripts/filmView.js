@@ -4,13 +4,15 @@
 
   filmView.render = function(film){
     var template = Handlebars.compile($('#film-template').text());
-    var dateAsString = new Date(film.datetime).toDateString();
+    var datetimeAsString = new Date(film.datetime).toDateString();
     var timeAsString = new Date(film.datetime).toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+    var dateAsString = new Date(film.date).toDateString();
 
     // film.imdbRating = Film.getRating(film.title);
     // console.log(film.imdbRating);
-    film.datetime = dateAsString;
+    film.datetime = datetimeAsString;
     film.time = timeAsString;
+    film.date = dateAsString;
 
     if (film.isFavorite == 'true'){
       film.isFavorite = true;
@@ -305,7 +307,7 @@
 
     var element = {};
     var map = {};
-    $('h6').each(function(){
+    $('.date-for-print').each(function(){
       var value = $(this).text();
       if (map[value] == null){
         map[value] = true;

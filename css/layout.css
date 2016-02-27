@@ -99,6 +99,14 @@ select {
   .column, .columns {
     float: none !important;
   }
+
+  #footer-nav li {
+    display: none !important;
+  }
+
+  #copyright h5 {
+    /*font-weight: lighter !important;*/
+  }
 }
 
 

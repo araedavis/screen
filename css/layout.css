@@ -76,6 +76,9 @@ select {
   .nav-tab {
     display: block;
   }
+  .close {
+    display: none;
+  }
 }
 
 

@@ -28,7 +28,6 @@
     return htmlObject;
   };
 
-
   filmView.modalWindow = function(){
     $('.filmButton').on('click', function(e){
       e.preventDefault();
@@ -189,15 +188,11 @@
         $('#date-filter').append(
             rows.map(function(row){
               var dateFormatted = new Date(row.date);
-              // console.log('this is the row rawdate ' + row.date);
               return template({
                 val: dateFormatted.toDateString(),
                 date: row.date
               });
             })
-          //)
-          // .sort(function(a,b){
-          //  return new Date(a.datetime) - newDate(b.datetime);
         );
       };
     });
@@ -326,7 +321,6 @@
         returnArray.push(object);
       }
     });
-    // console.log('array to return ' + returnArray);
     return returnArray;
   };
 
@@ -351,33 +345,29 @@
   filmView.initPage = function(){
     $('#filtered-films').empty().append('<div class="container"></div>');
 
+
     //Carousel Logic
     Film.fetchAllFilmData(function(filmData) {
 
       $('#filtered-films').append(filmData.map(filmView.render));
-      $('#carousel-main').append(getCarouselHtml(filmData));
 
-      $('.main-gallery').flickity({
-        cellAlign: 'left',
-        contain: true
-      });
+      if(!($('#carousel-main').hasClass('flickity-enabled'))){
+        $('#carousel-main').empty();
+        $('#carousel-main').append(getCarouselHtml(filmData));
+        $('.main-gallery').flickity({
+          cellAlign: 'left',
+          contain: true
+        });
+      }
+
 
       filmView.addFavorites();
       filmView.addModalButtons();
-      // filmView.modalWindow();
       filmView.buttonClick();
       filmView.mobileView();
       filmView.printPage();
 
     });
-
-
-    filmView.addFavorites();
-    filmView.addModalButtons();
-    // filmView.modalWindow();
-    filmView.buttonClick();
-    filmView.mobileView();
-
   };
 
   function getCarouselHtml(filmData) {
@@ -394,11 +384,6 @@
   function uglyImages(film, index) {
     return [1,5,18,7].indexOf(film.id) === -1;
   }
-  //test function calls
-    //filmView.handleFilters();
-    // filmView.populateFilters();
-    // filmView.initPage();
-
 
   module.filmView = filmView;
 

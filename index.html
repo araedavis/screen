@@ -11,7 +11,8 @@
     <!-- <link rel='stylesheet' href="vendor/css/fullcalendar.print.css"/> -->
     <link href="https://fonts.googleapis.com/css?family=Andika|Source+Sans+Pro:400,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- <link href="vendor/flickity-docs/flickity.css" media="screen" rel="stylesheet"> -->
+    <link href="vendor/flickity-docs/flickity.css" media="screen" rel="stylesheet">
+    <link href="flickity.css" rel="stylesheet">
 
     <!--custom stylesheets -->
     <link rel="stylesheet" href="css/base.css">
@@ -132,18 +133,13 @@
 
 
 <!--begin Landing -->
-      <section id="landing">
-        <div class="container">
-          <div class="row">
-            <div class="twelve columns placeholder-img">
-              <img src="imgs/screen_placeholder.jpg"></img>
-            </div>
-            <!-- <div class="main-gallery js-flickity">
-              <div class="gallery-cell"></div>
-              <div class="gallery-cell"></div>
-              <div class="gallery-cell"></div>
-            </div> -->
-          </div>
+
+<script id="carousel-template" type="text/x-handlebars-template">
+  <div class="gallery-cell fade" style="background-image: url(/imgs/imagesSmall/{{imagesmall}})">
+    <p class="imgDescription">Genre: {{genre1}} Title: {{title}} <br/> <a href="#" class="filmButton" data-film-id="{{id}}" data-control="userBtn" >View More</a></p>
+  </div>
+</script>
+<div id="carousel-main" class="main-gallery imgWrap respond-to-film-buttons"></div>
 
 
 <!--DONE: see if there's a good way to display FontAwesome chevron icon-->
@@ -175,7 +171,6 @@
         </div>
 
       </div> <!--end row for filters -->
-    </div> <!--end skeleton container for landing section -->
 
     <!-- begin Filtered Films -->
           <div id="filtered-films" class="respond-to-film-buttons">
@@ -183,9 +178,6 @@
 
             </div>
           </div>
-
-      </section>
-
 
 
 <!--begin My Films -->
@@ -275,7 +267,7 @@
       <script src="/scripts/filmController.js" type="text/javascript"></script>
       <script src="/scripts/myCalendarController.js" type="text/javascript"></script>
       <script src="/scripts/routes.js" type="text/javascript"></script>
-
+      <script src="/vendor/flickity-docs/flickity.pkgd.min.js" type="text/javascript"></script>
       <!-- <script src="/data/festivalData.json"></script> -->
       <!--<script src="server.js" type="text/javascript"></script>-->
 

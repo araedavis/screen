@@ -109,11 +109,13 @@
 /*=== Film container ===*/
 
 .filmContainer {
+  margin: 10px;
   /*border-bottom: 1px dotted #03A89E;*/
 }
 
 .filmCaption {
   background-color: #f9f9f9;
+  margin: 10px;
 }
 
 .filmImg {

@@ -109,14 +109,19 @@
 /*=== Film container ===*/
 
 .filmContainer {
+  margin: 10px;
   /*border-bottom: 1px dotted #03A89E;*/
 }
 
 .filmCaption {
   background-color: #f9f9f9;
+  margin: 10px;
 }
 
 .filmImg {
+  object-fit: cover;
+  width: 600px;
+  height: 300px;
   max-width: 100%;
   border-radius: 10px;
 }
@@ -154,6 +159,7 @@ select:hover {
 
 .profile-photo {
 	display: block;
+  border-radius: 4px;
 	max-width: 200px;
   max-height: 200px;
 	margin: 0 auto 30px;

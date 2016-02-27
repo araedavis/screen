@@ -1,5 +1,5 @@
 (function(module){
-  Film = function(opts){
+  var Film = function(opts){
     Object.keys(opts).forEach(function(e){
       this[e] = opts[e];
     },this);
@@ -281,7 +281,7 @@
   Film.getRating = function(film, callback){
     var queryTitle = film.title.toLowerCase().replace(/\s/g,'+');
     $.ajax({
-      url: 'http://www.omdbapi.com/?' + 't=' + queryTitle,
+      url: '//www.omdbapi.com/?' + 't=' + queryTitle,
       method: 'GET',
       error: function(){
         console.log('Omdb api call failed');

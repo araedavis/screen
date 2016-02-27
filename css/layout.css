@@ -55,7 +55,7 @@ select {
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 850px){
   .screen-project {
     padding: 0 !important;
   }
@@ -99,10 +99,18 @@ select {
   .column, .columns {
     float: none !important;
   }
+
+  #footer-nav li {
+    display: none !important;
+  }
+
+  #copyright h5 {
+    /*font-weight: lighter !important;*/
+  }
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 850px){
   #menu {
     display: none;
     float: right;
@@ -124,6 +132,7 @@ select {
   }
 
   .filter-container {
+    margin-left: 50px;
     padding: 1em;
   }
 
@@ -137,23 +146,43 @@ select {
 
   @media print {
 
+    body {
+       line-height: 1.2
+    }
+
     .hidePrint {
       display:none;
     }
+
+    .filmCaption {
+      margin: 0 auto;
+      width: 90%;
+    }
+
     h6 {
       font-size: 1.1em;
       font-weight: bold;
       text-decoration: underline;
     }
-    header, button, a, img {
+    header, button, a, img, footer {
       display:none;
     }
-    h5.dir-coun {display:none;}
-    div .twttr-btn {display:none;}
-    h2, h5 {font-size: 1em}
+    h5.dir-coun {
+      display:none;
+    }
+    div .twttr-btn {
+      display:none;
+    }
+    h2, h5 {
+      font-size: 1em
+    }
 
     h5 {
-      float: right;
-      margin-left: 10px;}
-    h2 {float: left;}
+      margin-top: -10px;
+    }
+
+    h2 {
+      margin: 5px 0 -10px;
+      /*border-bottom: dotted;
+      border-width: 0.5px;*/
   }

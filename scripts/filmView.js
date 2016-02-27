@@ -149,7 +149,7 @@
 
         // Replace youtube placeholder with <iframe>
         var ytlink = $(e.target).data('ytlink');
-        var iframeString = '<iframe class="yt-content" title="YouTube video player" class="youtube-player"  type="text/html" width="640" height="390" src="' + ytlink + '" frameborder="0" allowFullScreen></iframe>';
+        var iframeString = '<div class="youtube-player"><iframe class="yt-content" title="YouTube video player" type="text/html" width="640" height="390" src="' + ytlink + '" frameborder="0" allowFullScreen></iframe></div>';
         $(e.target).parent().parent().next().find('.yt-placeholder').replaceWith(iframeString);
 
         var filmId = $(e.target).data('film-id');

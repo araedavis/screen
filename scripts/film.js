@@ -1,5 +1,5 @@
 (function(module){
-  Film = function(opts){
+  var Film = function(opts){
     Object.keys(opts).forEach(function(e){
       this[e] = opts[e];
     },this);

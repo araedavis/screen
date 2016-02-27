@@ -281,7 +281,7 @@
   Film.getRating = function(film, callback){
     var queryTitle = film.title.toLowerCase().replace(/\s/g,'+');
     $.ajax({
-      url: 'http://www.omdbapi.com/?' + 't=' + queryTitle,
+      url: '//www.omdbapi.com/?' + 't=' + queryTitle,
       method: 'GET',
       error: function(){
         console.log('Omdb api call failed');

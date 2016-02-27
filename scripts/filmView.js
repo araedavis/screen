@@ -28,24 +28,6 @@
     return htmlObject;
   };
 
-  // filmView.modalWindow = function(){
-  //   $('.filmButton').on('click', function(e){
-  //     e.preventDefault();
-  //     var filmId = $(e.target).data('film-id');
-  //     $('.modalDialog').hide();
-  //     $('.modalDialog-'+ filmId).show('slow', function() {
-  //     });
-  //     // $('html').addClass('scrollprevent');
-  //   });
-  //
-  //   $('.close, .modalDialog').on('click', function(e){
-  //     e.preventDefault();
-  //     $('.modalDialog').hide('slow', function(){
-  //     });
-  //     $('html').removeClass('scrollprevent');
-  //   });
-  // };
-
   filmView.displayRatings = function(imdb){
 
   };
@@ -365,12 +347,12 @@
       filmView.addFavorites();
       filmView.addModalButtons();
       filmView.buttonClick();
-      filmView.mobileView();
       filmView.printPage();
 
     });
   };
-
+  filmView.mobileView();
+  
   function getCarouselHtml(filmData) {
     return filmData.filter(uglyImages)
       .slice(0, 13)

@@ -28,6 +28,12 @@ select {
   max-width: 100%;
 }
 
+@media screen and (max-width: 550px){
+  #carousel-main {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px){
   .screen-project {
     padding: 0 !important;

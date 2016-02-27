@@ -119,7 +119,12 @@
   filmView.addModalButtons = function(){
     $('.modalDialog').on('click', 'div', function(e){
       e.preventDefault();
-      $('.youtube-player').hide();
+
+      // Replace <iframe> placeholder with placeholder
+      var ytlink = $(e.target).data('ytlink');
+      var iframeString = '<div class="yt-placeholder"></div>';
+      $(e.target).find('.yt-content').replaceWith(iframeString);
+
       $('.modalDialog').hide('slow', function(){
       });
       $('html').removeClass('scrollprevent');
@@ -150,7 +155,7 @@
         // Replace <iframe> placeholder with placeholder
         var ytlink = $(e.target).data('ytlink');
         var iframeString = '<div class="yt-placeholder"></div>';
-        $(e.target).parent().parent().next().find('.yt-content').replaceWith(iframeString);
+        $(e.target).parent().find('.yt-content').replaceWith(iframeString);
 
         $('.modalDialog').hide('slow', function(){
         });

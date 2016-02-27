@@ -37,9 +37,10 @@
             <img class="filmImg" src="/imgs/imagesSmall/{{imagesmall}}"><br/>
           </div>
           <div class="filmCaption six columns">
-            <h6>{{datetime}} || {{time}}</h6>
+            <h6 class="hidePrint">{{datetime}} || {{time}}</h6>
+            <h6 class="date-for-print hideScreen">{{date}}<h6>
             <h5>Venue: {{venue}}</h5>
-            <h2>{{title}}</h2>
+            <h2>{{title}}<span class="hideScreen"> || {{time}}</span></h2>
 
             <h5 class="dir-coun">Directed by {{director}} || Country: {{country}}</h5>
             <a class="filmButton" href="#" data-ytlink="{{youtube}}" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br><br>
@@ -57,7 +58,7 @@
         <div class="modalContent">
           <div class="filmHeader screen-project">
             <div class="yt-placeholder"></div>
-            <a href="#close" title="Close" class="close">X</a>
+            <a href="#close" data-ytlink="{{youtube}}" title="Close" class="close">X</a>
             <h3 class="filmTitle subheader headline">{{title}}</h3>
             <h3 class="filmType subheader headline">{{genre1}}</h3>
             <div>
@@ -89,12 +90,19 @@
       </div> <!--end modalDialog-->
     </script>
 
+    <!--handlebars template for No Results Filter Query-->
+    <script id="no-result-template" type="text/x-handlebars-template">
+      <div class="no-result">
+        <h1 class="user-message">Sorry, no films match that search</h1>
+      </div>
+    </script>
+
   </head>
 
   <body>
     <main>
       <header>
-        <a>
+        <a href="/">
           <img src="imgs/SCREEN-logo.png" id="logo">
         </a>
         <nav id="main-nav">
@@ -215,7 +223,7 @@
 
         <div id="team" class="row">
             <div class="three columns">
-              <img src="imgs/teamPhotos/dave.jpg" class="profile-photo">
+              <img src="imgs/teamPhotos/dave.jpeg" class="profile-photo">
               <h3>Dave</h3>
               <h5>Dave is a Software developer, who likes movies and makes his own camera lenses from cardboard and tape</h5>
               <a href="http://www.davehanagan.com" target="blank">www.davehanagan.com</a><br>
@@ -242,7 +250,7 @@
             </div>
 
             <div class="three columns">
-              <img src="imgs/teamPhotos/placeholder.jpg" class="profile-photo">
+              <img src="imgs/teamPhotos/amandeep.jpg" class="profile-photo">
               <h3>Amandeep</h3>
               <h5>Amandeep is a Software developer, who is from San Francisco</h5>
               <a href="" target="blank">www.amandeep.com</a><br>
@@ -255,14 +263,14 @@
             </div>
             <div class="three columns">
               <img src="imgs/teamPhotos/sonya.jpg" class="profile-photo">
-              <h3>Sonya</h3>
+              <h3>Sonya Trachsel</h3>
               <h5>Sonya is a software developer with a passion for storytelling through photography
                  and making software accessible for everyone.</h5>
-              <a href="" target="blank">www.sonya.com</a><br>
-              <a href="" target="blank">
+              <a href="https://strachsel.com" target="blank">www.strachsel.com</a><br>
+              <a href="https://github.com/strachsel" target="blank">
                 <i class="fa fa-github team-icon"></i>
               </a>
-              <a href="" target="blank">
+              <a href="https://www.linkedin.com/in/sonyamt" target="blank">
                 <i class="fa fa-linkedin-square team-icon"></i>
               </a>
             </div>
@@ -272,9 +280,20 @@
       </section>
 
       <footer id="main-footer">
-        <!-- <div>
-          <p>Here is a footer</p>
-        </div> -->
+        <div id="footer-content">
+          <a href="mailto:hello@teamsuperb.com">Let's talk</a>
+        </div>
+        <div id="copyright">
+          <ul id="footer-nav">
+            <li>
+              <a href="https://github.com/araedavis/screen/"><i class="fa fa-github"></i></a>
+            </li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/myfilms">My Films</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+          <h5>Copyright 2016 Team Superb ©</h5>
+        </div>
       </footer>
 
     </main>

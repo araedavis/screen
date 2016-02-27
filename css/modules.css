@@ -82,8 +82,7 @@
 .filter-style select {
   border: none;
   background-color: transparent;
-  /*padding: 5px 8px;*/
-  /*width: 85%;*/
+  text-align-last: center;
 }
 
 .favButton i,
@@ -99,14 +98,24 @@
 .liked {
   color: red;
 }
+
+.user-message {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 /*=== Film container ===*/
 
 .filmContainer {
+  margin: 10px;
   /*border-bottom: 1px dotted #03A89E;*/
 }
 
 .filmCaption {
   background-color: #f9f9f9;
+  margin: 10px;
 }
 
 .filmImg {
@@ -147,7 +156,9 @@ select:hover {
 
 .profile-photo {
 	display: block;
+  border-radius: 4px;
 	max-width: 200px;
+  max-height: 200px;
 	margin: 0 auto 30px;
 }
 
@@ -259,6 +270,41 @@ select:hover {
   overflow: hidden;
 }
 
+#footer-content {
+  color: #f3f3f3;
+  background-color: #03A89E;
+  padding: 35px;
+}
+
+#footer-content a {
+  text-decoration: underline;
+  margin: 20px;
+  font-size: 1.5em;
+  color: #f3f3f3;
+  font-family: 'Andika', sans-serif;
+  text-transform: capitalize;
+}
+
+#copyright h5 {
+  font-weight: normal;
+  float: right;
+  margin: 10px;
+}
+
+#footer-nav {
+  padding: 10px;
+  display: block;
+  float: left;
+  position: absolute;
+}
+
+#footer-nav li {
+  margin: 20px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: inline;
+}
 /*.screen-project:before {
     background-color: rgba(41,39,42,.9);
     bottom: 0;

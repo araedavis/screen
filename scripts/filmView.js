@@ -4,13 +4,15 @@
 
   filmView.render = function(film){
     var template = Handlebars.compile($('#film-template').text());
-    var dateAsString = new Date(film.datetime).toDateString();
+    var datetimeAsString = new Date(film.datetime).toDateString();
     var timeAsString = new Date(film.datetime).toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+    var dateAsString = new Date(film.date).toDateString();
 
     // film.imdbRating = Film.getRating(film.title);
     // console.log(film.imdbRating);
-    film.datetime = dateAsString;
+    film.datetime = datetimeAsString;
     film.time = timeAsString;
+    film.date = dateAsString;
 
     if (film.isFavorite == 'true'){
       film.isFavorite = true;
@@ -117,7 +119,12 @@
   filmView.addModalButtons = function(){
     $('.modalDialog').on('click', 'div', function(e){
       e.preventDefault();
-      $('.youtube-player').hide();
+
+      // Replace <iframe> placeholder with placeholder
+      var ytlink = $(e.target).data('ytlink');
+      var iframeString = '<div class="yt-placeholder"></div>';
+      $(e.target).find('.yt-content').replaceWith(iframeString);
+
       $('.modalDialog').hide('slow', function(){
       });
       $('html').removeClass('scrollprevent');
@@ -148,7 +155,7 @@
         // Replace <iframe> placeholder with placeholder
         var ytlink = $(e.target).data('ytlink');
         var iframeString = '<div class="yt-placeholder"></div>';
-        $(e.target).parent().parent().next().find('.yt-content').replaceWith(iframeString);
+        $(e.target).parent().find('.yt-content').replaceWith(iframeString);
 
         $('.modalDialog').hide('slow', function(){
         });
@@ -226,7 +233,6 @@
     $('.filter-container').on('change', 'select', function(e){
       var arrayOfActiveFilters = filmView.getStateOfFilters();
       filmView.performFilter(arrayOfActiveFilters);
-      console.log('handleFilter fires');
     });
   };
 
@@ -240,45 +246,39 @@
       filmView.initPage();
 
     }else if (lengthOfArray === 1){
-      Film.fetchOneCriteria(array[0].criteria, array[0].value, function(returnedArray){
-        $('#filtered-films').empty();
-        returnedArray.forEach(function(element){
-          $('#filtered-films').append(filmView.render(element));
-        });
-      });
+      Film.fetchOneCriteria(array[0].criteria, array[0].value,
+        filmView.outputFilterArray);
 
     }else if (lengthOfArray === 2){
       Film.fetchTwoCriteria(array[0].criteria, array[0].value,
         array[1].criteria, array[1].value,
-        function(returnedArray){
-          $('#filtered-films').empty();
-          returnedArray.forEach(function(element){
-            $('#filtered-films').append(filmView.render(element));
-          });
-        });
+        filmView.outputFilterArray);
 
     }else if (lengthOfArray === 3){
       Film.fetchThreeCriteria(array[0].criteria, array[0].value,
         array[1].criteria, array[1].value,
         array[2].criteria, array[2].value,
-        function(returnedArray){
-          $('#filtered-films').empty();
-          returnedArray.forEach(function(element){
-            $('#filtered-films').append(filmView.render(element));
-          });
-        });
+        filmView.outputFilterArray);
 
     }else if(lengthOfArray === 4){
       Film.fetchFourCriteria(array[0].criteria, array[0].value,
         array[1].criteria, array[1].value,
         array[2].criteria, array[2].value,
         array[3].criteria, array[3].value,
-        function(returnedArray){
-          $('#filtered-films').empty();
-          returnedArray.forEach(function(element){
-            $('#filtered-films').append(filmView.render(element));
-          });
-        });
+        filmView.outputFilterArray);
+    }
+  };
+
+  filmView.outputFilterArray = function(filterArray){
+    if (filterArray.length === 0){
+      var template = Handlebars.compile($('#no-result-template').text());
+      $('#filtered-films').empty();
+      $('#filtered-films').append(template());
+    }else{
+      $('#filtered-films').empty();
+      filterArray.forEach(function(element){
+        $('#filtered-films').append(filmView.render(element));
+      });
     }
   };
 
@@ -311,10 +311,8 @@
   filmView.printPage = function(){
 
     var element = {};
-
-
     var map = {};
-    $('h6').each(function(){
+    $('.date-for-print').each(function(){
       var value = $(this).text();
       if (map[value] == null){
         map[value] = true;
@@ -322,7 +320,6 @@
         $(this).addClass('hidePrint');
       }
     });
-
   };
 
   filmView.initPage = function(){
@@ -352,7 +349,7 @@
     });
   };
   filmView.mobileView();
-  
+
   function getCarouselHtml(filmData) {
     return filmData.filter(uglyImages)
       .slice(0, 13)

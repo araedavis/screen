@@ -16,7 +16,7 @@ section {
 }
 
 select {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .filter-layout {
@@ -43,6 +43,12 @@ select {
 	height:100%;
 }
 
+@media screen {
+  .hideScreen {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 550px){
   #carousel-main {
     display: none;
@@ -66,6 +72,10 @@ select {
     display: none;
   }
 
+  #nav {
+    display: none;
+  }
+
   #menu {
     width: 1.4em;
     display: block;
@@ -84,6 +94,18 @@ select {
   }
   .close {
     display: none;
+  }
+
+  .column, .columns {
+    float: none !important;
+  }
+
+  #footer-nav li {
+    display: none !important;
+  }
+
+  #copyright h5 {
+    /*font-weight: lighter !important;*/
   }
 }
 

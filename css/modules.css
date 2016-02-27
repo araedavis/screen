@@ -99,6 +99,14 @@
 .liked {
   color: red;
 }
+
+.user-message {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
 /*=== Film container ===*/
 
 .filmContainer {

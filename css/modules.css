@@ -110,6 +110,7 @@
 }
 
 .filmImg {
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -213,6 +214,7 @@ select:hover {
     position: absolute;
     top: 10px;
     left: 12px;
+    z-index: 1;
     text-align: center;
     width: 24px;
     text-decoration: none;

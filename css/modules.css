@@ -266,6 +266,41 @@ select:hover {
   overflow: hidden;
 }
 
+#footer-content {
+  color: #f3f3f3;
+  background-color: #03A89E;
+  padding: 35px;
+}
+
+#footer-content a {
+  text-decoration: underline;
+  margin: 20px;
+  font-size: 1.5em;
+  color: #f3f3f3;
+  font-family: 'Andika', sans-serif;
+  text-transform: capitalize;
+}
+
+#copyright h5 {
+  font-weight: normal;
+  float: right;
+  margin: 10px;
+}
+
+#footer-nav {
+  padding: 10px;
+  display: block;
+  float: left;
+  position: absolute;
+}
+
+#footer-nav li {
+  margin: 20px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: inline;
+}
 /*.screen-project:before {
     background-color: rgba(41,39,42,.9);
     bottom: 0;

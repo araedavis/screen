@@ -8,7 +8,6 @@
     "venue":"Fox Tower",
     "date":"2016/02/07",
     "time":"20:30:00",
-    "start":"2016-02-07T20:30:00",
     "alt_venue":"Cinemagic",
     "alt_date":"2016/02/16",
     "alt_time":"15:00:00",
@@ -17,7 +16,8 @@
     "youtube":"http://www.youtube.com/v/zcTp5fbW3K0",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"WAJMA (AN AFGHAN LOVE STORY)"
   },
   {
     "country":"ARGENTINA",
@@ -36,7 +36,8 @@
     "youtube":"http://www.youtube.com/v/YxMtDaNbMMk",
     "genre1":"Narrative Feature",
     "genre2":"Spanish Language",
-    "genre3":"German Language"
+    "genre3":"German Language",
+    "title":"THE GERMAN DOCTOR"
   },
   {
     "country":"AUSTRALIA",
@@ -55,7 +56,8 @@
     "youtube":"http://www.youtube.com/v/byE542mNjp8",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"THE ROCKET"
   },
   {
     "country":"BANGLADESH",
@@ -74,7 +76,8 @@
     "youtube":"http://www.youtube.com/v/Ffxj7ZPDDkg",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"TELEVISION"
   },
   {
     "country":"CAMBODIA",
@@ -93,7 +96,8 @@
     "youtube":"http://www.youtube.com/v/lzvVRtbA70s",
     "genre1":"Asian",
     "genre2":"Documentary",
-    "genre3":""
+    "genre3":"",
+    "title":"THE MISSING PICTURE"
   },
   {
     "country":"CANADA",
@@ -112,7 +116,8 @@
     "youtube":"http://www.youtube.com/v/H1_FkjD9I58",
     "genre1":"Oscar Submission",
     "genre2":"Documentary",
-    "genre3":""
+    "genre3":"",
+    "title":"GABRIELLE"
   },
   {
     "country":"CANADA",
@@ -131,7 +136,8 @@
     "youtube":"http://www.youtube.com/v/TmX11-CUeR8",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"VIC + FLO SAW A BEAR"
   },
   {
     "country":"CHINA",
@@ -150,7 +156,8 @@
     "youtube":"http://www.youtube.com/v/_Zwc-rfdC8c",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":"Asian"
+    "genre3":"Asian",
+    "title":"BACK TO 1942"
   },
   {
     "country":"CHINA",
@@ -169,7 +176,8 @@
     "youtube":"http://www.youtube.com/v/mojq-VRzwBI",
     "genre1":"Narrative Feature",
     "genre2":"Asian",
-    "genre3":""
+    "genre3":"",
+    "title":"TRAP STREET"
   },
   {
     "country":"CROATIA",
@@ -188,7 +196,8 @@
     "youtube":"http://www.youtube.com/v/wIZXmv_yDrE",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"THE PRIEST'S CHILDREN"
   },
   {
     "country":"CZECH REPUBLIC",
@@ -207,7 +216,8 @@
     "youtube":"http://www.youtube.com/v/D3W_ZXh9idQ",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":"Comedy"
+    "genre3":"Comedy",
+    "title":"THE DON JUANS"
   },
   {
     "country":"DENMARK",
@@ -226,7 +236,8 @@
     "youtube":"http://www.youtube.com/v/Ktb2kHdOvgo",
     "genre1":"Narrative Feature",
     "genre2":"Family Fare",
-    "genre3":""
+    "genre3":"",
+    "title":"ANTBOY"
   },
   {
     "country":"EGYPT",
@@ -245,7 +256,8 @@
     "youtube":"http://www.youtube.com/v/KiUty3nIhZo",
     "genre1":"Middle Eastern",
     "genre2":"Documentary",
-    "genre3":""
+    "genre3":"",
+    "title":"CAIRO DRIVE"
   },
   {
     "country":"FINLAND",
@@ -264,7 +276,8 @@
     "youtube":"http://www.youtube.com/v/ZXUbJUjOhxU",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":""
+    "genre3":"",
+    "title":"DISCIPLE"
   },
   {
     "country":"FRANCE",
@@ -283,7 +296,8 @@
     "youtube":"http://www.youtube.com/v/SZtDcCAyLwU",
     "genre1":"Narrative Feature",
     "genre2":"French Language",
-    "genre3":""
+    "genre3":"",
+    "title":"2 AUTUMNS, 3 WINTERS"
   },
   {
     "country":"FRANCE",
@@ -302,7 +316,8 @@
     "youtube":"http://www.youtube.com/v/uUQfZtiKu-4",
     "genre1":"Narrative Feature",
     "genre2":"French Language",
-    "genre3":""
+    "genre3":"",
+    "title":"AGE OF UPRISING: THE LEGEND OF MICHAEL KOHLHAAS"
   },
   {
     "country":"FRANCE",
@@ -321,7 +336,8 @@
     "youtube":"http://www.youtube.com/v/boZ_aUh7EZQ",
     "genre1":"Narrative Feature",
     "genre2":"Animation",
-    "genre3":""
+    "genre3":"",
+    "title":"AYA OF YOP CITY"
   },
   {
     "country":"FRANCE",
@@ -340,7 +356,8 @@
     "youtube":"http://www.youtube.com/v/rlJgzcEzYT4",
     "genre1":"Narrative Feature",
     "genre2":"French Language",
-    "genre3":""
+    "genre3":"",
+    "title":"CYCLING WITH MOLIERE"
   },
   {
     "country":"FRANCE",
@@ -359,7 +376,8 @@
     "youtube":"http://www.youtube.com/v/97CX4eaOim0",
     "genre1":"Narrative Feature",
     "genre2":"Animation",
-    "genre3":"Family Fare"
+    "genre3":"Family Fare",
+    "title":"THE DAY OF THE CROWS"
   },
   {
     "country":"FRANCE",
@@ -378,7 +396,8 @@
     "youtube":"http://www.youtube.com/v/UJ1rmOYLr2U",
     "genre1":"Narrative Feature",
     "genre2":"Animation",
-    "genre3":"Family Fare"
+    "genre3":"Family Fare",
+    "title":"ERNEST AND CELESTINE"
   },
   {
     "country":"FRANCE",
@@ -397,7 +416,8 @@
     "youtube":"http://www.youtube.com/v/V0-w_2NBZP0",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"JUST A SIGH"
   },
   {
     "country":"FRANCE",
@@ -416,7 +436,8 @@
     "youtube":"http://www.youtube.com/v/YhP3iQ3kyMs",
     "genre1":"Documentary",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"THE LAST OF THE UNJUST"
   },
   {
     "country":"FRANCE",
@@ -435,7 +456,8 @@
     "youtube":"http://www.youtube.com/v/uhpfUUmn5VA&feature=youtu.be",
     "genre1":"Narrative Feature",
     "genre2":"Animation",
-    "genre3":""
+    "genre3":"",
+    "title":"MY MOMMY IS IN AMERICA AND SHE MET BUFFALO BILL"
   },
   {
     "country":"FRANCE",
@@ -454,7 +476,8 @@
     "youtube":"http://www.youtube.com/v/PgcEGKn7waI",
     "genre1":"Narrative Feature",
     "genre2":"French Language",
-    "genre3":"Queer"
+    "genre3":"Queer",
+    "title":"STRANGER BY THE LAKE"
   },
   {
     "country":"FRANCE",
@@ -473,7 +496,8 @@
     "youtube":"http://www.youtube.com/v/IzSJ5mijWyA",
     "genre1":"Narrative Feature",
     "genre2":"French Language",
-    "genre3":""
+    "genre3":"",
+    "title":"YOUNG AND BEAUTIFUL"
   },
   {
     "country":"GEORGIA",
@@ -492,7 +516,8 @@
     "youtube":"http://www.youtube.com/v/fEyt7XqbMx4",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":""
+    "genre3":"",
+    "title":"IN BLOOM"
   },
   {
     "country":"GERMANY",
@@ -511,7 +536,8 @@
     "youtube":"http://www.youtube.com/v/s9GOvKPAy1g&feature=youtu.be",
     "genre1":"Narrative Feature",
     "genre2":"German Language",
-    "genre3":""
+    "genre3":"",
+    "title":"COFFEE IN BERLIN"
   },
   {
     "country":"GERMANY",
@@ -530,7 +556,8 @@
     "youtube":"http://www.youtube.com/v/ujc7fC93uRY",
     "genre1":"Narrative Feature",
     "genre2":"German Language",
-    "genre3":""
+    "genre3":"",
+    "title":"NOTHING BAD CAN HAPPEN"
   },
   {
     "country":"GERMANY",
@@ -549,7 +576,8 @@
     "youtube":"http://www.youtube.com/v/h9WwkoEjkJc",
     "genre1":"Narrative Feature",
     "genre2":"German Language",
-    "genre3":"Comedy"
+    "genre3":"Comedy",
+    "title":"THE STRANGE LITTLE CAT"
   },
   {
     "country":"GERMANY",
@@ -568,7 +596,8 @@
     "youtube":"http://www.youtube.com/v/W9lzGwTWlDg",
     "genre1":"Oscar Submission",
     "genre2":"German Language",
-    "genre3":"Narrative Feature"
+    "genre3":"Narrative Feature",
+    "title":"TWO LIVES"
   },
   {
     "country":"GREAT BRITAIN",
@@ -587,7 +616,8 @@
     "youtube":"http://www.youtube.com/v/ctidPo0v42M",
     "genre1":"Narrative Feature",
     "genre2":"Comedy",
-    "genre3":""
+    "genre3":"",
+    "title":"ALAN PARTRIDGE: ALPHA PAPA"
   },
   {
     "country":"GREAT BRITAIN",
@@ -598,7 +628,6 @@
     "venue":"Whitsell Auditorium",
     "date":"2016/02/06",
     "time":"19:00:00",
-    "start":"2016-02-06T19:00:00",
     "alt_venue":"",
     "alt_date":"",
     "alt_time":"",
@@ -607,7 +636,8 @@
     "youtube":"http://www.youtube.com/v/Wtdk6owFj2o",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"BELLE"
   },
   {
     "country":"GREAT BRITAIN",
@@ -626,7 +656,8 @@
     "youtube":"http://www.youtube.com/v/RZkdkobK99A",
     "genre1":"Documentary",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"GOOGLE AND THE WORLD BRAIN"
   },
   {
     "country":"GREAT BRITAIN",
@@ -645,7 +676,8 @@
     "youtube":"http://www.youtube.com/v/vB6508I35Mo",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"LE WEEK-END"
   },
   {
     "country":"GREAT BRITAIN",
@@ -661,10 +693,11 @@
     "alt_time":"12:30:00",
     "imagesmall":"metro-manila_500.jpg",
     "imagelarge":"metromanila1.jpg",
-    "youtube":"http://www.youtube.com/v/ONsGD5Kzo7E",
+    "youtube":"http://www.youtube.com/v/0aApjU1Ymug",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":""
+    "genre3":"",
+    "title":"METRO MANILA"
   },
   {
     "country":"GREAT BRITAIN",
@@ -683,7 +716,8 @@
     "youtube":"http://www.youtube.com/v/ueQ6Q3hDLlE",
     "genre1":"Documentary",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"VILLAGE AT THE END OF THE WORLD"
   },
   {
     "country":"GREECE",
@@ -702,7 +736,8 @@
     "youtube":"http://www.youtube.com/v/6mdrg7jGZKY",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":""
+    "genre3":"",
+    "title":"BOY EATING THE BIRD'S FOOD"
   },
   {
     "country":"HONG KONG",
@@ -721,7 +756,8 @@
     "youtube":"http://www.youtube.com/v/JhCA6YoaRjI",
     "genre1":"Narrative Feature",
     "genre2":"Asian",
-    "genre3":""
+    "genre3":"",
+    "title":"AMERICAN DREAMS IN CHINA"
   },
   {
     "country":"HONG KONG",
@@ -740,7 +776,8 @@
     "youtube":"http://www.youtube.com/v/DIfhw5vA4c0",
     "genre1":"Narrative Feature",
     "genre2":"Asian",
-    "genre3":""
+    "genre3":"",
+    "title":"BENDS"
   },
   {
     "country":"HONG KONG",
@@ -759,7 +796,8 @@
     "youtube":"http://www.youtube.com/v/XSaX6YlBI0Y",
     "genre1":"Narrative Feature",
     "genre2":"Asian",
-    "genre3":""
+    "genre3":"",
+    "title":"THE WAY WE DANCE"
   },
   {
     "country":"HUNGARY",
@@ -778,7 +816,8 @@
     "youtube":"http://www.youtube.com/v/9tuuhDrn8L8",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"AGLAJA"
   },
   {
     "country":"ICELAND",
@@ -797,7 +836,8 @@
     "youtube":"http://www.youtube.com/v/MKodaUmsYxk",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":"Comedy"
+    "genre3":"Comedy",
+    "title":"OF HORSES AND MEN"
   },
   {
     "country":"INDIA",
@@ -816,7 +856,8 @@
     "youtube":"http://www.youtube.com/v/5BMbSBnVQfA",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"THE GOOD ROAD"
   },
   {
     "country":"INDIA",
@@ -835,7 +876,8 @@
     "youtube":"http://www.youtube.com/v/Qdn6nVJHyfM",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"THE LUNCHBOX"
   },
   {
     "country":"IRAN",
@@ -854,7 +896,8 @@
     "youtube":"http://www.youtube.com/v/3FJcYNQZioU",
     "genre1":"Narrative Feature",
     "genre2":"Middle Eastern",
-    "genre3":""
+    "genre3":"",
+    "title":"CLOSED CURTAIN"
   },
   {
     "country":"IRAN",
@@ -873,7 +916,8 @@
     "youtube":"http://www.youtube.com/v/r8XoAwzYVCk",
     "genre1":"Narrative Feature",
     "genre2":"Middle Eastern",
-    "genre3":""
+    "genre3":"",
+    "title":"THE LAST STEP"
   },
   {
     "country":"IRAN",
@@ -892,7 +936,8 @@
     "youtube":"http://www.youtube.com/v/fauqGpmNfBY&feature=youtu.be",
     "genre1":"Narrative Feature",
     "genre2":"Middle Eastern",
-    "genre3":""
+    "genre3":"",
+    "title":"THE SNOW ON THE PINES"
   },
   {
     "country":"ISRAEL",
@@ -911,7 +956,8 @@
     "youtube":"http://www.youtube.com/v/QHBl43lMJY0",
     "genre1":"Narrative Feature",
     "genre2":"Animation",
-    "genre3":"Middle Eastern"
+    "genre3":"Middle Eastern",
+    "title":"THE CONGRESS"
   },
   {
     "country":"ITALY",
@@ -930,7 +976,8 @@
     "youtube":"http://www.youtube.com/v/RHilq5GgZjQ",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"SALVO"
   },
   {
     "country":"ITALY",
@@ -949,7 +996,8 @@
     "youtube":"http://www.youtube.com/v/VvV5zco-HZc",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"THOSE HAPPY YEARS"
   },
   {
     "country":"JAPAN",
@@ -968,7 +1016,8 @@
     "youtube":"http://www.youtube.com/v/7lRk8Rvl_yo",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":""
+    "genre3":"",
+    "title":"THE GREAT PASSAGE"
   },
   {
     "country":"JAPAN",
@@ -987,7 +1036,8 @@
     "youtube":"http://www.youtube.com/v/PhHoCnRg1Yw",
     "genre1":"Narrative Feature",
     "genre2":"Animation",
-    "genre3":""
+    "genre3":"",
+    "title":"THE WIND RISES"
   },
   {
     "country":"LEBANON",
@@ -1006,7 +1056,8 @@
     "youtube":"http://www.youtube.com/v/snXCBCrtDnQ",
     "genre1":"Documentary",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"A WORLD NOT OURS"
   },
   {
     "country":"MEXICO",
@@ -1025,7 +1076,8 @@
     "youtube":"http://www.youtube.com/v/GBBNmC2JWGU",
     "genre1":"Narrative Feature",
     "genre2":"Spanish Language",
-    "genre3":""
+    "genre3":"",
+    "title":"THE GOLDEN DREAM"
   },
   {
     "country":"MEXICO",
@@ -1044,7 +1096,8 @@
     "youtube":"http://www.youtube.com/v/qfcNTCn9k5g",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":"Spanish Language"
+    "genre3":"Spanish Language",
+    "title":"HELI"
   },
   {
     "country":"MEXICO",
@@ -1063,7 +1116,8 @@
     "youtube":"http://www.youtube.com/v/8kNokiSIiNc&feature=youtu.be",
     "genre1":"Narrative Feature",
     "genre2":"Spanish Language",
-    "genre3":"Comedy"
+    "genre3":"Comedy",
+    "title":"THE LAST CALL"
   },
   {
     "country":"MEXICO",
@@ -1082,7 +1136,8 @@
     "youtube":"http://www.youtube.com/v/PKZMaL-bV0U",
     "genre1":"Narrative Feature",
     "genre2":"Spanish Language",
-    "genre3":"Documentary"
+    "genre3":"Documentary",
+    "title":"LA ULTIMA PELICULA"
   },
   {
     "country":"MOROCCO",
@@ -1101,7 +1156,8 @@
     "youtube":"http://www.youtube.com/v/8egRMy__xW4",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"HORSES OF GOD"
   },
   {
     "country":"NEPAL",
@@ -1120,7 +1176,8 @@
     "youtube":"http://www.youtube.com/v/l2dysc8Fo0A",
     "genre1":"Documentary",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"MANAKAMANA"
   },
   {
     "country":"NETHERLANDS",
@@ -1139,7 +1196,8 @@
     "youtube":"http://www.youtube.com/v/Xh_Xq7goDUA",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"BORGMAN"
   },
   {
     "country":"NETHERLANDS",
@@ -1158,7 +1216,8 @@
     "youtube":"http://www.youtube.com/v/7Z7aCKYpMNs",
     "genre1":"Narrative Feature",
     "genre2":"Queer",
-    "genre3":""
+    "genre3":"",
+    "title":"IT'S ALL SO QUIET"
   },
   {
     "country":"NETHERLANDS",
@@ -1177,7 +1236,8 @@
     "youtube":"http://www.youtube.com/v/Zl6c9ucviho",
     "genre1":"Family Fare",
     "genre2":"Documentary",
-    "genre3":""
+    "genre3":"",
+    "title":"MAIDENTRIP"
   },
   {
     "country":"NETHERLANDS",
@@ -1196,13 +1256,14 @@
     "youtube":"http://www.youtube.com/v/JRw8B9ch_yc",
     "genre1":"Documentary",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"THE NEW RIJKSMUSEUM"
   },
   {
     "country":"NETHERLANDS",
     "title":"THE ZIGZAG KID",
     "director":"Vincent Bal",
-    "description":"The Zigzag Kid is a stylish, witty, action-packed caper ï¿½ la The Pink Panther that also touches on more serious themes of self-discovery, the strength of family, and acceptance. The son of the world's greatest police inspector, Nono is on a train trip to see his uncle when he meets his father's arch-nemesis, the notorious criminal Felix Glick, and must put his own detective skills to work. Wearing disguises and evading police, he heads to the French Riviera but only has 24 hours to compete his high-stakes mission--while also confronting the mystery of his own identity and the truth about his mother--before his bar mitzvah! Winner of the Audience Award at the Montreal International Children's Film Festival and the European Film Academy Young Audience Award. ",
+    "description":"The Zigzag Kid is a stylish, witty, action-packed caper _ la The Pink Panther that also touches on more serious themes of self-discovery, the strength of family, and acceptance. The son of the world's greatest police inspector, Nono is on a train trip to see his uncle when he meets his father's arch-nemesis, the notorious criminal Felix Glick, and must put his own detective skills to work. Wearing disguises and evading police, he heads to the French Riviera but only has 24 hours to compete his high-stakes mission--while also confronting the mystery of his own identity and the truth about his mother--before his bar mitzvah! Winner of the Audience Award at the Montreal International Children's Film Festival and the European Film Academy Young Audience Award. ",
     "trt":95,
     "venue":"Cinema 21",
     "date":"2016/02/08",
@@ -1215,13 +1276,14 @@
     "youtube":"http://www.youtube.com/v/bb-VNo_xjLI",
     "genre1":"Narrative Feature",
     "genre2":"Family Fare",
-    "genre3":""
+    "genre3":"",
+    "title":"THE ZIGZAG KID"
   },
   {
     "country":"NORWAY",
     "title":"BEFORE SNOWFALL",
     "director":"Hisham Zaman",
-    "description":"How far would you go to restore your family's honor? As the oldest man in his household, Siyar confronts that question after his sister Nermin flees an arranged marriage and he must seek vengeance for the slight. Siyar tracks her from their village in Kurdistan to a world apart in Istanbul. His fateful introduction to Evin, a young girl living on the streets, leads to the first cracks in his resolve. Then Nermin escapes, and he follows her to Germany and Norway on a journey that will forever change his notions of loyalty, dignity, honor, and love. Both a tender coming-of-age/road trip story and a classic tragedy, Before Snowfall is a heartbreaking depiction of the disastrous intersection of primal forces. Winner of the Best Nordic Film Award at the Gï¿½teborg Film Festival and the Best Cinematography Award at the Tribeca Film Festival. ",
+    "description":"How far would you go to restore your family's honor? As the oldest man in his household, Siyar confronts that question after his sister Nermin flees an arranged marriage and he must seek vengeance for the slight. Siyar tracks her from their village in Kurdistan to a world apart in Istanbul. His fateful introduction to Evin, a young girl living on the streets, leads to the first cracks in his resolve. Then Nermin escapes, and he follows her to Germany and Norway on a journey that will forever change his notions of loyalty, dignity, honor, and love. Both a tender coming-of-age/road trip story and a classic tragedy, Before Snowfall is a heartbreaking depiction of the disastrous intersection of primal forces. Winner of the Best Nordic Film Award at the G_teborg Film Festival and the Best Cinematography Award at the Tribeca Film Festival. ",
     "trt":105,
     "venue":"Cinemagic",
     "date":"2016/02/09",
@@ -1234,7 +1296,8 @@
     "youtube":"http://www.youtube.com/v/aTR23exgNI8",
     "genre1":"Narrative Feature",
     "genre2":"German Language",
-    "genre3":""
+    "genre3":"",
+    "title":"BEFORE SNOWFALL"
   },
   {
     "country":"NORWAY",
@@ -1253,7 +1316,8 @@
     "youtube":"http://www.youtube.com/v/VJmiZ0c3qxg",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":""
+    "genre3":"",
+    "title":"I AM YOURS"
   },
   {
     "country":"NORWAY",
@@ -1272,7 +1336,8 @@
     "youtube":"http://www.youtube.com/v/v1bCmw2zuGI",
     "genre1":"Narrative Feature",
     "genre2":"Family Fare",
-    "genre3":""
+    "genre3":"",
+    "title":"THE TOUGH GUYS"
   },
   {
     "country":"PALESTINE",
@@ -1291,7 +1356,8 @@
     "youtube":"http://www.youtube.com/v/v5dSeBD-qiY",
     "genre1":"Narrative Feature",
     "genre2":"Middle Eastern",
-    "genre3":""
+    "genre3":"",
+    "title":"OMAR"
   },
   {
     "country":"PHILIPPINES",
@@ -1310,7 +1376,8 @@
     "youtube":"http://www.youtube.com/v/cgAZ4nyWYGA",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"THY WOMB"
   },
   {
     "country":"PHILIPPINES",
@@ -1329,7 +1396,8 @@
     "youtube":"http://www.youtube.com/v/TY2ipU9tYek",
     "genre1":"Oscar Submission",
     "genre2":"Documentary",
-    "genre3":""
+    "genre3":"",
+    "title":"TRANSIT"
   },
   {
     "country":"POLAND",
@@ -1348,7 +1416,8 @@
     "youtube":"http://www.youtube.com/v/_jYLGogjG6g",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"AFTERMATH"
   },
   {
     "country":"POLAND",
@@ -1367,7 +1436,8 @@
     "youtube":"http://www.youtube.com/v/PDpxbDSWe_Q",
     "genre1":"Narrative Feature",
     "genre2":"",
-    "genre3":""
+    "genre3":"",
+    "title":"IDA"
   },
   {
     "country":"POLAND",
@@ -1386,7 +1456,8 @@
     "youtube":"http://www.youtube.com/v/SlrjOAe1-mQ",
     "genre1":"Narrative Feature",
     "genre2":"History",
-    "genre3":""
+    "genre3":"",
+    "title":"WALESA: MAN OF HOPE"
   },
   {
     "country":"ROMANIA",
@@ -1405,7 +1476,8 @@
     "youtube":"http://www.youtube.com/v/i74dlB-XKZc",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":""
+    "genre3":"",
+    "title":"CHILD'S POSE"
   },
   {
     "country":"SERBIA",
@@ -1424,7 +1496,8 @@
     "youtube":"http://www.youtube.com/v/TgaE7y8QjT0",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":""
+    "genre3":"",
+    "title":"CIRCLES"
   },
   {
     "country":"SINGAPORE",
@@ -1443,7 +1516,8 @@
     "youtube":"http://www.youtube.com/v/ISovsVvX8Bg",
     "genre1":"Narrative Feature",
     "genre2":"Asian",
-    "genre3":""
+    "genre3":"",
+    "title":"ILO ILO"
   },
   {
     "country":"SOUTH KOREA",
@@ -1462,7 +1536,8 @@
     "youtube":"http://www.youtube.com/v/v7jwkrlCkuc",
     "genre1":"Oscar Submission",
     "genre2":"Narrative Feature",
-    "genre3":"Asian"
+    "genre3":"Asian",
+    "title":"JUVENILE OFFENDER"
   },
   {
     "country":"SOUTH KOREA",
@@ -1481,7 +1556,8 @@
     "youtube":"http://www.youtube.com/v/E6sx97sccMY",
     "genre1":"Narrative Feature",
     "genre2":"Asian",
-    "genre3":""
+    "genre3":"",
+    "title":"NOBODY'S DAUGHTER HAEWON"
   },
   {
     "country":"SPAIN",
@@ -1500,7 +1576,8 @@
     "youtube":"http://www.youtube.com/v/UFGuoyjvb3U",
     "genre1":"Narrative Feature",
     "genre2":"Spanish Language",
-    "genre3":""
+    "genre3":"",
+    "title":"15 YEARS AND ONE DAY"
   },
   {
     "country":"SPAIN",
@@ -1519,7 +1596,8 @@
     "youtube":"http://www.youtube.com/v/2DIBqglmJ3s&feature=youtu.be",
     "genre1":"Narrative Feature",
     "genre2":"Animation",
-    "genre3":""
+    "genre3":"",
+    "title":"THE APOSTLE"
   },
   {
     "country":"SPAIN",
@@ -1538,13 +1616,14 @@
     "youtube":"http://www.youtube.com/v/__lhwjIsobg",
     "genre1":"Narrative Feature",
     "genre2":"Spanish Language",
-    "genre3":""
+    "genre3":"",
+    "title":"A GUN IN EACH HAND"
   },
   {
     "country":"SPAIN",
     "title":"PEOPLE IN PLACES",
     "director":"Juan Cavestany",
-    "description":"\"To uncover the strange in the ordinary, the unsettling in the everyday: this is the mark of imaginative wizardry that can be found in abundance in People in Places. Working with the tiniest of micro-budgets, Cavestany stages a series of bizarre, Buï¿½uelian scenarios that offer a cracked view of contemporary Spain in the wake of the economic crisis. Making use of some of Spain's greatest actors alongside faces, he places them in bizarre situations that will have you laughing out loud. Moving from one nondescript location to the next, a theme, or perhaps more of an undercurrent, emerges--until the fiercely political nature of the film becomes apparent. Voyeuristic and confounding, Cavestany uses the preposterous to highlight the all-too-real, capturing people in places doing very, very peculiar things.\"--Toronto International Film Festival. ",
+    "description":"\"To uncover the strange in the ordinary, the unsettling in the everyday: this is the mark of imaginative wizardry that can be found in abundance in People in Places. Working with the tiniest of micro-budgets, Cavestany stages a series of bizarre, Bu_uelian scenarios that offer a cracked view of contemporary Spain in the wake of the economic crisis. Making use of some of Spain's greatest actors alongside faces, he places them in bizarre situations that will have you laughing out loud. Moving from one nondescript location to the next, a theme, or perhaps more of an undercurrent, emerges--until the fiercely political nature of the film becomes apparent. Voyeuristic and confounding, Cavestany uses the preposterous to highlight the all-too-real, capturing people in places doing very, very peculiar things.\"--Toronto International Film Festival. ",
     "trt":83,
     "venue":"Cinema 21",
     "date":"2016/02/14",
@@ -1557,7 +1636,8 @@
     "youtube":"http://www.youtube.com/v/obdXsr2q5Gw",
     "genre1":"Narrative Feature",
     "genre2":"Spanish Language",
-    "genre3":""
+    "genre3":"",
+    "title":"PEOPLE IN PLACES"
   },
   {
     "country":"SPAIN",
@@ -1573,10 +1653,11 @@
     "alt_time":"21:15:00",
     "imagesmall":"search-for-emak_500.jpg",
     "imagelarge":"searchforemak1.jpg",
-    "youtube":"http://emakbakiafilms.com/en/trailer-2/",
+    "youtube":"http://www.youtube.com/v/PjyMFYID_Cg",
     "genre1":"Spanish Language",
     "genre2":"Documentary",
-    "genre3":""
+    "genre3":"",
+    "title":"THE SEARCH FOR EMAK BAKIA"
   },
   {
     "country":"SPAIN",
@@ -1595,6 +1676,407 @@
     "youtube":"http://www.youtube.com/v/EbPWavobMdM&feature=youtu.be",
     "genre1":"Narrative Feature",
     "genre2":"Spanish Language",
-    "genre3":""
+    "genre3":"",
+    "title":"THE WISHFUL THINKERS"
+  },
+  {
+    "country":"SWEDEN",
+    "title":"EAT SLEEP DIE",
+    "director":"Gabriela Pichler",
+    "description":"Winner of the Audience Award at the Venice Film Festival and the top Swedish national Guldbagge Awards, Pichler's remarkable film profiles 20-year-old Ra_a, a woman struggling to support herself and her father in a southern Swedish village. Despite being an efficient worker, Ra_a is the first to go when the packing plant starts firing staff. Since she has Bosnian Muslim heritage, her dismissal stings with racial undertones. Jobless, Ra_a is then abandoned by her father when he leaves to seek work in Norway. Suddenly her small town seems even smaller and lonelier as she is confronted with a difficult choice: leaving her life behind for a new job elsewhere or permanent unemployment. The hard realities of modern Swedish, and global, society are depicted with profound emotional insight as Ra_a comes to terms with her life. (",
+    "trt":104,
+    "venue":"Whitsell Auditorium",
+    "date":"2016/02/19",
+    "time":"20:30:00",
+    "alt_venue":"Whitsell Auditorium",
+    "alt_date":"2016/02/21",
+    "alt_time":"21:30:00",
+    "imagesmall":"Eat-Sleep-Die_500.jpg",
+    "imagelarge":"Eat-Sleep-Die-2-Foto-Johan-Lundborg1.jpg",
+    "youtube":"http://www.youtube.com/v/q1sKX6m5nlA",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":"",
+    "title":"EAT SLEEP DIE"
+  },
+  {
+    "country":"SWEDEN",
+    "title":"TITO ON ICE",
+    "director":"Helena Ahonen, Max Andersson",
+    "description":"To promote their comic book Bosnian Flat Dog, Swedish artists Max Andersson and Lars Sjunnesson toured the countries of the former Yugoslavia with a mummified Marshal Tito in a refrigerator. Now comes the documentary, which takes Super-8mm footage of their tour and animates it with cardboard cutouts, garbage, and other recycled materials. The result is a surreal trip through the Balkans that is part promotion, part performance art, and part history of Marshal Tito and the dissolution of Yugoslavia in the early 1990s. Through it all, there is a comics creator's eye at work. Live-action interviews suddenly switch to animation, which is like moving from one panel to the next in a comic book. Altogether, a joyous trip through the war-torn subconscious of an underground artist. ",
+    "trt":77,
+    "venue":"Cinemagic",
+    "date":"2016/02/09",
+    "time":"15:00:00",
+    "alt_venue":"Cinema 21",
+    "alt_date":"2016/02/16",
+    "alt_time":"13:00:00",
+    "imagesmall":"TitoOnIceGermany_500.jpg",
+    "imagelarge":"TitoOnIce.png",
+    "youtube":"http://www.youtube.com/v/3AqExsTCH9o&feature=youtu.be",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":"",
+    "title":"TITO ON ICE"
+  },
+  {
+    "country":"SWEDEN",
+    "title":"WE ARE THE BEST!",
+    "director":"Lukas Moodysson",
+    "description":"Stockholm, 1982: 13-year-old best friends Bobo and Klara are united by their feelings of outsiderness--embarrassed by their parents, repulsed by the conformity of the school's popular kids, and hating gym class. After wandering into the local community center music room and banging on the instruments, they declare themselves a punk band--never mind that they can't play a lick. In need of some proper musicianship, they recruit their classmate Hedvig--a talented guitarist, though painfully shy and socially marginalized by her parents' unfashionable enthusiasm for evangelical Christianity. Now a trio, the three friends create a joyful noise as they play music together and navigate the confusing world of the '80s they are growing up in. Moodysson's rousing youth chronicle was adapted from the graphic novel by his wife Coco. ",
+    "trt":102,
+    "venue":"Fox Tower",
+    "date":"2016/02/08",
+    "time":"20:30:00",
+    "alt_venue":"Cinema 21",
+    "alt_date":"2016/02/12",
+    "alt_time":"18:00:00",
+    "imagesmall":"WE_ARE_THE_BEST_500.jpg",
+    "imagelarge":"WE_ARE_THE_BEST.jpg",
+    "youtube":"http://www.youtube.com/v/TfPytPjV1xc",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":"",
+    "title":"WE ARE THE BEST!"
+  },
+  {
+    "country":"SWITZERLAND",
+    "title":"MARY QUEEN OF SCOTS",
+    "director":"Thomas Imbach",
+    "description":"This sumptuous historical drama provides a riveting psychological portrait of the woman who became a pawn in the 16th-century conflict between Protestants and Catholics. As a child, Catholic Mary (Camille Rutherford) is sent to France to marry the future king. After his premature death, she returns to Scotland and, to her regret, marries Lord Darnle. In love with the Earl of Bothwell, the two plot Darnle's demise. When her life is thrown into political turmoil after Darnle's death, Mary seeks help from her Protestant cousin, Elizabeth I, the queen of England--who, threated by her rivalry, has Mary imprisoned and, after 18 years, beheaded. Rather than focusing on dramatic incident, Imbach takes a personal look at British royal tragedy and the story of a woman haunted by expectations and torn between romance and duty. ",
+    "trt":120,
+    "venue":"OMSI",
+    "date":"2016/02/09",
+    "time":"18:30:00",
+    "alt_venue":"Cinema 21",
+    "alt_date":"2016/02/15",
+    "alt_time":"12:30:00",
+    "imagesmall":"maryqueenofscotsswiss_500.jpg",
+    "imagelarge":"maryqueenofscotsswiss.tiff",
+    "youtube":"http://www.youtube.com/v/EjOWH0g2D9Y&feature=youtu.be",
+    "genre1":"Narrative Feature",
+    "genre2":"History",
+    "genre3":"",
+    "title":"MARY QUEEN OF SCOTS"
+  },
+  {
+    "country":"TAIWAN",
+    "title":"STRAY DOGS",
+    "director":"Tsai Ming-Liang",
+    "description":"In Ming-Liang's vision, existence seems to hang by a thread that could snap at any moment. Under a torrential downpour in Taipei, a single father does odd jobs to make a meager living. His children, left without supervision, roam the streets. Their divorced mother spends her nights creeping around like a ghost in her rundown building and feeding the stray dogs that take shelter there. With his latest offering, the Taiwanese filmmaker delves deeper into his evocative cinematic world, one where disenfranchised people are overcome with an uneasiness they can't explain. With its gorgeous lighting and striking locations and compositions, Stray Dogs is \"as visually powerful as it is emotionally overwhelming and bracingly pure in both its anger and its compassion. One of the finest works of an extraordinary artist.\"--New York Film Festival. ",
+    "trt":138,
+    "venue":"Fox Tower",
+    "date":"2016/02/15",
+    "time":"15:15:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/17",
+    "alt_time":"19:30:00",
+    "imagesmall":"Stray-Dogs_500.jpg",
+    "imagelarge":"Stray-Dogs1.jpg",
+    "youtube":"http://www.youtube.com/v/fird2qXpjEA",
+    "genre1":"Narrative Feature",
+    "genre2":"Asian",
+    "genre3":"",
+    "title":"STRAY DOGS"
+  },
+  {
+    "country":"TURKEY",
+    "title":"THE BUTTERFLY'S DREAM",
+    "director":"Yilmaz Erdogan",
+    "description":"In 1941, with World War II looming, in Zonguldak, an impoverished mining city on the Black Sea coast of Turkey, every man in the area is required by law to work in the coal mines. Amidst the poverty, disease, and turmoil are two young poets, Muzaffer and Rustu. Their persevering dream is to have their poetry published. One day they see Suzan, the beautiful daughter of one of the city's wealthy merchants, and make a bet over the girl: they will both write a poem for her, and whichever she likes, the other will fade from the sceneï¿½. As their lives progress, the rivalry between an optimist and a pessimist, both in search of happiness, will test not only their poetry but their bravery. This year's Turkish submission for the Best Foreign Language Film Oscar. ",
+    "trt":138,
+    "venue":"OMSI",
+    "date":"2016/02/08",
+    "time":"20:30:00",
+    "alt_venue":"Cinema 21",
+    "alt_date":"2016/02/10",
+    "alt_time":"17:45:00",
+    "imagesmall":"the-butterflys-dream_500.jpg",
+    "imagelarge":"the-butterflys-dream-40.jpg",
+    "youtube":"http://www.youtube.com/v/AtHirtYl0v0",
+    "genre1":"Oscar Submission",
+    "genre2":"Narrative Feature",
+    "genre3":"",
+    "title":"THE BUTTERFLY'S DREAM"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"CHEATIN'",
+    "director":"Bill Plympton",
+    "description":"An adult tale of love, jealousy, revenge, and murder--infused with Plympton's surreal sense of humor--Cheatin' takes its inspiration from the work of such James M. Cain noir classics as Double Indemnity and The Postman Always Rings Twice. In a fateful bumper car collision, Jake and Ella meet and become the most loving couple in the long history of romance. But when a scheming \"other\" woman drives a wedge of jealousy into their perfect courtship, insecurity and hatred spell out an untimely fate. With only the help of a disgraced magician and his forbidden \"soul machine,\" Ella takes the form of Jake's numerous lovers, fighting malfunction and deceit to reclaim their destiny. Plympton's seventh animated feature is his first done in a hand-painted style, with over 40,000 drawings colored by a studio team of just 10 people. ",
+    "trt":76,
+    "venue":"Cinema 21",
+    "date":"2016/02/12",
+    "time":"20:30:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/16",
+    "alt_time":"17:30:00",
+    "imagesmall":"cheatin_500.jpg",
+    "imagelarge":"cheatin1.jpg",
+    "youtube":"http://www.youtube.com/v/E8ilPAEgkpA",
+    "genre1":"Narrative Feature",
+    "genre2":"Animation",
+    "genre3":"",
+    "title":"CHEATIN'"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"CODE BLACK",
+    "director":"Ryan McGarry",
+    "description":"\"C-Booth,\" the trauma bay at the LA County Hospital, was the first, the toughest, and the best training ground for ER doctors in the country. But when the hospital moved to a modern facility, the dedicated medical staff faced a growing crisis. Code Black follows a group of young doctors as they grapple with the divide between their idealistic expectations for improving patient care and the realities of an underfunded and overly bureaucratic system. McGarry--a full-time doctor at the hospital while making the film--explores the frustrations. How and why do they persist in saving lives in the face of thwarting regulations and paperwork? As one doctor states, \"More people have died in this square footage than in any other location in the United States. On a brighter note, more people have been saved here too.\" ",
+    "trt":78,
+    "venue":"OMSI",
+    "date":"2016/02/19",
+    "time":"18:00:00",
+    "alt_venue":"World Trade Center Theater",
+    "alt_date":"2016/02/21",
+    "alt_time":"19:00:00",
+    "imagesmall":"code-black_500.jpg",
+    "imagelarge":"code-black1.jpg",
+    "youtube":"http://www.youtube.com/v/EpO3nP_bCcw",
+    "genre1":"Documentary",
+    "genre2":"",
+    "genre3":"",
+    "title":"CODE BLACK"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"COHERENCE",
+    "director":"James Ward Byrkit",
+    "description":"A group of friends and ex-lovers learn why you should not throw a dinner party the night a mysterious comet is passing close to Earth in this mind-bending science fiction thriller. The first glasses of wine have barely been poured when tensions start to rise. None of that matters, however, when the lights go off throughout the neighborhood, all except for one house a few blocks over, lit up like a beacon in the darkness. \"Coherence is a cerebral low-budget sci-fi that dives headfirst into a pool of quantum mechanics and theoretical physics. It's a tightly focused, intimately shot film that quickly ratchets up the tension and mystery. Coherence is relationship drama turned on its head, giving you plenty to think about without spoon-feeding you any answers.\"--Fantastic Fest. ",
+    "trt":89,
+    "venue":"Cinema 21",
+    "date":"2016/02/22",
+    "time":"23:30:00",
+    "alt_venue":"Cinema 21",
+    "alt_date":"",
+    "alt_time":"",
+    "imagesmall":"CoherenceStill_500.jpg",
+    "imagelarge":"CoherenceStill1.jpg",
+    "youtube":"http://www.youtube.com/v/sEceDz1Rodc",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":"",
+    "title":"COHERENCE"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"FINDING VIVIAN MAIER",
+    "director":"John Maloof, Charlie Siskel",
+    "description":"Street photographer Vivian Maier was a mystery even to those who knew her. A secretive nanny in the wealthy suburbs of Chicago, she died in 2009 and would have been forgotten. But Maloof, an amateur historian, uncovered thousands of her negatives at a storage locker auction and changed history. Now Maier is hailed alongside the likes of Diane Arbus, Robert Frank, Henri Cartier-Bresson, and Weegee as a major artist. And that is just where the story begins. Finding Vivian Maier follows the filmmakers as they unearth Vivian's story, combing through thousands of negatives and tracking down the families she worked for and others who remember her. The story that emerges goes beyond cliches of the undiscovered artist and a strange life to ask as many questions about ourselves as it does about her. ",
+    "trt":83,
+    "venue":"Whitsell Auditorium",
+    "date":"2016/02/09",
+    "time":"15:00:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/11",
+    "alt_time":"20:30:00",
+    "imagesmall":"Finding-VivianM_500.jpg",
+    "imagelarge":"FindingVivianMaier.jpg",
+    "youtube":"http://www.youtube.com/v/2o2nBhQ67Zc",
+    "genre1":"Art",
+    "genre2":"Documentary",
+    "genre3":"",
+    "title":"FINDING VIVIAN MAIER"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"THE GALAPAGOS AFFAIR",
+    "director":"Daniel Geller, Dayna Goldfine",
+    "description":"Darwin meets Hitchcock in this gripping, stranger-than-fiction murder-mystery. In 1929, Berlin physician Friedrich Ritter and his lover Dore Strauch left Germany for the deserted Galapagos island of Floreana. Inspired by Nietzsche, Ritter intended to escape \"monster\" civilization and write in solitude. But soon the couple was discovered by the international press, who trumpeted them as \"the Adam and Eve of the Galapagos.\" Others flocked to the island--first, the Wittmer family, who fancied themselves as \"the Swiss Family Robinsons of the Galapagos,\" followed by an Austrian baroness with two lovers and plans for opening a luxury hotel. Then, two inhabitants were found murdered, and paradise became just another hell on earth. Rare archival footage, voice performances by Cate Blanchett and Diane Kruger, and modern-day interviews spin a tale of idealistic dreams gone awry. ",
+    "trt":126,
+    "venue":"World Trade Center Theater",
+    "date":"2016/02/08",
+    "time":"15:30:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/13",
+    "alt_time":"20:30:00",
+    "imagesmall":"the-galapagos_500.jpg",
+    "imagelarge":"the-galapagos-affair.jpg",
+    "youtube":"http://www.youtube.com/v/Wf2txEIcg6E",
+    "genre1":"Documentary",
+    "genre2":"",
+    "genre3":"",
+    "title":"THE GALAPAGOS AFFAIR"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"LEVITATED MASS: THE STORY OF MICHAEL HEIZER'S MONOLITHIC SCULPTURE",
+    "director":"Doug Pray",
+    "description":"Levitated Mass chronicles the journey of a 340-ton granite boulder that was moved from a quarry in Riverside to the Los Angeles County Museum of Art and mounted upon the walls of a 456-foot-long concrete slot. First attempted in 1968, the 2012 permanent installation \"Levitated Mass\" is the latest land sculpture by one of America's most misunderstood and exciting artists, Michael Heizer. His rock's 105-mile transport captured international media attention and challenged the imagination of thousands of southern Californians over 10 nights as it crawled through four counties on a football-field-long transport. As fascinating is the dramatic story of Heizer's past and present work, the ambitions of a major metropolitan museum, and the public's reaction to this massive display of modern (yet ancient-feeling) conceptual art. ",
+    "trt":88,
+    "venue":"Whitsell Auditorium",
+    "date":"2016/02/17",
+    "time":"14:30:00",
+    "alt_venue":"Fox Tower",
+    "alt_date":"2016/02/18",
+    "alt_time":"18:00:00",
+    "imagesmall":"levitated-mass_500.jpg",
+    "imagelarge":"levitated-mass.jpg",
+    "youtube":"http://www.youtube.com/v/MD_6az-OI_A",
+    "genre1":"Art",
+    "genre2":"Documentary",
+    "genre3":"",
+    "title":"LEVITATED MASS: THE STORY OF MICHAEL HEIZER'S MONOLITHIC SCULPTURE"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"PARTICLE FEVER",
+    "director":"Mark Levinson",
+    "description":"Physicists from all over the world in search of the theoretical Higgs particle collaborated on the planning and construction of the 18-mile-long Cern Large Hadron Collider. Situated in an underground complex near the Franco-Swiss border, it's allegedly the biggest, most expensive scientific experiment ever made. The idea was to recreate conditions immediately after the Big Bang, allowing a closer understanding of the origin of matter. Physicist-turned-filmmaker Mark Levinson was there with his cameras when the collider went online, and he found a way of approaching the experiment as an epic adventure story, involving multiple setbacks, mysteries, and--according to hysterical press accounts--the possible end of the world as we know it. Fortunately, one doesn't need a PhD in particle physics to keep up with a documentary as thrilling as any fiction. ",
+    "trt":97,
+    "venue":"World Trade Center Theater",
+    "date":"2016/02/08",
+    "time":"18:00:00",
+    "alt_venue":"OMSI",
+    "alt_date":"2016/02/10",
+    "alt_time":"18:00:00",
+    "imagesmall":"particle-fever_500.jpg",
+    "imagelarge":"particle fever_use.jpg",
+    "youtube":"http://www.youtube.com/v/dEcWjMX9oCw",
+    "genre1":"Documentary",
+    "genre2":"",
+    "genre3":"",
+    "title":"PARTICLE FEVER"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"PROXY",
+    "director":"Zack Parker",
+    "description":"\"As a pregnant Esther (Alexia Rasmussen) walks home, she is viciously attacked by a hooded assailant. In the wake of this traumatic event, she finds some consolation and normalcy in the kindly Melanie (Alexa Havins), whom she meets at a support group. But a chance encounter makes it clear that nothing--and no one--in Esther's life is as it appears. Setting off a chain reaction of increasingly shocking revelations, Proxy twists and turns its way through loss, grief, and death. The surprise standout is auteur Joe Swanberg in a supporting role as Melanie's husband. Be warned: Proxy begins with some deeply disturbing content, but this immensely challenging thriller will reward audiences who stick with it as it delves into very dark territory and confronts our every assumption and belief about what we have seen.\"--Toronto International Film Festival. ",
+    "trt":120,
+    "venue":"Cinema 21",
+    "date":"2016/02/21",
+    "time":"23:30:00",
+    "alt_venue":"",
+    "alt_date":"",
+    "alt_time":"",
+    "imagesmall":"Proxy_500.jpg",
+    "imagelarge":"Proxy.jpg",
+    "youtube":"http://www.youtube.com/v/BcvPmieIUNk",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":"",
+    "title":"PROXY"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"REMOTE AREA MEDICAL",
+    "director":"Jeff Reichert, Farihah Zaman",
+    "description":"As the national debate over the future of healthcare continues on, this heartfelt film takes a step back from the politics to give an emotional, on-the-ground portrait of those who live every day without proper access to medical care. Unable to afford treatment, an estimated 45 million people in the US lack access to preventative care and often suffer through illnesses in the hopes that they'll just go away. Remote Area Medical documents the annual two-day \"pop-up\" medical clinic operated by the nonprofit Remote Area Medical (RAM) in Bristol, Tennessee. During that time, doctors, nurses, and support workers provide care for hundreds of people who can't afford routine medical checkups, dental exams, and prescription eyeglasses that most take for granted. A moving portrait of a one-of-a-kind community assembled to secure a better future for us all. ",
+    "trt":80,
+    "venue":"World Trade Center Theater",
+    "date":"2016/02/07",
+    "time":"20:30:00",
+    "alt_venue":"World Trade Center Theater",
+    "alt_date":"2016/02/09",
+    "alt_time":"15:00:00",
+    "imagesmall":"remote-area_500.jpg",
+    "imagelarge":"remote_area_medical_2.jpg",
+    "youtube":"http://www.youtube.com/v/fP4bQ7U0BW8",
+    "genre1":"Documentary",
+    "genre2":"",
+    "genre3":"",
+    "title":"REMOTE AREA MEDICAL"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"THE SACRAMENT",
+    "director":"Ti West",
+    "description":"A shocking tale of devotion gone horribly wrong, The Sacrament offers a disturbing vision of the power of groupthink. Patrick is a photographer whose once drug-addicted sister Caroline is a member of an isolated sober-living community in Mississippi. Patrick discovers that the program is closer to a communal-living collective and that there is a strange and charismatic leader of the group, known only as \"Father.\" When his sister leaves the country to start a new utopian society in the jungle, he enlists two co-workers to shoot a documentary on their whereabouts. Based on detailed research of the infamous Jonestown massacre, The Sacrament provides a terrifying examination of modern religion, charismatic influence, and the exploitation of power as West explores the horrific idea of a man who can talk people into killing themselves. ",
+    "trt":95,
+    "venue":"Cinema 21",
+    "date":"2016/02/08",
+    "time":"23:30:00",
+    "alt_venue":"Cinema 21",
+    "alt_date":"",
+    "alt_time":"",
+    "imagesmall":"thesacrament_500.jpg",
+    "imagelarge":"thesacrament.jpg",
+    "youtube":"http://www.youtube.com/v/uNGleyHCJwg",
+    "genre1":"Narrative Feature",
+    "genre2":"",
+    "genre3":"",
+    "title":"THE SACRAMENT"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"TEENAGE",
+    "director":"Matt Wolf",
+    "description":"Who was the first teenager? Based on punk-historian Jon Savage's book Teenage: The Creation of Youth, Wolf's compelling collage of archival images, Super-8mm recreations, and the actual diaries of mid-century teens, all set to an alluring post-punk contemporary soundtrack, is an entertaining look at the birth of the iconic, eternally cool figure of the teenager. Though the seeds of youth culture were planted even before the hipsters of the 1920s, the word and concept of \"teenager\" was a post-World War II invention. Before then, childhood and adulthood were two completely discrete phases with nothing in between. Wolf's historical survey finds that the urge to escape adult oppression, fashion personal identity, and influence the culture is universal--and eternally inspirational. \"Pop cultural historiography of the most style-conscious and captivating kind.\"--Indiewire. ",
+    "trt":78,
+    "venue":"Fox Tower",
+    "date":"2016/02/07",
+    "time":"18:00:00",
+    "alt_venue":"Cinemagic",
+    "alt_date":"2016/02/10",
+    "alt_time":"18:00:00",
+    "imagesmall":"TEENAGE_500.jpg",
+    "imagelarge":"TEENAGE_KS_PS.jpg",
+    "youtube":"http://www.youtube.com/v/hGNSodO2CJA",
+    "genre1":"History",
+    "genre2":"Documentary",
+    "genre3":"",
+    "title":"TEENAGE"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"TIM'S VERMEER",
+    "director":"Teller",
+    "description":"In 2001, in his book Secret Knowledge, artist David Hockney argued that some classical painters--Johannes Vermeer (\"Girl with the Pearl Earring\") especially--had used camera optics in making their great paintings. There was controversy. Was this cheating? Why shouldn't an artist do whatever he can think of? answered Hockney. But Tim Jenison, a Texas software inventor, considered how he might use 17th-century technology to achieve Vermeer's photographic look. When his first experiment seemed to work, he thought, \"Why not paint my own Vermeer?\" Spanning eight years, Jenison's riveting mystery-adventure takes him to Delft, where Vermeer painted his masterpieces, on a pilgrimage to the north coast of Yorkshire to visit Hockney, and even to Buckingham Palace. Narrated by the ever-ebullient Penn and directed by the silent Teller, both longtime friends of Jenison's, Tim's Vermeer is a bouncy, entertaining, real-life detective story. ",
+    "trt":80,
+    "venue":"Whitsell Auditorium",
+    "date":"2016/02/14",
+    "time":"18:00:00",
+    "alt_venue":"OMSI",
+    "alt_date":"2016/02/18",
+    "alt_time":"20:30:00",
+    "imagesmall":"TIMS-VERMEER_500.jpg",
+    "imagelarge":"TIMVERMEER.jpg",
+    "youtube":"http://www.youtube.com/v/CS_HUWs9c8c",
+    "genre1":"Documentary",
+    "genre2":"",
+    "genre3":"",
+    "title":"TIM'S VERMEER"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"VISITORS",
+    "director":"Godfrey Reggio",
+    "description":"Thirty years after their groundbreaking Koyaanisqatsi (Qatsi trilogy), director Godfrey Reggio and composer Philip Glass have joined forces with associate director Jon Kane to create a cinematic time capsule for the 21st century. If the Qatsi trilogy reflected on ideas of balance, transformation, and war, Visitors asks a very different question: who and what is a visitor when we look around ourselves on this planet? Using this idea as a metaphysical departure for his visual reverie, Reggio takes us on a unique voyage into the mysteries and wonders of the universe. Shot in dazzling black and white, Reggio's visual genius opens us to the magic of experience as it calls upon its audiences to find their own meaning. Through the mind-altering imagery and Glass's hypnotic soundscapes, Visitors, more akin to music than narrative storytelling, provides a dazzling, wordless ode to modern life. ",
+    "trt":87,
+    "venue":"OMSI",
+    "date":"2016/02/10",
+    "time":"20:30:00",
+    "alt_venue":"Whitsell Auditorium",
+    "alt_date":"2016/02/15",
+    "alt_time":"18:00:00",
+    "imagesmall":"visitors_500.jpg",
+    "imagelarge":"visitors1.jpg",
+    "youtube":"http://www.youtube.com/v/s3w8cNgWtMI",
+    "genre1":"Documentary",
+    "genre2":"",
+    "genre3":"",
+    "title":"VISITORS"
+  },
+  {
+    "country":"UNITED STATES",
+    "title":"WHAT IS CINEMA?",
+    "director":"Chuck Workman",
+    "description":"Chuck Workman is best known for creating unforgettable Oscar montage sequences. In What is Cinema?, he shares his understanding and love of avant-garde cinematic language by creating a visual essay out of clips from films that have pushed the boundaries of the art form. Woven among them are new and archival interviews with a pantheon of personal filmmakers that provide food for thought on where cinema might be headed. Workman's interview subjects include the likes of Mike Leigh, Jonas Mekas, Yvonne Rainer, David Lynch, video artist Bill Viola, Kelly Reichardt, Costa-Gavras, Ken Jacobs, and Michael Moore, who consider key artists from Chantal Akerman to Andy Warhol, along with vintage interviews with Robert Bresson, Alfred Hitchcock, Akira Kurosawa, and many others. ",
+    "trt":80,
+    "venue":"World Trade Center Theater",
+    "date":"2016/02/08",
+    "time":"13:00:00",
+    "alt_venue":"World Trade Center Theater",
+    "alt_date":"2016/02/14",
+    "alt_time":"20:30:00",
+    "imagesmall":"whatiscinema_500.jpg",
+    "imagelarge":"whatiscinema-US.jpg",
+    "youtube":"http://www.youtube.com/v/v8ERTFGijFI",
+    "genre1":"Art",
+    "genre2":"Documentary",
+    "genre3":"",
+    "title":"WHAT IS CINEMA?"
   }
 ]

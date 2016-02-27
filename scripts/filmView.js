@@ -5,10 +5,12 @@
   filmView.render = function(film){
     var template = Handlebars.compile($('#film-template').text());
     var dateAsString = new Date(film.datetime).toDateString();
+    var timeAsString = new Date(film.datetime).toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
 
     // film.imdbRating = Film.getRating(film.title);
     // console.log(film.imdbRating);
     film.datetime = dateAsString;
+    film.time = timeAsString;
 
     if (film.isFavorite == 'true'){
       film.isFavorite = true;
@@ -20,26 +22,15 @@
     return htmlObject;
   }; // end
 
-
-  filmView.modalWindow = function(){
-    $('.filmButton').on('click', function(e){
-      console.log('hello');
-      e.preventDefault();
-      var filmId = $(e.target).data('film-id');
-      $('.modalDialog').hide();
-      $('.modalDialog-'+ filmId).show('slow', function() {
-      });
-      // $('html').addClass('scrollprevent');
-    });
-
-    $('.close').on('click', function(e){
-      e.preventDefault();
-      $('.modalDialog').hide('slow', function(){
-      });
-      $('html').removeClass('scrollprevent');
-    });
+  filmView.renderCarousel = function(film) {
+    var template = Handlebars.compile($('#carousel-template').text());
+    var htmlObject = template(film);
+    return htmlObject;
   };
 
+  filmView.displayRatings = function(imdb){
+
+  };
 
   filmView.buttonClick = function(){
     $('.button-fill').hover(function () {
@@ -81,7 +72,43 @@
           });
         }
       };
+      if($(e.target).hasClass('imdbButton')){
+        var imdbId = $(e.target).data('id');
+        Film.getLocalRating(imdbId, function(review){
 
+          $(e.target).empty();
+
+          if(review === undefined || review === NaN){
+            $(e.target).append('<i class="fa fa-star-o star-icn"></i>Film not reviewed on IMDB');
+
+          } else {
+            var starArray = [];
+            var starRating = review/2;
+
+            for(var i = 1; i <= 5; i++){
+              if(starRating - i > - 0.2){
+                starArray.push(1);
+              } else if (starRating - i <= - 0.2 && starRating - i >= -0.6){
+                starArray.push(0.5);
+              } else if (starRating - i < -0.6){
+                starArray.push(0);
+              }
+            }
+
+            console.log(starArray);
+            starArray.forEach(function(star){
+              if(star === 0){
+                $(e.target).append('<i class="fa fa-star-o star-icn"></i>');
+              } else if (star === 0.5){
+                $(e.target).append('<i class="fa fa-star-half-o star-icn"></i>');
+              } else if (star === 1){
+                $(e.target).append('<i class="fa fa-star star-icn"></i>');
+              }
+            });
+          }
+        });
+
+      }
     });
   };
 
@@ -91,8 +118,13 @@
       e.preventDefault();
 
       if ($(e.target).hasClass('filmButton')){
-        console.log('hello');
         e.preventDefault();
+
+        // Replace youtube placeholder with <iframe>
+        var ytlink = $(e.target).data('ytlink');
+        var iframeString = '<iframe class="yt-content" title="YouTube video player" class="youtube-player"  type="text/html" width="640" height="390" src="' + ytlink + '" frameborder="0" allowFullScreen></iframe>';
+        $(e.target).parent().parent().next().find('.yt-placeholder').replaceWith(iframeString);
+
         var filmId = $(e.target).data('film-id');
         $('.modalDialog').hide();
         $('.modalDialog-'+ filmId).show('slow', function() {
@@ -102,6 +134,12 @@
 
       if ($(e.target).hasClass('close')){
         e.preventDefault();
+
+        // Replace <iframe> placeholder with placeholder
+        var ytlink = $(e.target).data('ytlink');
+        var iframeString = '<div class="yt-placeholder"></div>';
+        $(e.target).parent().parent().next().find('.yt-content').replaceWith(iframeString);
+
         $('.modalDialog').hide('slow', function(){
         });
         $('html').removeClass('scrollprevent');
@@ -123,15 +161,11 @@
         $('#date-filter').append(
             rows.map(function(row){
               var dateFormatted = new Date(row.date);
-              // console.log('this is the row rawdate ' + row.date);
               return template({
                 val: dateFormatted.toDateString(),
                 date: row.date
               });
             })
-          //)
-          // .sort(function(a,b){
-          //  return new Date(a.datetime) - newDate(b.datetime);
         );
       };
     });
@@ -260,30 +294,69 @@
         returnArray.push(object);
       }
     });
-    // console.log('array to return ' + returnArray);
     return returnArray;
+  };
+
+
+  filmView.printPage = function(){
+
+    var element = {};
+
+
+    var map = {};
+    $('h6').each(function(){
+      var value = $(this).text();
+      if (map[value] == null){
+        map[value] = true;
+      } else {
+        $(this).addClass('hidePrint');
+      }
+    });
+
   };
 
   filmView.initPage = function(){
     $('#filtered-films').empty().append('<div class="container"></div>');
 
-    Film.fetchAllFilmData(function(returnedArray){
-      returnedArray.forEach(function(element){
-        $('#filtered-films').append(filmView.render(element));
-      });
+
+    //Carousel Logic
+    Film.fetchAllFilmData(function(filmData) {
+
+      $('#filtered-films').append(filmData.map(filmView.render));
+
+      if(!($('#carousel-main').hasClass('flickity-enabled'))){
+        $('#carousel-main').empty();
+        $('#carousel-main').append(getCarouselHtml(filmData));
+        $('.main-gallery').flickity({
+          cellAlign: 'left',
+          contain: true
+        });
+      }
+
+
       filmView.addFavorites();
       filmView.addModalButtons();
-      // filmView.modalWindow();
       filmView.buttonClick();
       filmView.mobileView();
+      filmView.printPage();
+
     });
   };
 
-  //test function calls
-    //filmView.handleFilters();
-    // filmView.populateFilters();
-    // filmView.initPage();
+  function getCarouselHtml(filmData) {
+    return filmData.filter(uglyImages)
+      .slice(0, 13)
+      .sort(randomOrder)
+      .map(filmView.renderCarousel);
+  }
 
+  function randomOrder() {
+    return Math.floor(Math.random() * 3) - 1;
+  }
+
+  function uglyImages(film, index) {
+    return [1,5,18,7].indexOf(film.id) === -1;
+  }
 
   module.filmView = filmView;
 

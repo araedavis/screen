@@ -37,9 +37,10 @@
             <img class="filmImg" src="/imgs/imagesSmall/{{imagesmall}}"><br/>
           </div>
           <div class="filmCaption six columns">
-            <h6>{{datetime}} || {{time}}</h6>
+            <h6 class="hidePrint">{{datetime}} || {{time}}</h6>
+            <h6 class="date-for-print hideScreen">{{date}}<h6>
             <h5>Venue: {{venue}}</h5>
-            <h2>{{title}}</h2>
+            <h2>{{title}}<span class="hideScreen"> || {{time}}</span></h2>
 
             <h5 class="dir-coun">Directed by {{director}} || Country: {{country}}</h5>
             <a class="filmButton" href="#" data-ytlink="{{youtube}}" data-film-id="{{id}}" data-control="userBtn">VIEW MORE</a><br><br>

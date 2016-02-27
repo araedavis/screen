@@ -47,6 +47,11 @@
     });
   };
 
+  filmView.displayRatings = function(imdb){
+
+  };
+
+
   filmView.buttonClick = function(){
     $('.button-fill').hover(function () {
       $(this).children('.button-inside').addClass('full');
@@ -87,7 +92,43 @@
           });
         }
       };
+      if($(e.target).hasClass('imdbButton')){
+        var imdbId = $(e.target).data('id');
+        Film.getLocalRating(imdbId, function(review){
 
+          $(e.target).empty();
+
+          if(review === undefined || review === NaN){
+            $(e.target).append('<i class="fa fa-star-o star-icn"></i>Film not reviewed on IMDB');
+
+          } else {
+            var starArray = [];
+            var starRating = review/2;
+
+            for(var i = 1; i <= 5; i++){
+              if(starRating - i > - 0.2){
+                starArray.push(1);
+              } else if (starRating - i <= - 0.2 && starRating - i >= -0.6){
+                starArray.push(0.5);
+              } else if (starRating - i < -0.6){
+                starArray.push(0);
+              }
+            }
+
+            console.log(starArray);
+            starArray.forEach(function(star){
+              if(star === 0){
+                $(e.target).append('<i class="fa fa-star-o star-icn"></i>');
+              } else if (star === 0.5){
+                $(e.target).append('<i class="fa fa-star-half-o star-icn"></i>');
+              } else if (star === 1){
+                $(e.target).append('<i class="fa fa-star star-icn"></i>');
+              }
+            });
+          }
+        });
+
+      }
     });
   };
 
@@ -105,8 +146,13 @@
       e.preventDefault();
 
       if ($(e.target).hasClass('filmButton')){
-        console.log('hello');
         e.preventDefault();
+
+        // Replace youtube placeholder with <iframe>
+        var ytlink = $(e.target).data('ytlink');
+        var iframeString = '<iframe class="yt-content" title="YouTube video player" class="youtube-player"  type="text/html" width="640" height="390" src="' + ytlink + '" frameborder="0" allowFullScreen></iframe>';
+        $(e.target).parent().parent().next().find('.yt-placeholder').replaceWith(iframeString);
+
         var filmId = $(e.target).data('film-id');
         $('.modalDialog').hide();
         $('.modalDialog-'+ filmId).show('slow', function() {
@@ -116,6 +162,12 @@
 
       if ($(e.target).hasClass('close','modalDialog')){
         e.preventDefault();
+
+        // Replace <iframe> placeholder with placeholder
+        var ytlink = $(e.target).data('ytlink');
+        var iframeString = '<div class="yt-placeholder"></div>';
+        $(e.target).parent().parent().next().find('.yt-content').replaceWith(iframeString);
+
         $('.modalDialog').hide('slow', function(){
         });
         $('html').removeClass('scrollprevent');
@@ -278,6 +330,7 @@
     return returnArray;
   };
 
+
   filmView.printPage = function(){
 
     var element = {};
@@ -298,9 +351,7 @@
   filmView.initPage = function(){
     $('#filtered-films').empty().append('<div class="container"></div>');
 
-
     //Carousel Logic
-
     Film.fetchAllFilmData(function(filmData) {
 
       $('#filtered-films').append(filmData.map(filmView.render));
@@ -317,7 +368,16 @@
       filmView.buttonClick();
       filmView.mobileView();
       filmView.printPage();
+
     });
+
+
+    filmView.addFavorites();
+    filmView.addModalButtons();
+    // filmView.modalWindow();
+    filmView.buttonClick();
+    filmView.mobileView();
+
   };
 
   function getCarouselHtml(filmData) {
